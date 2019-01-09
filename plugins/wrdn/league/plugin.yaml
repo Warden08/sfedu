@@ -1,0 +1,28 @@
+plugin:
+    name: 'wrdn.league::lang.plugin.name'
+    description: 'wrdn.league::lang.plugin.description'
+    author: wrdn
+    icon: oc-icon-fire
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Сезоны
+        url: wrdn/league/seasons
+        icon: icon-fire
+        sideMenu:
+            side-menu-item:
+                label: Сезоны
+                url: wrdn/league/seasons
+                icon: icon-fire
+            side-menu-item2:
+                label: Турниры
+                url: wrdn/league/tournaments
+                icon: icon-star
+            side-menu-item3:
+                label: Команды
+                url: wrdn/league/teams
+                icon: icon-users
+            side-menu-item4:
+                label: Игроки
+                url: /
+                icon: icon-user

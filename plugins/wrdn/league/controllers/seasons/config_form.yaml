@@ -1,0 +1,10 @@
+name: Seasons
+form: $/wrdn/league/models/season/fields.yaml
+modelClass: Wrdn\league\Models\Season
+defaultRedirect: wrdn/league/seasons
+create:
+    redirect: 'wrdn/league/seasons/update/:id'
+    redirectClose: wrdn/league/seasons
+update:
+    redirect: wrdn/league/seasons
+    redirectClose: wrdn/league/seasons

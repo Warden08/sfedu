@@ -1,0 +1,4 @@
+title: Seasons
+modelClass: Wrdn\league\Models\Season
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: 'Название сезона'
+        span: auto
+        type: text
+    slug:
+        label: URL
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    is_active:
+        label: 'Активный сезон'
+        span: auto
+        type: switch

@@ -1,0 +1,10 @@
+name: Tournaments
+form: $/wrdn/league/models/tournament/fields.yaml
+modelClass: Wrdn\league\Models\Tournament
+defaultRedirect: wrdn/league/tournaments
+create:
+    redirect: 'wrdn/league/tournaments/update/:id'
+    redirectClose: wrdn/league/tournaments
+update:
+    redirect: wrdn/league/tournaments
+    redirectClose: wrdn/league/tournaments

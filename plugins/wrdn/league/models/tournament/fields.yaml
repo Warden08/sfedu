@@ -1,0 +1,17 @@
+fields:
+    game:
+        label: Дисциплина
+        options:
+            'Dota 2': 'Dota 2'
+            Artifact: Artifact
+            'CS:GO': 'CS:GO'
+            Warface: Warface
+            Hearthstone: Hearthstone
+        span: auto
+        type: dropdown
+    seasons:
+        label: Сезон
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        type: relation

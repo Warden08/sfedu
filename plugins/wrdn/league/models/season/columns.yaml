@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: name
+        type: text
+    is_active:
+        label: is_active
+        type: number

@@ -1,0 +1,7 @@
+columns:
+    id:
+        label: id
+        type: number
+    game:
+        label: game
+        type: text
