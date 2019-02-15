@@ -73,11 +73,14 @@ class Video extends Model
         $this->name = $json['items'][0]['snippet']['title'];
         $this->video_id = $videoId;
         $this->slug = self::url($this->name);
-        $this->date = $json['items'][0]['snippet']['publishedAt'];
+        $this->date = date('Y-m-d H:i:s');
         $this->text = nl2br($json['items'][0]['snippet']['description']);
         $this->img = $json['items'][0]['snippet']['thumbnails']['high']['url'];
        //$this->Frame = "<iframe width='620' height='340' src='https://www.youtube.com/embed/".$videoId."' frameborder='0' allowfullscreen></iframe>";
         $this->duration = $json['items'][0]['contentDetails']['duration'];
+        //$json['items'][0]['snippet']['publishedAt']
+        $this->likes = $json['items'][0]['statistics']['likeCount'];
+        $this->views = $json['items'][0]['statistics']['viewCount'];
     }
 
     public static function url($title, $separator = '-')

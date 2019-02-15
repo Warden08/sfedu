@@ -1,0 +1,35 @@
+fields:
+    first_name:
+        label: Имя
+        span: auto
+        type: text
+    last_name:
+        label: Фамилия
+        span: auto
+        type: text
+    nickname:
+        label: Никнейм
+        span: auto
+        type: text
+    slug:
+        label: URL
+        span: auto
+        preset:
+            field: nickname
+            type: slug
+        type: text
+    age:
+        label: Возраст
+        span: auto
+        type: text
+    teams:
+        label: 'Состоит в команде'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    portret:
+        label: Фото
+        span: auto
+        mode: file
+        type: mediafinder

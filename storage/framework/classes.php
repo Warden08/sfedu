@@ -83,4 +83,10 @@
   'wrdn\\league\\Controllers\\teams' => 'plugins\\wrdn\\league\\controllers\\teams.php',
   'Wrdn\\league\\Models\\Team' => 'plugins\\wrdn\\league\\models\\Team.php',
   'Wrdn\\League\\Models\\Tournament' => 'plugins\\wrdn\\league\\models\\Tournament.php',
+  'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
+  'system\\Controllers\\eventlogs' => 'modules\\system\\controllers\\eventlogs.php',
+  'wrdn\\league\\Controllers\\players' => 'plugins\\wrdn\\league\\controllers\\players.php',
+  'Wrdn\\league\\Models\\Player' => 'plugins\\wrdn\\league\\models\\Player.php',
+  'Wrdn\\League\\Models\\Team' => 'plugins\\wrdn\\league\\models\\Team.php',
+  'RainLab\\Builder\\Classes\\ComponentHelper' => 'plugins\\rainlab\\builder\\classes\\ComponentHelper.php',
 );

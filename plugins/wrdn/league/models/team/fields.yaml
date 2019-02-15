@@ -1,0 +1,37 @@
+fields:
+    name:
+        label: 'Название команды'
+        span: auto
+        type: text
+    slug:
+        label: URL
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    tag:
+        label: 'Тег команды'
+        span: auto
+        type: text
+    logo:
+        label: Логотип
+        mode: file
+        span: auto
+        type: mediafinder
+    game:
+        label: Дисциплина
+        span: auto
+        options:
+            'Dota 2': 'Dota 2'
+            Artifact: Artifact
+            'CS:GO': 'CS:GO'
+            Warface: Warface
+            Hearthstone: Hearthstone
+        type: dropdown
+    seasons:
+        label: 'Участие в сезонах'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

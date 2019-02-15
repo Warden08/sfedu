@@ -1,0 +1,35 @@
+title = "Турниры"
+url = "/seasons/tournaments"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Wrdn\league\Models\Tournament"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "game"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section id="layout-title">
+    <div class="container">
+        <h3>Турниры</h3>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+{% component 'builderList' %}
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-3">
+
+            {% partial 'blog/sidebar' %}
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+1550209149a:1:{s:19:"seasons/seasons.htm";a:10:{s:8:"fileName";s:19:"seasons/seasons.htm";s:7:"content";s:730:"title = "Сезоны"
+url = "/seasons"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Wrdn\league\Models\Season"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section id="layout-title">
+    <div class="container">
+        <h3>Сезоны</h3>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            
+{% component 'builderList' %}
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-3">
+
+            {% partial 'blog/sidebar' %}
+
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1547126565;s:6:"markup";s:410:"<section id="layout-title">
+    <div class="container">
+        <h3>Сезоны</h3>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            
+{% component 'builderList' %}
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-sm-3">
+
+            {% partial 'blog/sidebar' %}
+
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:12:"Сезоны";s:3:"url";s:8:"/seasons";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:25:"Wrdn\league\Models\Season";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

@@ -48,3 +48,15 @@
 1.0.17:
     - 'Updated table wrdn_video_videos1'
     - builder_table_update_wrdn_video_videos_14.php
+1.0.18:
+    - 'Updated table wrdn_video_videos'
+    - builder_table_update_wrdn_video_videos_15.php
+1.0.19:
+    - 'Updated table wrdn_video_videos'
+    - builder_table_update_wrdn_video_videos_16.php
+1.0.20:
+    - 'Drop table wrdn_video_videos'
+    - builder_table_delete_wrdn_video_videos.php
+1.0.21:
+    - 'Created table wrdn_video_videos'
+    - builder_table_create_wrdn_video_videos_2.php

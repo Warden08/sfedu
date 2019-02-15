@@ -24,7 +24,7 @@ class Player extends Model
     public $belongsToMany = [
         'teams' => ['Wrdn\League\Models\Team',
             'table' => 'wrdn_league_teams_players',
-            'order' => 'nickname'
+            'order' => 'name'
         ],
     ];
 }
