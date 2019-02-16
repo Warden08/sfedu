@@ -1,0 +1,10 @@
+title = "Новости - Отдельная запись"
+url = "/news/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+==
+{% component 'blogPost' %}

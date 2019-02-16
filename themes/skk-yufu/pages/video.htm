@@ -1,0 +1,13 @@
+title = "Видео"
+url = "/video"
+layout = "default"
+is_hidden = 0
+
+[videoVideos]
+pageNumber = "{{ :page }}"
+videosPerPage = 15
+noPostsMessage = "No posts found"
+sortOrder = "id asc"
+videoPage = "video/entry"
+==
+{% component 'videoVideos' %}
