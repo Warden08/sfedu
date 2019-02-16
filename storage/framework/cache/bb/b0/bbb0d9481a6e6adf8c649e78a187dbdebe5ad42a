@@ -1,4 +1,4 @@
-1550210909a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1877:"<!DOCTYPE html>
+1550297433a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2416:"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,7 +23,20 @@
     <div class="container-fluid page-body-wrapper">
         {% partial "sidebar" %}
         <div class="main-panel">
-            {% page %}
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-md-8 stretch-card grid-margin">
+                        <div class="card main-card" style="min-height: 1000px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    {% page %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- content-wrapper ends -->
             {% partial "footer" %}
         </div>
@@ -49,7 +62,7 @@
 </body>
 
 </html>
-";s:5:"mtime";i:1550210308;s:6:"markup";s:1875:"<!DOCTYPE html>
+";s:5:"mtime";i:1550296831;s:6:"markup";s:2414:"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -74,7 +87,20 @@
     <div class="container-fluid page-body-wrapper">
         {% partial "sidebar" %}
         <div class="main-panel">
-            {% page %}
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-md-8 stretch-card grid-margin">
+                        <div class="card main-card" style="min-height: 1000px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    {% page %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- content-wrapper ends -->
             {% partial "footer" %}
         </div>

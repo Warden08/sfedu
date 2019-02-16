@@ -76,17 +76,30 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
         unset($context['__cms_partial_params']);
         // line 25
         echo "        <div class=\"main-panel\">
-            ";
-        // line 26
+            <div class=\"content-wrapper\">
+                <div class=\"row\">
+                    <div class=\"col-md-8 stretch-card grid-margin\">
+                        <div class=\"card main-card\" style=\"min-height: 1000px;\">
+                            <div class=\"card-body\">
+                                <div class=\"row\">
+                                    ";
+        // line 32
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 27
-        echo "            <!-- content-wrapper ends -->
+        // line 33
+        echo "                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content-wrapper ends -->
             ";
-        // line 28
+        // line 41
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 29
+        // line 42
         echo "        </div>
         <!-- main-panel ends -->
     </div>
@@ -96,11 +109,11 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 
 <!-- plugins:js -->
 <script src=\"";
-        // line 37
+        // line 50
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendors/js/vendor.bundle.base.js");
         echo "\"></script>
 <script src=\"";
-        // line 38
+        // line 51
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendors/js/vendor.bundle.addons.js");
         echo "\"></script>
 <!-- endinject -->
@@ -108,17 +121,17 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 <!-- End plugin js for this page-->
 <!-- inject:js -->
 <script src=\"";
-        // line 43
+        // line 56
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/off-canvas.js");
         echo "\"></script>
 <script src=\"";
-        // line 44
+        // line 57
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/misc.js");
         echo "\"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src=\"";
-        // line 47
+        // line 60
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/dashboard.js");
         echo "\"></script>
 <!-- End custom js for this page-->
@@ -139,7 +152,7 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 
     public function getDebugInfo()
     {
-        return array (  122 => 47,  116 => 44,  112 => 43,  104 => 38,  100 => 37,  90 => 29,  86 => 28,  83 => 27,  81 => 26,  78 => 25,  74 => 24,  71 => 23,  67 => 22,  60 => 18,  55 => 16,  49 => 13,  45 => 12,  40 => 10,  36 => 9,  32 => 8,  23 => 1,);
+        return array (  135 => 60,  129 => 57,  125 => 56,  117 => 51,  113 => 50,  103 => 42,  99 => 41,  89 => 33,  87 => 32,  78 => 25,  74 => 24,  71 => 23,  67 => 22,  60 => 18,  55 => 16,  49 => 13,  45 => 12,  40 => 10,  36 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -169,7 +182,20 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
     <div class=\"container-fluid page-body-wrapper\">
         {% partial \"sidebar\" %}
         <div class=\"main-panel\">
-            {% page %}
+            <div class=\"content-wrapper\">
+                <div class=\"row\">
+                    <div class=\"col-md-8 stretch-card grid-margin\">
+                        <div class=\"card main-card\" style=\"min-height: 1000px;\">
+                            <div class=\"card-body\">
+                                <div class=\"row\">
+                                    {% page %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- content-wrapper ends -->
             {% partial \"footer\" %}
         </div>
