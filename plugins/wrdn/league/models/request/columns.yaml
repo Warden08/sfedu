@@ -1,0 +1,52 @@
+columns:
+    id:
+        label: id
+        type: number
+    team_name:
+        label: team_name
+        type: text
+    team_tag:
+        label: team_tag
+        type: text
+    team_logo:
+        label: team_logo
+        type: text
+    game:
+        label: game
+        type: text
+    pl1_nick:
+        label: pl1_nick
+        type: text
+    pl2_nick:
+        label: pl2_nick
+        type: text
+    pl3_nick:
+        label: pl3_nick
+        type: text
+    pl4_nick:
+        label: pl4_nick
+        type: text
+    pl5_nick:
+        label: pl5_nick
+        type: text
+    pl1_name:
+        label: pl1_name
+        type: text
+    pl2_name:
+        label: pl2_name
+        type: text
+    pl3_name:
+        label: pl3_name
+        type: text
+    pl4_name:
+        label: pl4_name
+        type: text
+    pl5_name:
+        label: pl5_name
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime

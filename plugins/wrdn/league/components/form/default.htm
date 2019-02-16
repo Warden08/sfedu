@@ -1,0 +1,69 @@
+<div class="card my-4">
+    <div class="card-header">Отправить заявку</div>
+    <div class="card-body">
+        <p>
+            <b>Правила и условия по которым осуществляется поддержка</b>
+        <ul>
+            <li>Запрещатся размещать у себя на стриме любые другие логотипы на русскоязычные ресурсы связанные с Artifact</li>
+            <li>Вам нужно разместить на своем стриме наш <a href="/storage/app/media/stream_promo.jpg" target="_blank">логотип</a></li>
+        </ul>
+        </p>
+        {{ form_open({ request: 'onSave' }) }}
+        {% flash success %}
+        <div class="alert alert-success" role="alert">
+            {{message}}
+        </div>
+        {% endflash %}
+        {% flash error %}
+        <div class="alert alert-danger" role="alert">
+            {{message}}
+        </div>
+        {% endflash %}
+        <div class="form-group">
+            <label for="age">Ваш возраст:</label>
+            <input type="text"class="form-control {% if errors.first('age') %}is-invalid{% endif %}" id="age" name="age" />
+            <div class="invalid-feedback">
+                {{ errors.first('age') }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exp">Количество наигранных часов в Artifact:</label>
+            <input type="text" class="form-control {% if errors.first('exp') %}is-invalid{% endif %}" id="exp" name="exp"/>
+            <div class="invalid-feedback">
+                {{ errors.first('exp') }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="viewers">Среднее количество зрителей:</label>
+            <input type="text" class="form-control {% if errors.first('viewers') %}is-invalid{% endif %}" id="viewers" name="viewers"/>
+            <div class="invalid-feedback">
+                {{ errors.first('viewers') }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="vk">Ссылка на профиль ВКонтакте:</label>
+            <input name="vk" class="form-control {% if errors.first('vk') %}is-invalid{% endif %}" id="vk"/>
+            <div class="invalid-feedback">
+                {{ errors.first('vk') }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="link">Ссылка на стрим:</label>
+            <input type="text" name="link" class="form-control {% if errors.first('link') %}is-invalid{% endif %}" id="link"/>
+            <small id="linkHelp" class="form-text text-muted">Например: https://twitch.tv/artifact</small>
+            <div class="invalid-feedback">
+                {{ errors.first('link') }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="short_desc">Краткое описание Вашего контента:</label>
+            <textarea name="short_desc" class="form-control {% if errors.first('short_desc') %}is-invalid{% endif %}" id="short_desc"></textarea>
+            <div class="invalid-feedback">
+                {{ errors.first('short_desc') }}
+            </div>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LfaykgUAAAAALk-WYUAjDwqDgSuNEwmlxSJf7_V" data-theme="dark"></div>
+        <button type="submit" class="btn btn-success">Отправить</button>
+        {{form_close}}
+    </div>
+</div>

@@ -12295,7 +12295,6 @@ input[type="button"].btn-block {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   padding: 0.5rem 1rem;
 }
 
@@ -17331,6 +17330,7 @@ input:focus {
   font-family: "ubuntu-regular", sans-serif;
   padding: 0;
   width: 260px;
+  height: 100%;
   z-index: 11;
   position: fixed;
   transition: width 0.25s ease, background 0.25s ease;

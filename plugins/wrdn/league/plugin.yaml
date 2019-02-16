@@ -26,3 +26,7 @@ navigation:
                 label: Игроки
                 url: wrdn/league/players
                 icon: icon-user
+            side-menu-item5:
+                label: Заявки
+                url: wrdn/league/requests
+                icon: icon-sitemap

@@ -1,4 +1,4 @@
-1550298204a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:3042:"title = "Главная"
+1550321720a:1:{s:8:"home.htm";a:11:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:915:"title = "Главная"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -9,71 +9,31 @@ videosPerPage = 4
 noPostsMessage = "No posts found"
 sortOrder = "name asc"
 videoPage = "home"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "news/entry"
+postPage = "home"
 ==
-                                   <div class="col-md-8">
-                                       <div class="post-list card">
-                                           <div class="block-header">Новости</div>
-                                           <div class="card-body">
-                                               <article class="news-entry">
-                                                   <a href="/news/fks-rossii-anonsiruet-novyj-sezon-studencheskoj-ligi">
-                                                       <img class="card-img-top" data-src="1.jpg" src="http://vksl.ru/storage/app/uploads/public/5c0/d6e/161/5c0d6e1617123441599612.jpg">
-                                                       <h4>ФКС России анонсирует новый сезон Студенческой лиги</h4>
-                                                       <p class="info">
-                                                           Posted
-                                                           on Nov 29, 2018
-                                                       </p>
-                                                   </a>
-                                               </article>
-                                               <article class="news-entry">
-                                                   <a href="/news/raspisanie-grand-finala-vserossijskoj-kibersportivnoj-studencheskoj-ligi">
-                                                       <img class="card-img-top" data-src="2.jpg" src="http://vksl.ru/storage/app/uploads/public/5c0/d6e/1ea/5c0d6e1eaee76058704713.jpg">
-                                                       <h4>Расписание гранд-финала Всероссийской киберспортивной студенческой лиги</h4>
-                                                       <p class="info">
-                                                           Posted
-                                                           on Nov 29, 2018
-                                                       </p>
-                                                   </a>
-                                               </article>
-                                           </div>
-                                       </div>
-                                   </div>
+<div class="col-md-8">
+    {% component 'blogPosts' %}
+</div>
                                    <div class="col-md-4">
                                        <div class="card">
                                            <div class="block-header">Матчи</div>
                                            <div class="card-body">fdsfsfsdfdsfsdf</div>
                                        </div>
                                         {% component 'videoVideos' %}
-                                   </div>";s:5:"mtime";i:1550296926;s:6:"markup";s:2788:"<div class="col-md-8">
-                                       <div class="post-list card">
-                                           <div class="block-header">Новости</div>
-                                           <div class="card-body">
-                                               <article class="news-entry">
-                                                   <a href="/news/fks-rossii-anonsiruet-novyj-sezon-studencheskoj-ligi">
-                                                       <img class="card-img-top" data-src="1.jpg" src="http://vksl.ru/storage/app/uploads/public/5c0/d6e/161/5c0d6e1617123441599612.jpg">
-                                                       <h4>ФКС России анонсирует новый сезон Студенческой лиги</h4>
-                                                       <p class="info">
-                                                           Posted
-                                                           on Nov 29, 2018
-                                                       </p>
-                                                   </a>
-                                               </article>
-                                               <article class="news-entry">
-                                                   <a href="/news/raspisanie-grand-finala-vserossijskoj-kibersportivnoj-studencheskoj-ligi">
-                                                       <img class="card-img-top" data-src="2.jpg" src="http://vksl.ru/storage/app/uploads/public/5c0/d6e/1ea/5c0d6e1eaee76058704713.jpg">
-                                                       <h4>Расписание гранд-финала Всероссийской киберспортивной студенческой лиги</h4>
-                                                       <p class="info">
-                                                           Posted
-                                                           on Nov 29, 2018
-                                                       </p>
-                                                   </a>
-                                               </article>
-                                           </div>
-                                       </div>
-                                   </div>
+                                   </div>";s:5:"mtime";i:1550317879;s:6:"markup";s:518:"<div class="col-md-8">
+    {% component 'blogPosts' %}
+</div>
                                    <div class="col-md-4">
                                        <div class="card">
                                            <div class="block-header">Матчи</div>
                                            <div class="card-body">fdsfsfsdfdsfsdf</div>
                                        </div>
                                         {% component 'videoVideos' %}
-                                   </div>";s:4:"code";N;s:5:"title";s:14:"Главная";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"videoVideos";a:5:{s:10:"pageNumber";s:11:"{{ :page }}";s:13:"videosPerPage";s:1:"4";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:8:"name asc";s:9:"videoPage";s:4:"home";}}}
+                                   </div>";s:4:"code";N;s:5:"title";s:14:"Главная";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"videoVideos";a:5:{s:10:"pageNumber";s:11:"{{ :page }}";s:13:"videosPerPage";s:1:"4";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:8:"name asc";s:9:"videoPage";s:4:"home";}s:9:"blogPosts";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:10:"news/entry";s:8:"postPage";s:4:"home";}}}

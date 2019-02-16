@@ -101,4 +101,8 @@
   'RainLab\\Blog\\Components\\Categories' => 'plugins\\rainlab\\blog\\components\\Categories.php',
   'RainLab\\Blog\\Components\\RssFeed' => 'plugins\\rainlab\\blog\\components\\RssFeed.php',
   'Wrdn\\Video\\Models\\Video' => 'plugins\\wrdn\\video\\models\\Video.php',
+  'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\BlogMarkdown.php',
+  'wrdn\\league\\Controllers\\requests' => 'plugins\\wrdn\\league\\controllers\\requests.php',
+  'Wrdn\\league\\Models\\Request' => 'plugins\\wrdn\\league\\models\\Request.php',
+  'Wrdn\\League\\Components\\Form' => 'plugins\\wrdn\\league\\components\\Form.php',
 );

@@ -33,3 +33,9 @@
 1.0.12:
     - 'Created table wrdn_league_seasons_teams'
     - builder_table_create_wrdn_league_seasons_teams.php
+1.0.13:
+    - 'Created table wrdn_league_requests'
+    - builder_table_create_wrdn_league_requests.php
+1.0.14:
+    - 'Updated table wrdn_league_requests'
+    - builder_table_update_wrdn_league_requests.php
