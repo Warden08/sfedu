@@ -1,0 +1,16 @@
+1550385998a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:168:"title = "Регламент"
+url = "/rules"
+layout = "default"
+is_hidden = 0
+==
+<div class="col-md-8">
+tut rules mthfaka
+</div>
+<div class="col-md-4">
+
+</div>";s:5:"mtime";i:1550384169;s:6:"markup";s:83:"<div class="col-md-8">
+tut rules mthfaka
+</div>
+<div class="col-md-4">
+
+</div>";s:4:"code";N;s:5:"title";s:18:"Регламент";s:3:"url";s:6:"/rules";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

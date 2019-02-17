@@ -48,33 +48,34 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
         // line 13
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendors/css/vendor.bundle.base.css");
         echo "\">
+    <link href=\"https://use.fontawesome.com/releases/v5.0.8/css/all.css\" rel=\"stylesheet\">
     <!-- endinject -->
     <!-- inject:css -->
     <link rel=\"stylesheet\" href=\"";
-        // line 16
+        // line 17
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.css");
         echo "\">
     <!-- endinject -->
     <link rel=\"shortcut icon\" href=\"";
-        // line 18
+        // line 19
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon.png");
         echo "\" />
 </head>
 <body>
 <div class=\"container-scroller\">
     ";
-        // line 22
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("nav"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 23
+        // line 24
         echo "    <div class=\"container-fluid page-body-wrapper\">
         ";
-        // line 24
+        // line 25
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 25
+        // line 26
         echo "        <div class=\"main-panel\">
             <div class=\"content-wrapper\">
                 <div class=\"row\">
@@ -83,9 +84,9 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
                             <div class=\"card-body\">
                                 <div class=\"row\">
                                     ";
-        // line 32
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 33
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 34
         echo "                                </div>
                             </div>
                         </div>
@@ -95,11 +96,11 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 
             <!-- content-wrapper ends -->
             ";
-        // line 41
+        // line 42
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 42
+        // line 43
         echo "        </div>
         <!-- main-panel ends -->
     </div>
@@ -109,11 +110,11 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 
 <!-- plugins:js -->
 <script src=\"";
-        // line 50
+        // line 51
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendors/js/vendor.bundle.base.js");
         echo "\"></script>
 <script src=\"";
-        // line 51
+        // line 52
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendors/js/vendor.bundle.addons.js");
         echo "\"></script>
 <!-- endinject -->
@@ -121,17 +122,17 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 <!-- End plugin js for this page-->
 <!-- inject:js -->
 <script src=\"";
-        // line 56
+        // line 57
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/off-canvas.js");
         echo "\"></script>
 <script src=\"";
-        // line 57
+        // line 58
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/misc.js");
         echo "\"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src=\"";
-        // line 60
+        // line 61
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/dashboard.js");
         echo "\"></script>
 <!-- End custom js for this page-->
@@ -152,7 +153,7 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
 
     public function getDebugInfo()
     {
-        return array (  135 => 60,  129 => 57,  125 => 56,  117 => 51,  113 => 50,  103 => 42,  99 => 41,  89 => 33,  87 => 32,  78 => 25,  74 => 24,  71 => 23,  67 => 22,  60 => 18,  55 => 16,  49 => 13,  45 => 12,  40 => 10,  36 => 9,  32 => 8,  23 => 1,);
+        return array (  136 => 61,  130 => 58,  126 => 57,  118 => 52,  114 => 51,  104 => 43,  100 => 42,  90 => 34,  88 => 33,  79 => 26,  75 => 25,  72 => 24,  68 => 23,  61 => 19,  56 => 17,  49 => 13,  45 => 12,  40 => 10,  36 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -170,6 +171,7 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
     <!-- plugins:css -->
     <link rel=\"stylesheet\" href=\"{{ 'assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css'|theme }}\">
     <link rel=\"stylesheet\" href=\"{{ 'assets/vendors/css/vendor.bundle.base.css'|theme }}\">
+    <link href=\"https://use.fontawesome.com/releases/v5.0.8/css/all.css\" rel=\"stylesheet\">
     <!-- endinject -->
     <!-- inject:css -->
     <link rel=\"stylesheet\" href=\"{{ 'assets/css/style.css'|theme }}\">

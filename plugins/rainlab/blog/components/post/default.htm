@@ -1,6 +1,9 @@
 {% set post = __SELF__.post %}
 
-<div class="content">{{ post.content_html|raw }}</div>
+<div class="card my-4">
+    <div class="card-header">{{ post.title }}</div>
+    <div class="card-body">
+        {{ post.content_html|raw }}</div>
 
 {% if post.featured_images.count %}
     <div class="featured-images text-center">
@@ -15,13 +18,19 @@
         {% endfor %}
     </div>
 {% endif %}
-
-<p class="info">
-    Posted
-    {% if post.categories.count %} in
-        {% for category in post.categories %}
-            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-        {% endfor %}
-    {% endif %}
-    on {{ post.published_at|date('M d, Y') }}
-</p>
+<div class="card-footer text-muted">
+        Опубликовано {{ post.published_at|date('d.m.Y, H:i') }}
+        <div class="card-social">
+            <!-- Put this script tag to the place, where the Share button will be -->
+            <script type="text/javascript"><!--
+            document.write(VK.Share.button({
+                url: "http://artifact.plus/news/{{post.slug}}",
+                title: '{{post.name}} - Новости - СКК ЮФУ',
+                image: '{{ post.img }}',
+                noparse: true
+            },{type: "custom",noparse: 0, text: "<img src=\"http://artifact.plus/themes/seanrasmussen-raz_html5up_halcyonic/assets/css/images/icon_vk.png\" width=\"32\" height=\"19\" />"}));
+            -->
+            </script>
+        </div>
+    </div>
+</div>

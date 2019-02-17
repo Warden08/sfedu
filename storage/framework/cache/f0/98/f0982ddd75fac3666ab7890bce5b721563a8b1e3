@@ -1,8 +1,8 @@
-1550321720a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:1623:"<!-- partial:partials/_navbar.html-->
+1550385824a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:1614:"<!-- partial:partials/_navbar.html-->
 <div class="row">
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo" href="/"><img src="{{ 'assets/images/logo.svg'|theme }}" alt="logo"/></a>
+            <a class="navbar-brand brand-logo" href="/"><img src="/storage/app/media/logo.png" alt="logo"/></a>
             <a class="navbar-brand brand-logo-mini" href="/"><img src="{{ 'images/logo-mini.svg'|theme }}" alt="logo"/></a>
         </div>
             <div class="col-md-8" style="width: auto">
@@ -26,11 +26,11 @@
             </div>
     </nav>
 </div>
-<!--  partial -->";s:5:"mtime";i:1550320167;s:6:"markup";s:1623:"<!-- partial:partials/_navbar.html-->
+<!--  partial -->";s:5:"mtime";i:1550345182;s:6:"markup";s:1614:"<!-- partial:partials/_navbar.html-->
 <div class="row">
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo" href="/"><img src="{{ 'assets/images/logo.svg'|theme }}" alt="logo"/></a>
+            <a class="navbar-brand brand-logo" href="/"><img src="/storage/app/media/logo.png" alt="logo"/></a>
             <a class="navbar-brand brand-logo-mini" href="/"><img src="{{ 'images/logo-mini.svg'|theme }}" alt="logo"/></a>
         </div>
             <div class="col-md-8" style="width: auto">

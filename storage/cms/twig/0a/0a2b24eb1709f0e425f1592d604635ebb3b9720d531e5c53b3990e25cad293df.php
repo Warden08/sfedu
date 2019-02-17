@@ -23,8 +23,8 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
         $context["posts"] = twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "posts", array());
         // line 2
         echo "
-<div class=\"post-list card\">
-    <div class=\"block-header\">Новости</div>
+<div class=\"card my-4\">
+    <div class=\"card-header\">Новости</div>
     <div class=\"card-body\">
         ";
         // line 6
@@ -163,8 +163,8 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
     {
         return new Twig_Source("{% set posts = __SELF__.posts %}
 
-<div class=\"post-list card\">
-    <div class=\"block-header\">Новости</div>
+<div class=\"card my-4\">
+    <div class=\"card-header\">Новости</div>
     <div class=\"card-body\">
         {% for post in posts %}
         <article class=\"news-entry\">

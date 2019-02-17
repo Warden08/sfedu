@@ -23,34 +23,40 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
         $context["post"] = twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "post", array());
         // line 2
         echo "
-<div class=\"content\">";
-        // line 3
+<div class=\"card my-4\">
+    <div class=\"card-header\">";
+        // line 4
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "title", array()), "html", null, true);
+        echo "</div>
+    <div class=\"card-body\">
+        ";
+        // line 6
         echo twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "content_html", array());
         echo "</div>
 
 ";
-        // line 5
+        // line 8
         if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", array()), "count", array())) {
-            // line 6
+            // line 9
             echo "    <div class=\"featured-images text-center\">
         ";
-            // line 7
+            // line 10
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 8
+                // line 11
                 echo "            <p>
                 <img
                     data-src=\"";
-                // line 10
+                // line 13
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "filename", array()), "html", null, true);
                 echo "\"
                     src=\"";
-                // line 11
+                // line 14
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", array()), "html", null, true);
                 echo "\"
                     alt=\"";
-                // line 12
+                // line 15
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "description", array()), "html", null, true);
                 echo "\"
                     style=\"max-width: 100%\" />
@@ -60,68 +66,39 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 16
+            // line 19
             echo "    </div>
 ";
         }
-        // line 18
-        echo "
-<p class=\"info\">
-    Posted
-    ";
         // line 21
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "categories", array()), "count", array())) {
-            echo " in
-        ";
-            // line 22
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "categories", array()));
-            $context['loop'] = array(
-              'parent' => $context['_parent'],
-              'index0' => 0,
-              'index'  => 1,
-              'first'  => true,
-            );
-            if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
-                $length = count($context['_seq']);
-                $context['loop']['revindex0'] = $length - 1;
-                $context['loop']['revindex'] = $length;
-                $context['loop']['length'] = $length;
-                $context['loop']['last'] = 1 === $length;
-            }
-            foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-                // line 23
-                echo "            <a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["category"], "url", array()), "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["category"], "name", array()), "html", null, true);
-                echo "</a>";
-                if ( !twig_get_attribute($this->env, $this->source, $context["loop"], "last", array())) {
-                    echo ", ";
-                }
-                // line 24
-                echo "        ";
-                ++$context['loop']['index0'];
-                ++$context['loop']['index'];
-                $context['loop']['first'] = false;
-                if (isset($context['loop']['length'])) {
-                    --$context['loop']['revindex0'];
-                    --$context['loop']['revindex'];
-                    $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-                }
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 25
-            echo "    ";
-        }
-        // line 26
-        echo "    on ";
-        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "published_at", array()), "M d, Y"), "html", null, true);
+        echo "<div class=\"card-footer text-muted\">
+        Опубликовано ";
+        // line 22
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "published_at", array()), "d.m.Y, H:i"), "html", null, true);
         echo "
-</p>
-";
+        <div class=\"card-social\">
+            <!-- Put this script tag to the place, where the Share button will be -->
+            <script type=\"text/javascript\"><!--
+            document.write(VK.Share.button({
+                url: \"http://artifact.plus/news/";
+        // line 27
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "slug", array()), "html", null, true);
+        echo "\",
+                title: '";
+        // line 28
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "name", array()), "html", null, true);
+        echo " - Новости - СКК ЮФУ',
+                image: '";
+        // line 29
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "img", array()), "html", null, true);
+        echo "',
+                noparse: true
+            },{type: \"custom\",noparse: 0, text: \"<img src=\\\"http://artifact.plus/themes/seanrasmussen-raz_html5up_halcyonic/assets/css/images/icon_vk.png\\\" width=\\\"32\\\" height=\\\"19\\\" />\"}));
+            -->
+            </script>
+        </div>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -136,14 +113,17 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
 
     public function getDebugInfo()
     {
-        return array (  120 => 26,  117 => 25,  103 => 24,  94 => 23,  77 => 22,  73 => 21,  68 => 18,  64 => 16,  54 => 12,  50 => 11,  46 => 10,  42 => 8,  38 => 7,  35 => 6,  33 => 5,  28 => 3,  25 => 2,  23 => 1,);
+        return array (  93 => 29,  89 => 28,  85 => 27,  77 => 22,  74 => 21,  70 => 19,  60 => 15,  56 => 14,  52 => 13,  48 => 11,  44 => 10,  41 => 9,  39 => 8,  34 => 6,  29 => 4,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{% set post = __SELF__.post %}
 
-<div class=\"content\">{{ post.content_html|raw }}</div>
+<div class=\"card my-4\">
+    <div class=\"card-header\">{{ post.title }}</div>
+    <div class=\"card-body\">
+        {{ post.content_html|raw }}</div>
 
 {% if post.featured_images.count %}
     <div class=\"featured-images text-center\">
@@ -158,16 +138,21 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
         {% endfor %}
     </div>
 {% endif %}
-
-<p class=\"info\">
-    Posted
-    {% if post.categories.count %} in
-        {% for category in post.categories %}
-            <a href=\"{{ category.url }}\">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-        {% endfor %}
-    {% endif %}
-    on {{ post.published_at|date('M d, Y') }}
-</p>
-", "D:\\OSPanel\\domains\\sfedu/plugins/rainlab/blog/components/post/default.htm", "");
+<div class=\"card-footer text-muted\">
+        Опубликовано {{ post.published_at|date('d.m.Y, H:i') }}
+        <div class=\"card-social\">
+            <!-- Put this script tag to the place, where the Share button will be -->
+            <script type=\"text/javascript\"><!--
+            document.write(VK.Share.button({
+                url: \"http://artifact.plus/news/{{post.slug}}\",
+                title: '{{post.name}} - Новости - СКК ЮФУ',
+                image: '{{ post.img }}',
+                noparse: true
+            },{type: \"custom\",noparse: 0, text: \"<img src=\\\"http://artifact.plus/themes/seanrasmussen-raz_html5up_halcyonic/assets/css/images/icon_vk.png\\\" width=\\\"32\\\" height=\\\"19\\\" />\"}));
+            -->
+            </script>
+        </div>
+    </div>
+</div>", "D:\\OSPanel\\domains\\sfedu/plugins/rainlab/blog/components/post/default.htm", "");
     }
 }

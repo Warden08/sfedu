@@ -20,9 +20,17 @@ class __TwigTemplate_8bfb94b1bf65c60ba8fce3a1f6968379fbee78ab0199c87d531f427710f
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
+        echo "<div class=\"col-md-8\">
+";
+        // line 2
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
+        // line 3
+        echo "</div>
+<div class=\"col-md-4\">
+
+</div>";
     }
 
     public function getTemplateName()
@@ -37,11 +45,16 @@ class __TwigTemplate_8bfb94b1bf65c60ba8fce3a1f6968379fbee78ab0199c87d531f427710f
 
     public function getDebugInfo()
     {
-        return array (  23 => 1,);
+        return array (  30 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% component 'blogPosts' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/news.htm", "");
+        return new Twig_Source("<div class=\"col-md-8\">
+{% component 'blogPosts' %}
+</div>
+<div class=\"col-md-4\">
+
+</div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/news.htm", "");
     }
 }

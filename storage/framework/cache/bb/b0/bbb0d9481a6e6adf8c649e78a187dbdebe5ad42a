@@ -1,4 +1,5 @@
-1550321720a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2404:"<!DOCTYPE html>
+1550386150a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2498:"==
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +12,7 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ 'assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/vendors/css/vendor.bundle.base.css'|theme }}">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <!-- endinject -->
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
@@ -61,8 +63,7 @@
 <!-- End custom js for this page-->
 </body>
 
-</html>
-";s:5:"mtime";i:1550316423;s:6:"markup";s:2402:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1550384932;s:6:"markup";s:2494:"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -75,6 +76,7 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ 'assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/vendors/css/vendor.bundle.base.css'|theme }}">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <!-- endinject -->
     <!-- inject:css -->
     <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
@@ -125,4 +127,4 @@
 <!-- End custom js for this page-->
 </body>
 
-</html>";s:4:"code";N;}}
+</html>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

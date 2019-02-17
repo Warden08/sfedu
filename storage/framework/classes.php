@@ -105,4 +105,6 @@
   'wrdn\\league\\Controllers\\requests' => 'plugins\\wrdn\\league\\controllers\\requests.php',
   'Wrdn\\league\\Models\\Request' => 'plugins\\wrdn\\league\\models\\Request.php',
   'Wrdn\\League\\Components\\Form' => 'plugins\\wrdn\\league\\components\\Form.php',
+  'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
+  'wrdn\\Video\\Models\\Video' => 'plugins\\wrdn\\video\\models\\Video.php',
 );

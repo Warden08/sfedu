@@ -2,12 +2,72 @@ title = "Видео"
 url = "/video"
 layout = "default"
 is_hidden = 0
-
-[videoVideos]
-pageNumber = "{{ :page }}"
-videosPerPage = 15
-noPostsMessage = "No posts found"
-sortOrder = "id asc"
-videoPage = "video/entry"
 ==
-{% component 'videoVideos' %}
+<?php
+function onStart() {
+    use wrdn\Video\Models\Video;
+    $videos = Video::orderBy('id', 'desc')->paginate(20);
+    
+    $this['videos'] = $videos;
+}
+?>
+==
+<div class="col-md-8">
+    <div class="card my-4">
+        <div class="card-header">Видео</div>
+        <div class="card-body row">
+            <div class="card-streams col-md-12">
+                {% for video in videos %}
+                    <div class="col-xs-6 col-md-4" style="padding: 0 4px">
+                        <a class="video-entry" href="/video/{{video.slug}}">
+                            <div class="about">{{video.name}}</div>
+                            <img src="{{video.img}}">
+                            <div class="info">
+                                <div class="title"><i class="fa fas fa-clock"></i> {{ video.date|date('d.m.Y, H:i') }}</div>
+                                <div class="viewers"><i class="fa fas fa-heart"></i> {{video.likes}}</div>
+                            </div>    
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+  {% if videos.lastPage > 1 %}
+<ul class="pagination">
+
+   {% if videos.currentPage > 1 %}
+       <li>
+           <a class="button " href="{{ videos.previousPageUrl }}"><i class="fa fa-arrow-left" aria-hidden="true"></i>Пред.</a>
+       </li>
+   {% else %}
+       <li>
+           <a class="button disabled" href="nojavascript...void(0)"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+       </li>
+   {% endif %}
+
+   {% for page in 1..videos.lastPage %}
+   <li>
+       <a 
+           class="page {{ videos.currentPage == page ? 'active' : null }}" 
+           href="{{ this.page.baseFileName | page }}?page={{ page }}">
+           {{ page }}
+       </a>
+   </li>
+   {% endfor %}
+
+   {% if videos.lastPage > all.videos.currentPage %}
+       <li>
+           <a href="{{ videos.nextPageUrl }}" class="button"><i class="fa fa-arrow-right" aria-hidden="true"></i>След<span class=""></span></a>
+       </li>
+   {% else %}
+       <li>
+           <a href="nojavascript...void(0)" class="button "><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+       </li>
+   {% endif %}
+
+</ul>
+{% endif %}
+        </div>
+    </div>
+</div>  
+<div class="col-md-4">
+
+</div>
