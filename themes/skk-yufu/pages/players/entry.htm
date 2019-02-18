@@ -1,0 +1,13 @@
+title = "Игроки - Отдельная запись"
+url = "/players/:slug"
+layout = "default"
+is_hidden = 0
+
+[PlayerEntry]
+slug = "{{ :slug }}"
+==
+<div class="col-md-8">
+{% component 'PlayerEntry' %}
+</div>
+<div class="col-md-4">
+</div>

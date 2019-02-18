@@ -1,0 +1,17 @@
+1550518907a:1:{s:15:"teams/entry.htm";a:10:{s:8:"fileName";s:15:"teams/entry.htm";s:7:"content";s:249:"title = "Команды - Отдельная запись"
+url = "/teams/:slug"
+layout = "default"
+is_hidden = 0
+
+[TeamEntry]
+slug = "{{ :slug }}"
+==
+<div class="col-md-8">
+{% component 'TeamEntry' %}
+</div>
+<div class="col-md-4">
+</div>";s:5:"mtime";i:1550516647;s:6:"markup";s:91:"<div class="col-md-8">
+{% component 'TeamEntry' %}
+</div>
+<div class="col-md-4">
+</div>";s:4:"code";N;s:5:"title";s:48:"Команды - Отдельная запись";s:3:"url";s:12:"/teams/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"TeamEntry";a:1:{s:4:"slug";s:11:"{{ :slug }}";}}}

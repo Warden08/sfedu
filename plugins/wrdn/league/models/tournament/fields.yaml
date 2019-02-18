@@ -1,4 +1,15 @@
 fields:
+    name:
+        label: Название
+        span: auto
+        type: text
+    slug:
+        label: URL-ссылка
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
     game:
         label: Дисциплина
         options:
@@ -11,7 +22,7 @@ fields:
         type: dropdown
     seasons:
         label: Сезон
-        span: auto
+        span: right
         nameFrom: name
         descriptionFrom: description
         type: relation

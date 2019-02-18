@@ -107,4 +107,10 @@
   'Wrdn\\League\\Components\\Form' => 'plugins\\wrdn\\league\\components\\Form.php',
   'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
   'wrdn\\Video\\Models\\Video' => 'plugins\\wrdn\\video\\models\\Video.php',
+  'Wrdn\\League\\Components\\Seasons' => 'plugins\\wrdn\\league\\components\\Seasons.php',
+  'Wrdn\\League\\Components\\Season' => 'plugins\\wrdn\\league\\components\\Season.php',
+  'Wrdn\\League\\Components\\Tournament' => 'plugins\\wrdn\\league\\components\\Tournament.php',
+  'Wrdn\\League\\Components\\Team' => 'plugins\\wrdn\\league\\components\\Team.php',
+  'Wrdn\\League\\Models\\Player' => 'plugins\\wrdn\\league\\models\\Player.php',
+  'Wrdn\\League\\Components\\Player' => 'plugins\\wrdn\\league\\components\\Player.php',
 );

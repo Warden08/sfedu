@@ -1,0 +1,19 @@
+{% set team = __SELF__.team %}
+<div class="card my-4">
+    <div class="card-header">{{team.name}}</div>
+    <div class="card-body">
+        <div class="row">
+            {% for player in team.players %}
+                <div class="col-md-4">
+                    <a class="team-player">
+                        <img src="/storage/app/media{{player.portret}}" width="100%">
+                        <div class="info">
+                            <h4 class="nickname">{{player.nickname}}</h4>
+                            <div class="name">{{player.first_name}} {{player.last_name}}</div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

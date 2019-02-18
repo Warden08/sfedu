@@ -39,3 +39,9 @@
 1.0.14:
     - 'Updated table wrdn_league_requests'
     - builder_table_update_wrdn_league_requests.php
+1.0.15:
+    - 'Updated table wrdn_league_tournaments'
+    - builder_table_update_wrdn_league_tournaments.php
+1.0.16:
+    - 'Updated table wrdn_league_tournaments'
+    - builder_table_update_wrdn_league_tournaments_2.php

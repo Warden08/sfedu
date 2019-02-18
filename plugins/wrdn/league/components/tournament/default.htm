@@ -1,0 +1,11 @@
+{% set tour = __SELF__.tournament %}
+<div class="card my-4">
+    <div class="card-header">{{tour.name}}</div>
+    <div class="card-body">
+        {% for team in tour.teams %}
+
+        <p><a href="/teams/{{team.slug}}">{{team.name}}</a></p>
+
+        {% endfor %}
+    </div>
+</div>

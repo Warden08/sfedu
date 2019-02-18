@@ -1,0 +1,11 @@
+{% set season = __SELF__.season %}
+<div class="card my-4">
+    <div class="card-header">{{season.name}}</div>
+    <div class="card-body">
+        {% for tournament in season.tournaments %}
+
+        <p><a href="/tournaments/{{tournament.slug}}">{{tournament.name}}</a></p>
+
+        {% endfor %}
+    </div>
+</div>

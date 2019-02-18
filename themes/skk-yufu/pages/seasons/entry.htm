@@ -1,0 +1,13 @@
+title = "Сезоны - Отдельная запись"
+url = "/seasons/:slug"
+layout = "default"
+is_hidden = 0
+
+[SeasonEntry]
+slug = "{{ :slug }}"
+==
+<div class="col-md-8">
+{% component 'SeasonEntry' %}
+</div>
+<div class="col-md-4">
+</div>

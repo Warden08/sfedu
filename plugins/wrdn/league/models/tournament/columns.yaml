@@ -5,3 +5,6 @@ columns:
     game:
         label: game
         type: text
+    name:
+        label: name
+        type: text

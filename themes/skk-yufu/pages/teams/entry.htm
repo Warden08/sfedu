@@ -1,0 +1,13 @@
+title = "Команды - Отдельная запись"
+url = "/teams/:slug"
+layout = "default"
+is_hidden = 0
+
+[TeamEntry]
+slug = "{{ :slug }}"
+==
+<div class="col-md-8">
+{% component 'TeamEntry' %}
+</div>
+<div class="col-md-4">
+</div>

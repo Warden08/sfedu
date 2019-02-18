@@ -29,8 +29,8 @@ fields:
             Warface: Warface
             Hearthstone: Hearthstone
         type: dropdown
-    seasons:
-        label: 'Участие в сезонах'
+    tournaments:
+        label: 'Участие в турнирах'
         nameFrom: name
         descriptionFrom: description
         span: auto

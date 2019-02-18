@@ -18319,7 +18319,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "ubuntu-medium", sans-serif;
+  font-family: "RussellSquare", sans-serif;
 }
 
 p {
@@ -21072,5 +21072,32 @@ dl li {
 }
 .video-entry .info > .viewers {
   float: right;
+}
+
+.team-player  {
+  transit```````ion: filter 0.4s;
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+.team-player img {
+  border-radius: 3px;
+
+}
+.team-player:hover {
+  border-radius: 3px;
+  filter: brightness( 1.1 );
+}
+.team-player .info {
+  position: absolute;
+  left: .5em;
+  z-index: 1;
+  bottom: 1em;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 1px 2px #000```;
+}
+.team-player .info .nickname {
+
 }
 /*# sourceMappingURL=maps/style.css.map */
