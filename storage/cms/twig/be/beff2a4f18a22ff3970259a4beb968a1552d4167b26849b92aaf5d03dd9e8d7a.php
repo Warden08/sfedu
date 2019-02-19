@@ -25,10 +25,7 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
     <nav class=\"navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row\">
         <div class=\"text-center navbar-brand-wrapper d-flex align-items-center justify-content-center\">
             <a class=\"navbar-brand brand-logo\" href=\"/\"><img src=\"/storage/app/media/logo.png\" alt=\"logo\"/></a>
-            <a class=\"navbar-brand brand-logo-mini\" href=\"/\"><img src=\"";
-        // line 6
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/logo-mini.svg");
-        echo "\" alt=\"logo\"/></a>
+            <a class=\"navbar-brand brand-logo-mini\" href=\"/\"><img src=\"/storage/app/media/rnd_logo_clear_2.png\" alt=\"logo\"/></a>
         </div>
             <div class=\"col-md-8\" style=\"width: auto\">
                 <div class=\"navbar-menu-wrapper d-flex align-items-stretch\">
@@ -59,14 +56,9 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
         return "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/nav.htm";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  30 => 6,  23 => 1,);
+        return array (  23 => 1,);
     }
 
     public function getSourceContext()
@@ -76,7 +68,7 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
     <nav class=\"navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row\">
         <div class=\"text-center navbar-brand-wrapper d-flex align-items-center justify-content-center\">
             <a class=\"navbar-brand brand-logo\" href=\"/\"><img src=\"/storage/app/media/logo.png\" alt=\"logo\"/></a>
-            <a class=\"navbar-brand brand-logo-mini\" href=\"/\"><img src=\"{{ 'images/logo-mini.svg'|theme }}\" alt=\"logo\"/></a>
+            <a class=\"navbar-brand brand-logo-mini\" href=\"/\"><img src=\"/storage/app/media/rnd_logo_clear_2.png\" alt=\"logo\"/></a>
         </div>
             <div class=\"col-md-8\" style=\"width: auto\">
                 <div class=\"navbar-menu-wrapper d-flex align-items-stretch\">

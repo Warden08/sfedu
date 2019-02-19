@@ -30,6 +30,10 @@ class Team extends Model
             'table' => 'wrdn_league_teams_players',
             'order' => 'nickname'
         ],
+        'matches' => ['Wrdn\League\Models\Match',
+            'table' => 'wrdn_league_matches_teams1',
+            'order' => 'game'
+        ],
     ];
 
     public static $allowedSortingOptions = [

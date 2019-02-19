@@ -30,3 +30,7 @@ navigation:
                 label: Заявки
                 url: wrdn/league/requests
                 icon: icon-sitemap
+            side-menu-item6:
+                label: Матчи
+                url: wrdn/league/matches
+                icon: icon-navicon

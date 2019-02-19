@@ -1,4 +1,4 @@
-1550518953a:1:{s:11:"sidebar.htm";a:5:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2146:"<!-- partial:partials/_sidebar.html -->
+1550536778a:1:{s:11:"sidebar.htm";a:5:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2165:"<!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
@@ -39,7 +39,7 @@
             </a>
             <div class="collapse show" id="general-pages">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="#">Autumn 2018</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/seasons/autumn-2018">Autumn 2018</a></li>
                 </ul>
             </div>
         </li>
@@ -50,7 +50,7 @@
         </li>
     </ul>
 </nav>
-<!-- partial -->";s:5:"mtime";i:1550512866;s:6:"markup";s:2146:"<!-- partial:partials/_sidebar.html -->
+<!-- partial -->";s:5:"mtime";i:1550535487;s:6:"markup";s:2165:"<!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
@@ -91,7 +91,7 @@
             </a>
             <div class="collapse show" id="general-pages">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="#">Autumn 2018</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/seasons/autumn-2018">Autumn 2018</a></li>
                 </ul>
             </div>
         </li>

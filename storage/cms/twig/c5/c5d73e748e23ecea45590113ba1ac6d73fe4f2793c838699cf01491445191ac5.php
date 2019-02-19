@@ -28,18 +28,11 @@ class __TwigTemplate_b11d2ff00a51405139cefeaeef6c9fac6c1b770f10a7e34e565e02f68d2
         unset($context['__cms_component_params']);
         // line 3
         echo "</div>
-                                   <div class=\"col-md-4\">
-                                       <div class=\"card\">
-                                           <div class=\"block-header\">Матчи</div>
-                                           <div class=\"card-body\">fdsfsfsdfdsfsdf</div>
-                                       </div>
-                                        ";
-        // line 9
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("videoVideos"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 10
-        echo "                                   </div>";
+";
+        // line 4
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -54,7 +47,7 @@ class __TwigTemplate_b11d2ff00a51405139cefeaeef6c9fac6c1b770f10a7e34e565e02f68d2
 
     public function getDebugInfo()
     {
-        return array (  42 => 10,  38 => 9,  30 => 3,  26 => 2,  23 => 1,);
+        return array (  33 => 4,  30 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -62,12 +55,6 @@ class __TwigTemplate_b11d2ff00a51405139cefeaeef6c9fac6c1b770f10a7e34e565e02f68d2
         return new Twig_Source("<div class=\"col-md-8\">
     {% component 'blogPosts' %}
 </div>
-                                   <div class=\"col-md-4\">
-                                       <div class=\"card\">
-                                           <div class=\"block-header\">Матчи</div>
-                                           <div class=\"card-body\">fdsfsfsdfdsfsdf</div>
-                                       </div>
-                                        {% component 'videoVideos' %}
-                                   </div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/home.htm", "");
+{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/home.htm", "");
     }
 }

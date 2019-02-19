@@ -1,0 +1,12 @@
+list: $/wrdn/league/models/match/columns.yaml
+modelClass: Wrdn\league\Models\Match
+title: Matches
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'wrdn/league/matches/update/:id'

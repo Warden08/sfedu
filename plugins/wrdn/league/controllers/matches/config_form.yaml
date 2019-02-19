@@ -1,0 +1,10 @@
+name: Matches
+form: $/wrdn/league/models/match/fields.yaml
+modelClass: Wrdn\league\Models\Match
+defaultRedirect: wrdn/league/matches
+create:
+    redirect: 'wrdn/league/matches/update/:id'
+    redirectClose: wrdn/league/matches
+update:
+    redirect: wrdn/league/matches
+    redirectClose: wrdn/league/matches

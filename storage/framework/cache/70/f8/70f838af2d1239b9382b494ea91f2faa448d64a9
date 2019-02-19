@@ -1,16 +1,22 @@
-1550518907a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:168:"title = "Регламент"
+1550536876a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:324:"title = "Регламент"
 url = "/rules"
 layout = "default"
 is_hidden = 0
 ==
 <div class="col-md-8">
-tut rules mthfaka
+    <div class="card my-4">
+        <div class="card-header">Регламент</div>
+        <div class="card-body">
+            some text here
+        </div>
+    </div>
 </div>
-<div class="col-md-4">
-
-</div>";s:5:"mtime";i:1550384169;s:6:"markup";s:83:"<div class="col-md-8">
-tut rules mthfaka
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550536270;s:6:"markup";s:239:"<div class="col-md-8">
+    <div class="card my-4">
+        <div class="card-header">Регламент</div>
+        <div class="card-body">
+            some text here
+        </div>
+    </div>
 </div>
-<div class="col-md-4">
-
-</div>";s:4:"code";N;s:5:"title";s:18:"Регламент";s:3:"url";s:6:"/rules";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:18:"Регламент";s:3:"url";s:6:"/rules";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

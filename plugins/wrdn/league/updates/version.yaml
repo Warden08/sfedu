@@ -45,3 +45,30 @@
 1.0.16:
     - 'Updated table wrdn_league_tournaments'
     - builder_table_update_wrdn_league_tournaments_2.php
+1.0.17:
+    - 'Created table wrdn_league_matches'
+    - builder_table_create_wrdn_league_matches.php
+1.0.18:
+    - 'Created table wrdn_league_matches_tournaments'
+    - builder_table_create_wrdn_league_matches_tournaments.php
+1.0.19:
+    - 'Created table wrdn_league_matches_team1'
+    - builder_table_create_wrdn_league_matches_team1.php
+1.0.20:
+    - 'Created table wrdn_league_matches_team2'
+    - builder_table_create_wrdn_league_matches_team2.php
+1.0.21:
+    - 'Updated table wrdn_league_matches_team2'
+    - builder_table_update_wrdn_league_matches_teams2.php
+1.0.22:
+    - 'Updated table wrdn_league_matches_team1'
+    - builder_table_update_wrdn_league_matches_teams1.php
+1.0.23:
+    - 'Updated table wrdn_league_matches_teams1'
+    - builder_table_update_wrdn_league_matches_teams1_2.php
+1.0.24:
+    - 'Updated table wrdn_league_matches_teams2'
+    - builder_table_update_wrdn_league_matches_teams2_2.php
+1.0.25:
+    - 'Updated table wrdn_league_teams'
+    - builder_table_update_wrdn_league_teams_2.php

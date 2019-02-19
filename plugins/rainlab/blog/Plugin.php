@@ -27,6 +27,7 @@ class Plugin extends PluginBase
             'RainLab\Blog\Components\Post'       => 'blogPost',
             'RainLab\Blog\Components\Posts'      => 'blogPosts',
             'RainLab\Blog\Components\Categories' => 'blogCategories',
+            'RainLab\Blog\Components\PostsSidebar' => 'PostsSidebar',
             'RainLab\Blog\Components\RssFeed'    => 'blogRssFeed'
         ];
     }

@@ -113,4 +113,9 @@
   'Wrdn\\League\\Components\\Team' => 'plugins\\wrdn\\league\\components\\Team.php',
   'Wrdn\\League\\Models\\Player' => 'plugins\\wrdn\\league\\models\\Player.php',
   'Wrdn\\League\\Components\\Player' => 'plugins\\wrdn\\league\\components\\Player.php',
+  'wrdn\\league\\Controllers\\matches' => 'plugins\\wrdn\\league\\controllers\\matches.php',
+  'Wrdn\\league\\Models\\Match' => 'plugins\\wrdn\\league\\models\\Match.php',
+  'Wrdn\\League\\Models\\Match' => 'plugins\\wrdn\\league\\models\\Match.php',
+  'RainLab\\Blog\\Components\\PostsSidebar' => 'plugins\\rainlab\\blog\\components\\PostsSidebar.php',
+  'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
 );

@@ -1,0 +1,19 @@
+[PostsSidebar]
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "news/entry"
+
+[videoVideos]
+pageNumber = "{{ :page }}"
+videosPerPage = 4
+noPostsMessage = "No posts found"
+sortOrder = "name asc"
+videoPage = "video/entry"
+==
+<div class="col-md-4">
+    {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
+    {% component 'videoVideos' %}
+ </div>

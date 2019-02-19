@@ -21,11 +21,18 @@ class __TwigTemplate_bc01d535b24d06a592f06e86cb7dde25346f4deeedd96904b61829e4695
     {
         // line 1
         echo "<div class=\"col-md-8\">
-tut rules mthfaka
+    <div class=\"card my-4\">
+        <div class=\"card-header\">Регламент</div>
+        <div class=\"card-body\">
+            some text here
+        </div>
+    </div>
 </div>
-<div class=\"col-md-4\">
-
-</div>";
+";
+        // line 9
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -33,18 +40,26 @@ tut rules mthfaka
         return "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/rules.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  23 => 1,);
+        return array (  33 => 9,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"col-md-8\">
-tut rules mthfaka
+    <div class=\"card my-4\">
+        <div class=\"card-header\">Регламент</div>
+        <div class=\"card-body\">
+            some text here
+        </div>
+    </div>
 </div>
-<div class=\"col-md-4\">
-
-</div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/rules.htm", "");
+{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/rules.htm", "");
     }
 }

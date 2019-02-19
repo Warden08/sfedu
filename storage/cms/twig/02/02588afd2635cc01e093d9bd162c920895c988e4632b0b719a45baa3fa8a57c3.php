@@ -61,7 +61,7 @@ class __TwigTemplate_d014b30345f36eef2037e89f9017939b44638f7734c0d2680efc07a1cfc
             </a>
             <div class=\"collapse show\" id=\"general-pages\">
                 <ul class=\"nav flex-column sub-menu\">
-                    <li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\">Autumn 2018</a></li>
+                    <li class=\"nav-item\"> <a class=\"nav-link\" href=\"/seasons/autumn-2018\">Autumn 2018</a></li>
                 </ul>
             </div>
         </li>
@@ -128,7 +128,7 @@ class __TwigTemplate_d014b30345f36eef2037e89f9017939b44638f7734c0d2680efc07a1cfc
             </a>
             <div class=\"collapse show\" id=\"general-pages\">
                 <ul class=\"nav flex-column sub-menu\">
-                    <li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\">Autumn 2018</a></li>
+                    <li class=\"nav-item\"> <a class=\"nav-link\" href=\"/seasons/autumn-2018\">Autumn 2018</a></li>
                 </ul>
             </div>
         </li>

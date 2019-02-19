@@ -15,7 +15,7 @@ fields:
         options:
             'Dota 2': 'Dota 2'
             Artifact: Artifact
-            'CS:GO': 'CS:GO'
+            CSGO: 'CS:GO'
             Warface: Warface
             Hearthstone: Hearthstone
         span: auto

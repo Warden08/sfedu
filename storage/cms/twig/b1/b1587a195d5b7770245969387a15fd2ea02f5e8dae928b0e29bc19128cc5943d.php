@@ -147,9 +147,11 @@ class __TwigTemplate_e4ba5064a1206468fcf49995a6973ad836a2a4821924f23136a7628c2a7
         echo "        </div>
     </div>
 </div>  
-<div class=\"col-md-4\">
-
-</div>";
+";
+        // line 57
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -164,7 +166,7 @@ class __TwigTemplate_e4ba5064a1206468fcf49995a6973ad836a2a4821924f23136a7628c2a7
 
     public function getDebugInfo()
     {
-        return array (  147 => 54,  142 => 51,  136 => 47,  130 => 44,  127 => 43,  125 => 42,  122 => 41,  112 => 37,  106 => 36,  102 => 35,  98 => 33,  94 => 32,  91 => 31,  85 => 27,  79 => 24,  76 => 23,  74 => 22,  70 => 20,  68 => 19,  65 => 18,  54 => 13,  50 => 12,  45 => 10,  41 => 9,  37 => 8,  34 => 7,  30 => 6,  23 => 1,);
+        return array (  152 => 57,  147 => 54,  142 => 51,  136 => 47,  130 => 44,  127 => 43,  125 => 42,  122 => 41,  112 => 37,  106 => 36,  102 => 35,  98 => 33,  94 => 32,  91 => 31,  85 => 27,  79 => 24,  76 => 23,  74 => 22,  70 => 20,  68 => 19,  65 => 18,  54 => 13,  50 => 12,  45 => 10,  41 => 9,  37 => 8,  34 => 7,  30 => 6,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -225,8 +227,6 @@ class __TwigTemplate_e4ba5064a1206468fcf49995a6973ad836a2a4821924f23136a7628c2a7
         </div>
     </div>
 </div>  
-<div class=\"col-md-4\">
-
-</div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/video.htm", "");
+{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/video.htm", "");
     }
 }

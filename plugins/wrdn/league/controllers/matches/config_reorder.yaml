@@ -1,0 +1,4 @@
+title: Matches
+modelClass: Wrdn\league\Models\Match
+toolbar:
+    buttons: reorder_toolbar

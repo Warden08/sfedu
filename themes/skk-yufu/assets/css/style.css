@@ -21075,17 +21075,20 @@ dl li {
 }
 
 .team-player  {
-  transit```````ion: filter 0.4s;
+  transition: filter 0.4s;
   position: relative;
   display: block;
   margin-bottom: 1rem;
-}
-.team-player img {
+  min-height: 183px;
+  max-height: 183px;
+  background-size: cover;
+  background-position: top;
   border-radius: 3px;
-
+  border: 1px solid rgba(0,0,0, 0.125);
+  background-repeat: no-repeat;
+  background-color: #EAECED;
 }
 .team-player:hover {
-  border-radius: 3px;
   filter: brightness( 1.1 );
 }
 .team-player .info {
@@ -21095,9 +21098,47 @@ dl li {
   bottom: 1em;
   width: 100%;
   color: #fff;
-  text-shadow: 0 1px 2px #000```;
+  text-shadow: 0 1px 1px #000000;
 }
 .team-player .info .nickname {
 
+}
+.team-profile .logo {
+  width: 100%;
+  border: 1px solid rgba(0,0,0, 0.125);
+  border-radius: 3px;
+  max-height: 187px;
+  min-height: 187px;
+  background-color: #EAECED;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.team-profile {
+  margin-bottom: 1rem;
+}
+.list-item {
+  display: block;
+  padding: 12px 8px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255, 0.06);
+  text-align: left;
+  transition: all ease-in .15s;
+}
+.tournaments-in-season .logo {
+  width: 100%;
+  border-radius: 18px;
+  max-height: 130px;
+  min-height: 130px;
+  background-color: #EAECED;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.card-body iframe {
+  max-width: 100%;
 }
 /*# sourceMappingURL=maps/style.css.map */

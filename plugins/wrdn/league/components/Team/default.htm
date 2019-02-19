@@ -1,18 +1,38 @@
 {% set team = __SELF__.team %}
 <div class="card my-4">
-    <div class="card-header">{{team.name}}</div>
+    <div class="card-header">{{team.name}} ({{team.tag}})</div>
     <div class="card-body">
+        <div class="row team-profile">
+            <div class="col-md-4">
+                <div class="logo" style="background-image: url('/storage/app/media{{team.logo}}')"></div>
+            </div>
+            <div class="col-md-8">
+                <p>{{team.info|raw}}</p>
+            </div>
+        </div>
         <div class="row">
             {% for player in team.players %}
                 <div class="col-md-4">
-                    <a class="team-player">
-                        <img src="/storage/app/media{{player.portret}}" width="100%">
+                    <a class="team-player" href="/players/{{player.slug}}" style="background-image: url('/storage/app/media{{player.portret}}')">
+                        <!--<img src="/storage/app/media{{player.portret}}" width="100%">-->
                         <div class="info">
                             <h4 class="nickname">{{player.nickname}}</h4>
                             <div class="name">{{player.first_name}} {{player.last_name}}</div>
                         </div>
                     </a>
                 </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="card my-4">
+    <div class="card-header">Матчи</div>
+    <div class="card-body">
+        <div class="row">
+            {% for match in team.matches %}
+            <div class="col-md-4">
+                <p>{{match.game}}</p>
+            </div>
             {% endfor %}
         </div>
     </div>

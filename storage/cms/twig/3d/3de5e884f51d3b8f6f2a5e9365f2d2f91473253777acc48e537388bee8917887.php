@@ -28,9 +28,11 @@ class __TwigTemplate_83e023239352d9d4b179bd85944112b2d2e7f2fe57d12eeec023cfb0ca6
         unset($context['__cms_component_params']);
         // line 3
         echo "</div>
-<div class=\"col-md-4\">
-
-</div>";
+";
+        // line 4
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -45,7 +47,7 @@ class __TwigTemplate_83e023239352d9d4b179bd85944112b2d2e7f2fe57d12eeec023cfb0ca6
 
     public function getDebugInfo()
     {
-        return array (  30 => 3,  26 => 2,  23 => 1,);
+        return array (  33 => 4,  30 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -53,8 +55,6 @@ class __TwigTemplate_83e023239352d9d4b179bd85944112b2d2e7f2fe57d12eeec023cfb0ca6
         return new Twig_Source("<div class=\"col-md-8\">
 {% component 'videoVideo' %}
 </div>
-<div class=\"col-md-4\">
-
-</div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/video/entry.htm", "");
+{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/video/entry.htm", "");
     }
 }

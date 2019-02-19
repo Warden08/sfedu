@@ -2,10 +2,12 @@
 <div class="card my-4">
     <div class="card-header">{{season.name}}</div>
     <div class="card-body">
-        {% for tournament in season.tournaments %}
-
-        <p><a href="/tournaments/{{tournament.slug}}">{{tournament.name}}</a></p>
-
-        {% endfor %}
+        <div class="row tournaments-in-season">
+            {% for tournament in season.tournaments %}
+                <div class="col-md-3">
+                    <a class="logo" href="/tournaments/{{tournament.slug}}" style="background-image: url('/storage/app/media/{{tournament.game}}.png')"></a>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 </div>

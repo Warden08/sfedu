@@ -28,8 +28,11 @@ class __TwigTemplate_e78772210d4f3813bc79e67e18f981aadc6869ae61eaf76daa92a168141
         unset($context['__cms_component_params']);
         // line 3
         echo "</div>
-<div class=\"col-md-4\">
-</div>";
+";
+        // line 4
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -44,7 +47,7 @@ class __TwigTemplate_e78772210d4f3813bc79e67e18f981aadc6869ae61eaf76daa92a168141
 
     public function getDebugInfo()
     {
-        return array (  30 => 3,  26 => 2,  23 => 1,);
+        return array (  33 => 4,  30 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -52,7 +55,6 @@ class __TwigTemplate_e78772210d4f3813bc79e67e18f981aadc6869ae61eaf76daa92a168141
         return new Twig_Source("<div class=\"col-md-8\">
 {% component 'SeasonEntry' %}
 </div>
-<div class=\"col-md-4\">
-</div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/seasons/entry.htm", "");
+{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/seasons/entry.htm", "");
     }
 }

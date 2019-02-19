@@ -1,0 +1,38 @@
+fields:
+    game:
+        label: Дисциплина
+        options:
+            'CS:GO': 'CS:GO'
+            'Dota 2': 'Dota 2'
+            Artifact: Artifact
+            Warface: Warface
+            Hearthstone: Hearthstone
+        span: auto
+        type: dropdown
+    score:
+        label: Счет
+        span: auto
+        type: text
+    team1:
+        label: 'Команда 1'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    team2:
+        label: 'Команда 2'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    date:
+        label: 'Начало матча'
+        span: auto
+        mode: datetime
+        type: datepicker
+    tournaments:
+        label: Турнир
+        nameFrom: name
+        descriptionFrom: description
+        span: right
+        type: relation

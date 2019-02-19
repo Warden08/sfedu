@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    game:
+        label: game
+        type: text
+    score:
+        label: score
+        type: text
+    date:
+        label: date
+        type: text

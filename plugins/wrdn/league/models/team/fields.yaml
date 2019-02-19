@@ -35,3 +35,8 @@ fields:
         descriptionFrom: description
         span: auto
         type: relation
+    info:
+        label: 'Информация о команде'
+        span: auto
+        size: huge
+        type: richeditor

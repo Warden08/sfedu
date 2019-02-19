@@ -5,13 +5,12 @@ is_hidden = 0
 
 [Seasons]
 pageNumber = "{{ :page }}"
-videosPerPage = 10
+seasonsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-videoPage = "video/entry"
+seasonPage = "seasons/entry"
 ==
 <div class="col-md-8">
 {% component 'Seasons' %}
 </div>
-<div class="col-md-4">
-</div>
+{% partial 'sidebar_blocks' %}
