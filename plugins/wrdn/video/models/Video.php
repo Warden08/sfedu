@@ -41,9 +41,7 @@ class Video extends Model
     public $table = 'wrdn_video_videos';
 
     public $belongsToMany = [
-        'comments' => ['Rebel59\Comments\Models\Comment',
-            'table' => 'rebel59_comments_comments',
-        ]
+
     ];
 
     public static $allowedSortingOptions = [

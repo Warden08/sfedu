@@ -4,8 +4,8 @@
     <div class="card-header">Новости</div>
     <div class="card-body">
         {% for post in posts %}
-        <article class="news-entry">
-            <a href="/news/{{post.slug}}">
+        <article>
+            <a class="news-entry" href="/news/{{post.slug}}">
                 {% if post.featured_images.count %}
                 {% for image in post.featured_images %}
                 <img class="card-img-top"  data-src="{{ image.filename }}" src="{{ image.path }}">

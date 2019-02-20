@@ -118,4 +118,8 @@
   'Wrdn\\League\\Models\\Match' => 'plugins\\wrdn\\league\\models\\Match.php',
   'RainLab\\Blog\\Components\\PostsSidebar' => 'plugins\\rainlab\\blog\\components\\PostsSidebar.php',
   'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
+  'Wrdn\\League\\Components\\Matches' => 'plugins\\wrdn\\league\\components\\Matches.php',
+  'anandpatel\\wysiwygeditors\\Plugin' => 'plugins\\anandpatel\\wysiwygeditors\\Plugin.php',
+  'AnandPatel\\WysiwygEditors\\Models\\Settings' => 'plugins\\anandpatel\\wysiwygeditors\\models\\Settings.php',
+  'AnandPatel\\WysiwygEditors\\FormWidgets\\Editor' => 'plugins\\anandpatel\\wysiwygeditors\\formwidgets\\Editor.php',
 );

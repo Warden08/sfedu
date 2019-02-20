@@ -134,7 +134,7 @@ class Seasons extends ComponentBase
         /*
          * Page links
          */
-        $this->seasonPagePage = $this->page['seasonPage'] = $this->property('seasonPage');
+        $this->seasonPage = $this->page['seasonPage'] = $this->property('seasonPage');
     }
 
     protected function listSeasons()

@@ -9,8 +9,17 @@ fields:
             Hearthstone: Hearthstone
         span: auto
         type: dropdown
-    score:
-        label: Счет
+    date:
+        label: 'Начало матча'
+        span: auto
+        mode: datetime
+        type: datepicker
+    score1:
+        label: 'Счет 1-й команды'
+        span: auto
+        type: text
+    score2:
+        label: 'счет 2-й команды'
         span: auto
         type: text
     team1:
@@ -25,11 +34,6 @@ fields:
         descriptionFrom: description
         span: auto
         type: relation
-    date:
-        label: 'Начало матча'
-        span: auto
-        mode: datetime
-        type: datepicker
     tournaments:
         label: Турнир
         nameFrom: name

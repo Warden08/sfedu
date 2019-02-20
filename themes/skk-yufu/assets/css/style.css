@@ -20978,15 +20978,16 @@ dl li {
   transform: skew(20deg);
 }
 .news-entry {
-  position: relative;
-  display: block;
-  transition: filter 0.4s;
-  margin-bottom: 1rem;
-}
-.news-entry a {
   color: #fff;
   text-shadow: 0px 1px 2px #000000;
   display: block;
+  margin-bottom: 1rem;
+  position: relative;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.news-entry:hover  {
+  color: #fff;
+  filter: brightness( 1.15 );
 }
 .card-img-top {
   width: 100%;
@@ -21136,9 +21137,68 @@ dl li {
   background-repeat: no-repeat;
   display: block;
   margin-bottom: 1rem;
+  position: relative;
 }
-
+.tournaments-in-season .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: .3rem 0;
+  background-color: rgba(0,0,0, 0.3);
+  width: 100%;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0, .5);
+}
 .card-body iframe {
   max-width: 100%;
+}
+.news-item a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 5px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.225);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.news-item a:hover {
+  background: #EAECED;
+}
+.news-item:hover:after {
+  content: "";
+  display: block;
+  bottom: -1px;
+  position: absolute;
+  /* height: 1px; */
+  width: 300px;
+  background: #1b1c20;
+  z-index: 1;
+}
+.news-item:first-child a {
+  border-top: none
+}
+.news-item:last-child a {
+  border-bottom: none
+}
+.news-item .title {
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news-item .info {
+  font-size: 12px;
+  padding: 0 15px;
+  color: #767779;
+}
+
+.card-body blockquote {
+  padding-left: .5rem;
+  border-left: 2px solid #212529;
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=maps/style.css.map */

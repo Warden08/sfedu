@@ -1,4 +1,4 @@
-1550536778a:1:{s:21:"tournaments/entry.htm";a:10:{s:8:"fileName";s:21:"tournaments/entry.htm";s:7:"content";s:267:"title = "Турниры - Отдельная запись"
+1550701287a:1:{s:21:"tournaments/entry.htm";a:10:{s:8:"fileName";s:21:"tournaments/entry.htm";s:7:"content";s:267:"title = "Турниры - Отдельная запись"
 url = "/tournaments/:slug"
 layout = "default"
 is_hidden = 0

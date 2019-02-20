@@ -25,28 +25,34 @@ class __TwigTemplate_dbd0fd1f206ebb029b6939b25edf9f8a24e8cca06d8eaba75d62c64aa5f
         echo "
 <div class=\"card my-4\">
     <div class=\"card-header\">Новости</div>
-    <div class=\"\">
-        ";
-        // line 6
+    ";
+        // line 5
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 7
-            echo "        <!-- Blog Post -->
+            // line 6
+            echo "    <article class=\"news-item\">
         <a href=\"/news/";
-            // line 8
+            // line 7
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "slug", array()), "html", null, true);
-            echo "\" class=\"list-item\">";
+            echo "\">
+            <div class=\"title\">";
+            // line 8
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "title", array()), "html", null, true);
-            echo "</a>
-        ";
+            echo "</div>
+            <div class=\"info\"><span class=\"date\">";
+            // line 9
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "published_at", array()), "d.m.Y, H:i"), "html", null, true);
+            echo "</span></div>
+        </a>
+    </article>
+    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 10
-        echo "    </div>
-</div>";
+        // line 13
+        echo "</div>";
     }
 
     public function getTemplateName()
@@ -61,7 +67,7 @@ class __TwigTemplate_dbd0fd1f206ebb029b6939b25edf9f8a24e8cca06d8eaba75d62c64aa5f
 
     public function getDebugInfo()
     {
-        return array (  48 => 10,  38 => 8,  35 => 7,  31 => 6,  25 => 2,  23 => 1,);
+        return array (  55 => 13,  45 => 9,  41 => 8,  37 => 7,  34 => 6,  30 => 5,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -70,12 +76,14 @@ class __TwigTemplate_dbd0fd1f206ebb029b6939b25edf9f8a24e8cca06d8eaba75d62c64aa5f
 
 <div class=\"card my-4\">
     <div class=\"card-header\">Новости</div>
-    <div class=\"\">
-        {% for post in posts %}
-        <!-- Blog Post -->
-        <a href=\"/news/{{post.slug}}\" class=\"list-item\">{{post.title}}</a>
-        {% endfor %}
-    </div>
+    {% for post in posts %}
+    <article class=\"news-item\">
+        <a href=\"/news/{{post.slug}}\">
+            <div class=\"title\">{{post.title}}</div>
+            <div class=\"info\"><span class=\"date\">{{ post.published_at|date('d.m.Y, H:i') }}</span></div>
+        </a>
+    </article>
+    {% endfor %}
 </div>", "D:\\OSPanel\\domains\\sfedu/plugins/rainlab/blog/components/postssidebar/default.htm", "");
     }
 }

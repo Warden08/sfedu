@@ -10,10 +10,11 @@ postPage = "news/entry"
 pageNumber = "{{ :page }}"
 videosPerPage = 4
 noPostsMessage = "No posts found"
-sortOrder = "name asc"
+sortOrder = "id desc"
 videoPage = "video/entry"
 ==
 <div class="col-md-4">
     {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
     {% component 'videoVideos' %}
+    {% partial 'sidebar_vk' %}
  </div>

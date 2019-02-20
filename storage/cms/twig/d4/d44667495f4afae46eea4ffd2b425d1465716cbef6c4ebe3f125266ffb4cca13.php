@@ -34,6 +34,11 @@ class __TwigTemplate_4ad2f1e5ae5e2adefbbf3c4996f8b6963b2e7c32831ea5ab0dbfea8934d
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("videoVideos"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 4
+        echo "    ";
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_vk"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 5
         echo " </div>";
     }
 
@@ -49,7 +54,7 @@ class __TwigTemplate_4ad2f1e5ae5e2adefbbf3c4996f8b6963b2e7c32831ea5ab0dbfea8934d
 
     public function getDebugInfo()
     {
-        return array (  37 => 4,  32 => 3,  26 => 2,  23 => 1,);
+        return array (  42 => 5,  37 => 4,  32 => 3,  26 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -57,6 +62,7 @@ class __TwigTemplate_4ad2f1e5ae5e2adefbbf3c4996f8b6963b2e7c32831ea5ab0dbfea8934d
         return new Twig_Source("<div class=\"col-md-4\">
     {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
     {% component 'videoVideos' %}
+    {% partial 'sidebar_vk' %}
  </div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/sidebar_blocks.htm", "");
     }
 }

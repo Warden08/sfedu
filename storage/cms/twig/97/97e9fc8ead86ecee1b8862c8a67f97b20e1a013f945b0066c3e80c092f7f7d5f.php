@@ -31,49 +31,47 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
     <div class=\"card-body\">
         ";
         // line 6
-        echo twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "content_html", array());
-        echo "</div>
-
-";
-        // line 8
         if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", array()), "count", array())) {
-            // line 9
-            echo "    <div class=\"featured-images text-center\">
-        ";
-            // line 10
+            // line 7
+            echo "        <div class=\"featured-images text-center\">
+            ";
+            // line 8
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 11
+                // line 9
                 echo "            <p>
                 <img
-                    data-src=\"";
-                // line 13
+                        data-src=\"";
+                // line 11
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "filename", array()), "html", null, true);
                 echo "\"
-                    src=\"";
-                // line 14
+                        src=\"";
+                // line 12
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "path", array()), "html", null, true);
                 echo "\"
-                    alt=\"";
-                // line 15
+                        alt=\"";
+                // line 13
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["image"], "description", array()), "html", null, true);
                 echo "\"
-                    style=\"max-width: 100%\" />
+                        style=\"max-width: 100%\" />
             </p>
-        ";
+            ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 19
-            echo "    </div>
-";
+            // line 17
+            echo "        </div>
+        ";
         }
-        // line 21
-        echo "<div class=\"card-footer text-muted\">
+        // line 19
+        echo "        ";
+        echo twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "content_html", array());
+        echo "</div>
+<div class=\"card-footer text-muted\">
         Опубликовано ";
-        // line 22
+        // line 21
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "published_at", array()), "d.m.Y, H:i"), "html", null, true);
         echo "
         <div class=\"card-social\">
@@ -81,15 +79,15 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
             <script type=\"text/javascript\"><!--
             document.write(VK.Share.button({
                 url: \"http://artifact.plus/news/";
-        // line 27
+        // line 26
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "slug", array()), "html", null, true);
         echo "\",
                 title: '";
-        // line 28
+        // line 27
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "name", array()), "html", null, true);
         echo " - Новости - СКК ЮФУ',
                 image: '";
-        // line 29
+        // line 28
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "img", array()), "html", null, true);
         echo "',
                 noparse: true
@@ -113,7 +111,7 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
 
     public function getDebugInfo()
     {
-        return array (  93 => 29,  89 => 28,  85 => 27,  77 => 22,  74 => 21,  70 => 19,  60 => 15,  56 => 14,  52 => 13,  48 => 11,  44 => 10,  41 => 9,  39 => 8,  34 => 6,  29 => 4,  25 => 2,  23 => 1,);
+        return array (  91 => 28,  87 => 27,  83 => 26,  75 => 21,  69 => 19,  65 => 17,  55 => 13,  51 => 12,  47 => 11,  43 => 9,  39 => 8,  36 => 7,  34 => 6,  29 => 4,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -123,21 +121,20 @@ class __TwigTemplate_d4426957be25b6bb4a887430b6a696fd54f4eff5b5c30d43930455d79c1
 <div class=\"card my-4\">
     <div class=\"card-header\">{{ post.title }}</div>
     <div class=\"card-body\">
-        {{ post.content_html|raw }}</div>
-
-{% if post.featured_images.count %}
-    <div class=\"featured-images text-center\">
-        {% for image in post.featured_images %}
+        {% if post.featured_images.count %}
+        <div class=\"featured-images text-center\">
+            {% for image in post.featured_images %}
             <p>
                 <img
-                    data-src=\"{{ image.filename }}\"
-                    src=\"{{ image.path }}\"
-                    alt=\"{{ image.description }}\"
-                    style=\"max-width: 100%\" />
+                        data-src=\"{{ image.filename }}\"
+                        src=\"{{ image.path }}\"
+                        alt=\"{{ image.description }}\"
+                        style=\"max-width: 100%\" />
             </p>
-        {% endfor %}
-    </div>
-{% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {{ post.content_html|raw }}</div>
 <div class=\"card-footer text-muted\">
         Опубликовано {{ post.published_at|date('d.m.Y, H:i') }}
         <div class=\"card-social\">

@@ -1,0 +1,36 @@
+{% set matches_all = __SELF__.matches %}
+
+<div class="card my-4">
+    <div class="card-header">Расписание матчей</div>
+    <div class="card-body">
+        {% for match in matches_all %}
+        <p>{% for team1 in match.team1 %}
+                {{team1.name}}
+            {% endfor %}
+            <b>vs</b>
+            {% for team2 in match.team2 %}
+            {{team2.name}}
+            {% endfor %}</p>
+        {% else %}
+        <article class="no-data">{{ noPostsMessage }}</article>
+        {% endfor %}
+    </div>
+</div>
+
+{% if matches.lastPage > 1 %}
+<ul class="pagination">
+    {% if matches.currentPage > 1 %}
+    <li><a href="{{ this.page.baseFileName|page({ (pageParam): (matches.currentPage-1) }) }}">&larr; Prev</a></li>
+    {% endif %}
+
+    {% for page in 1..matches.lastPage %}
+    <li class="{{ posts.currentPage == page ? 'active' : null }}">
+        <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+    </li>
+    {% endfor %}
+
+    {% if matches.lastPage > matches.currentPage %}
+    <li><a href="{{ this.page.baseFileName|page({ (pageParam): (matches.currentPage+1) }) }}">Next &rarr;</a></li>
+    {% endif %}
+</ul>
+{% endif %}

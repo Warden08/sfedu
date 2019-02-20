@@ -1,0 +1,16 @@
+title = "Расписание матчей"
+url = "/schedule"
+layout = "default"
+is_hidden = 0
+
+[Matches]
+pageNumber = "{{ :page }}"
+seasonsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+seasonPage = "matches/entry"
+==
+<div class="col-md-8">
+{% component 'Matches' %}
+</div>
+{% partial 'sidebar_blocks' %}

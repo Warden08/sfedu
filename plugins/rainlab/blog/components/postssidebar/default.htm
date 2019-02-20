@@ -2,10 +2,12 @@
 
 <div class="card my-4">
     <div class="card-header">Новости</div>
-    <div class="">
-        {% for post in posts %}
-        <!-- Blog Post -->
-        <a href="/news/{{post.slug}}" class="list-item">{{post.title}}</a>
-        {% endfor %}
-    </div>
+    {% for post in posts %}
+    <article class="news-item">
+        <a href="/news/{{post.slug}}">
+            <div class="title">{{post.title}}</div>
+            <div class="info"><span class="date">{{ post.published_at|date('d.m.Y, H:i') }}</span></div>
+        </a>
+    </article>
+    {% endfor %}
 </div>

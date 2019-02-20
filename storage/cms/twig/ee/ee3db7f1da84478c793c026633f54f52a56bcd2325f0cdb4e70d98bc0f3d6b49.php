@@ -23,32 +23,39 @@ class __TwigTemplate_2097d386960d9ad58755876379d01b6a1abcc80a55076beeee0da545b46
         $context["tour"] = twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "tournament", array());
         // line 2
         echo "<div class=\"card my-4\">
-    <div class=\"card-header\">";
+    <div class=\"card-header\">Участники ";
         // line 3
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["tour"] ?? null), "name", array()), "html", null, true);
         echo "</div>
     <div class=\"card-body\">
-        ";
-        // line 5
+        <div class=\"row tournaments-in-season\">
+            ";
+        // line 6
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["tour"] ?? null), "teams", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["team"]) {
-            // line 6
-            echo "
-        <p><a href=\"/teams/";
             // line 7
+            echo "            <div class=\"col-md-3\">
+                <a class=\"logo\" href=\"/teams/";
+            // line 8
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team"], "slug", array()), "html", null, true);
-            echo "\">";
+            echo "\" style=\"background-image: url('/storage/app/media/";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team"], "logo", array()), "html", null, true);
+            echo "')\">
+                    <div class=\"info\">";
+            // line 9
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team"], "name", array()), "html", null, true);
-            echo "</a></p>
-
-        ";
+            echo "</div>
+                </a>
+            </div>
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['team'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 10
-        echo "    </div>
+        // line 13
+        echo "        </div>
+    </div>
 </div>";
     }
 
@@ -64,20 +71,24 @@ class __TwigTemplate_2097d386960d9ad58755876379d01b6a1abcc80a55076beeee0da545b46
 
     public function getDebugInfo()
     {
-        return array (  51 => 10,  40 => 7,  37 => 6,  33 => 5,  28 => 3,  25 => 2,  23 => 1,);
+        return array (  57 => 13,  47 => 9,  41 => 8,  38 => 7,  34 => 6,  28 => 3,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{% set tour = __SELF__.tournament %}
 <div class=\"card my-4\">
-    <div class=\"card-header\">{{tour.name}}</div>
+    <div class=\"card-header\">Участники {{tour.name}}</div>
     <div class=\"card-body\">
-        {% for team in tour.teams %}
-
-        <p><a href=\"/teams/{{team.slug}}\">{{team.name}}</a></p>
-
-        {% endfor %}
+        <div class=\"row tournaments-in-season\">
+            {% for team in tour.teams %}
+            <div class=\"col-md-3\">
+                <a class=\"logo\" href=\"/teams/{{team.slug}}\" style=\"background-image: url('/storage/app/media/{{team.logo}}')\">
+                    <div class=\"info\">{{team.name}}</div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>", "D:\\OSPanel\\domains\\sfedu/plugins/wrdn/league/components/tournament/default.htm", "");
     }

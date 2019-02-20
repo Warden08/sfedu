@@ -1,11 +1,15 @@
 {% set tour = __SELF__.tournament %}
 <div class="card my-4">
-    <div class="card-header">{{tour.name}}</div>
+    <div class="card-header">Участники {{tour.name}}</div>
     <div class="card-body">
-        {% for team in tour.teams %}
-
-        <p><a href="/teams/{{team.slug}}">{{team.name}}</a></p>
-
-        {% endfor %}
+        <div class="row tournaments-in-season">
+            {% for team in tour.teams %}
+            <div class="col-md-3">
+                <a class="logo" href="/teams/{{team.slug}}" style="background-image: url('/storage/app/media/{{team.logo}}')">
+                    <div class="info">{{team.name}}</div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>

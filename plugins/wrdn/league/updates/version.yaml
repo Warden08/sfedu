@@ -72,3 +72,9 @@
 1.0.25:
     - 'Updated table wrdn_league_teams'
     - builder_table_update_wrdn_league_teams_2.php
+1.0.26:
+    - 'Updated table wrdn_league_matches'
+    - builder_table_update_wrdn_league_matches.php
+1.0.27:
+    - 'Updated table wrdn_league_matches'
+    - builder_table_update_wrdn_league_matches_2.php

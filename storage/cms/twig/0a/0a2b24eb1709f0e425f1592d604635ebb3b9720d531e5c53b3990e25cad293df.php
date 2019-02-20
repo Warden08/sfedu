@@ -33,8 +33,8 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
             // line 7
-            echo "        <article class=\"news-entry\">
-            <a href=\"/news/";
+            echo "        <article>
+            <a class=\"news-entry\" href=\"/news/";
             // line 8
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "slug", array()), "html", null, true);
             echo "\">
@@ -167,8 +167,8 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
     <div class=\"card-header\">Новости</div>
     <div class=\"card-body\">
         {% for post in posts %}
-        <article class=\"news-entry\">
-            <a href=\"/news/{{post.slug}}\">
+        <article>
+            <a class=\"news-entry\" href=\"/news/{{post.slug}}\">
                 {% if post.featured_images.count %}
                 {% for image in post.featured_images %}
                 <img class=\"card-img-top\"  data-src=\"{{ image.filename }}\" src=\"{{ image.path }}\">

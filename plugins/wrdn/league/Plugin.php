@@ -13,6 +13,7 @@ class Plugin extends PluginBase
             'Wrdn\League\Components\Tournament' => 'TournamentEntry',
             'Wrdn\League\Components\Team'       => 'TeamEntry',
             'Wrdn\League\Components\Player'     => 'PlayerEntry',
+            'Wrdn\League\Components\Matches'    => 'Matches',
         ];
     }
 

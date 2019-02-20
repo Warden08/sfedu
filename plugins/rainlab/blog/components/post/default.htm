@@ -3,21 +3,20 @@
 <div class="card my-4">
     <div class="card-header">{{ post.title }}</div>
     <div class="card-body">
-        {{ post.content_html|raw }}</div>
-
-{% if post.featured_images.count %}
-    <div class="featured-images text-center">
-        {% for image in post.featured_images %}
+        {% if post.featured_images.count %}
+        <div class="featured-images text-center">
+            {% for image in post.featured_images %}
             <p>
                 <img
-                    data-src="{{ image.filename }}"
-                    src="{{ image.path }}"
-                    alt="{{ image.description }}"
-                    style="max-width: 100%" />
+                        data-src="{{ image.filename }}"
+                        src="{{ image.path }}"
+                        alt="{{ image.description }}"
+                        style="max-width: 100%" />
             </p>
-        {% endfor %}
-    </div>
-{% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {{ post.content_html|raw }}</div>
 <div class="card-footer text-muted">
         Опубликовано {{ post.published_at|date('d.m.Y, H:i') }}
         <div class="card-social">

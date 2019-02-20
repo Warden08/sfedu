@@ -1,4 +1,4 @@
-1550537195a:1:{s:18:"sidebar_blocks.htm";a:7:{s:8:"fileName";s:18:"sidebar_blocks.htm";s:7:"content";s:504:"[PostsSidebar]
+1550701287a:1:{s:18:"sidebar_blocks.htm";a:7:{s:8:"fileName";s:18:"sidebar_blocks.htm";s:7:"content";s:535:"[PostsSidebar]
 pageNumber = "{{ :page }}"
 postsPerPage = 5
 noPostsMessage = "No posts found"
@@ -10,13 +10,15 @@ postPage = "news/entry"
 pageNumber = "{{ :page }}"
 videosPerPage = 4
 noPostsMessage = "No posts found"
-sortOrder = "name asc"
+sortOrder = "id desc"
 videoPage = "video/entry"
 ==
 <div class="col-md-4">
     {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
     {% component 'videoVideos' %}
- </div>";s:5:"mtime";i:1550532517;s:6:"markup";s:172:"<div class="col-md-4">
+    {% partial 'sidebar_vk' %}
+ </div>";s:5:"mtime";i:1550607557;s:6:"markup";s:204:"<div class="col-md-4">
     {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
     {% component 'videoVideos' %}
- </div>";s:4:"code";N;s:12:"PostsSidebar";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:1:"5";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:4:"home";s:8:"postPage";s:10:"news/entry";}s:11:"videoVideos";a:5:{s:10:"pageNumber";s:11:"{{ :page }}";s:13:"videosPerPage";s:1:"4";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:8:"name asc";s:9:"videoPage";s:11:"video/entry";}}}
+    {% partial 'sidebar_vk' %}
+ </div>";s:4:"code";N;s:12:"PostsSidebar";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:1:"5";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:4:"home";s:8:"postPage";s:10:"news/entry";}s:11:"videoVideos";a:5:{s:10:"pageNumber";s:11:"{{ :page }}";s:13:"videosPerPage";s:1:"4";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:7:"id desc";s:9:"videoPage";s:11:"video/entry";}}}
