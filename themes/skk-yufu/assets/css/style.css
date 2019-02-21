@@ -18305,6 +18305,7 @@ body {
   font-weight: 400;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
+  background-color: #f2edf3;
 }
 
 h1,
@@ -18538,13 +18539,13 @@ html {
 
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 260px);
   margin-left: 260px;
   min-height: calc(100vh - 70px);
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
+  width: 1060px;
 }
 
 @media (max-width: 991px) {

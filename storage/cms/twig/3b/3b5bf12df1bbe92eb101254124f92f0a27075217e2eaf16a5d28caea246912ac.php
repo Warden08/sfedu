@@ -79,7 +79,7 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
         echo "        <div class=\"main-panel\">
             <div class=\"content-wrapper\">
                 <div class=\"row\">
-                    <div class=\"col-md-8 stretch-card\">
+                    <div class=\"col-md-12 stretch-card\">
                         <div class=\"card main-card\" style=\"min-height: 1000px;\">
                             <div class=\"card-body\">
                                 <div class=\"row\">
@@ -186,7 +186,7 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
         <div class=\"main-panel\">
             <div class=\"content-wrapper\">
                 <div class=\"row\">
-                    <div class=\"col-md-8 stretch-card\">
+                    <div class=\"col-md-12 stretch-card\">
                         <div class=\"card main-card\" style=\"min-height: 1000px;\">
                             <div class=\"card-body\">
                                 <div class=\"row\">
