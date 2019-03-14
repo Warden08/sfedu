@@ -26,9 +26,7 @@ class __TwigTemplate_98dc84c44fb72d6a3bc075ae484835e08e35907810c14ec8da05f4677b5
     <div class=\"card-header\">";
         // line 3
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["team"] ?? null), "name", array()), "html", null, true);
-        echo " (";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["team"] ?? null), "tag", array()), "html", null, true);
-        echo ")</div>
+        echo "</div>
     <div class=\"card-body\">
         <div class=\"row team-profile\">
             <div class=\"col-md-4\">
@@ -124,14 +122,14 @@ class __TwigTemplate_98dc84c44fb72d6a3bc075ae484835e08e35907810c14ec8da05f4677b5
 
     public function getDebugInfo()
     {
-        return array (  110 => 37,  101 => 34,  98 => 33,  94 => 32,  85 => 25,  72 => 20,  68 => 19,  63 => 17,  57 => 16,  54 => 15,  50 => 14,  43 => 10,  37 => 7,  28 => 3,  25 => 2,  23 => 1,);
+        return array (  108 => 37,  99 => 34,  96 => 33,  92 => 32,  83 => 25,  70 => 20,  66 => 19,  61 => 17,  55 => 16,  52 => 15,  48 => 14,  41 => 10,  35 => 7,  28 => 3,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{% set team = __SELF__.team %}
 <div class=\"card my-4\">
-    <div class=\"card-header\">{{team.name}} ({{team.tag}})</div>
+    <div class=\"card-header\">{{team.name}}</div>
     <div class=\"card-body\">
         <div class=\"row team-profile\">
             <div class=\"col-md-4\">

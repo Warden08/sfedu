@@ -1,13 +1,6 @@
 <div class="card my-4">
-    <div class="card-header">Отправить заявку</div>
+    <div class="card-header">Отправить заявку на участие</div>
     <div class="card-body">
-        <p>
-            <b>Правила и условия по которым осуществляется поддержка</b>
-        <ul>
-            <li>Запрещатся размещать у себя на стриме любые другие логотипы на русскоязычные ресурсы связанные с Artifact</li>
-            <li>Вам нужно разместить на своем стриме наш <a href="/storage/app/media/stream_promo.jpg" target="_blank">логотип</a></li>
-        </ul>
-        </p>
         {{ form_open({ request: 'onSave' }) }}
         {% flash success %}
         <div class="alert alert-success" role="alert">
@@ -20,46 +13,359 @@
         </div>
         {% endflash %}
         <div class="form-group">
-            <label for="age">Ваш возраст:</label>
-            <input type="text"class="form-control {% if errors.first('age') %}is-invalid{% endif %}" id="age" name="age" />
+            <label for="game">Дисциплина:</label>
+            <select class="form-control {% if errors.first('game') %}is-invalid{% endif %}" id="game" name="game">
+                <option value="dota2">Dota 2</option>
+                <option value="csgo">Counter-Strike:Global Offensive</option>
+                <option value="warface">Warface</option>
+            </select>
             <div class="invalid-feedback">
-                {{ errors.first('age') }}
+                {{ errors.first('game') }}
             </div>
         </div>
         <div class="form-group">
-            <label for="exp">Количество наигранных часов в Artifact:</label>
-            <input type="text" class="form-control {% if errors.first('exp') %}is-invalid{% endif %}" id="exp" name="exp"/>
+            <label for="team_name">Название команды:</label>
+            <input type="text" required class="form-control {% if errors.first('team_name') %}is-invalid{% endif %}" id="team_name" name="team_name"/>
             <div class="invalid-feedback">
-                {{ errors.first('exp') }}
+                {{ errors.first('team_name') }}
             </div>
         </div>
         <div class="form-group">
-            <label for="viewers">Среднее количество зрителей:</label>
-            <input type="text" class="form-control {% if errors.first('viewers') %}is-invalid{% endif %}" id="viewers" name="viewers"/>
+            <label for="logo">Логотип:</label>
+            <input type="text" class="form-control {% if errors.first('logo') %}is-invalid{% endif %}" id="logo" name="logo"/>
             <div class="invalid-feedback">
-                {{ errors.first('viewers') }}
+                {{ errors.first('logo') }}
             </div>
         </div>
         <div class="form-group">
-            <label for="vk">Ссылка на профиль ВКонтакте:</label>
-            <input name="vk" class="form-control {% if errors.first('vk') %}is-invalid{% endif %}" id="vk"/>
+            <label for="university">Принадлежность к структурному подразделению (факультету, институту):</label>
+            <input name="university" class="form-control {% if errors.first('university') %}is-invalid{% endif %}" id="university"/>
             <div class="invalid-feedback">
-                {{ errors.first('vk') }}
+                {{ errors.first('university') }}
             </div>
         </div>
-        <div class="form-group">
-            <label for="link">Ссылка на стрим:</label>
-            <input type="text" name="link" class="form-control {% if errors.first('link') %}is-invalid{% endif %}" id="link"/>
-            <small id="linkHelp" class="form-text text-muted">Например: https://twitch.tv/artifact</small>
-            <div class="invalid-feedback">
-                {{ errors.first('link') }}
+        <div class="card">
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Капитан команды</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="cap_fio">ФИО:</label>
+                    <input type="text" required name="cap_fio" class="form-control {% if errors.first('cap_fio') %}is-invalid{% endif %}" id="cap_fio"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_fio') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cap_nick">Никнейм:</label>
+                    <input type="text" required name="cap_nick" class="form-control {% if errors.first('cap_nick') %}is-invalid{% endif %}" id="cap_nick"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_nick') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cap_birthday">Дата рождения:</label>
+                    <input type="text" required name="cap_birthday" class="form-control {% if errors.first('cap_birthday') %}is-invalid{% endif %}" id="cap_birthday"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_birthday') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cap_uni_info">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
+                    <input type="text" required name="cap_uni_info" class="form-control {% if errors.first('cap_uni_info') %}is-invalid{% endif %}" id="cap_uni_info"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_uni_info') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cap_vk">Ссылка VK:</label>
+                    <input type="text" required name="cap_vk" class="form-control {% if errors.first('cap_vk') %}is-invalid{% endif %}" id="cap_vk"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_vk') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cap_steam">Ссылка Steam:</label>
+                    <input type="text" required name="cap_steam" class="form-control {% if errors.first('cap_steam') %}is-invalid{% endif %}" id="cap_steam"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_steam') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cap_teams">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
+                    <input type="text" name="cap_teams" class="form-control {% if errors.first('cap_teams') %}is-invalid{% endif %}" id="cap_teams"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('cap_teams') }}
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            <label for="short_desc">Краткое описание Вашего контента:</label>
-            <textarea name="short_desc" class="form-control {% if errors.first('short_desc') %}is-invalid{% endif %}" id="short_desc"></textarea>
-            <div class="invalid-feedback">
-                {{ errors.first('short_desc') }}
+        <div class="card">
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №2</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="p2_fio">ФИО:</label>
+                    <input type="text" required name="p2_fio" class="form-control {% if errors.first('p2_fio') %}is-invalid{% endif %}" id="p2_fio"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_fio') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p2_nick">Никнейм:</label>
+                    <input type="text" required name="p2_nick" class="form-control {% if errors.first('p2_nick') %}is-invalid{% endif %}" id="p2_nick"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_nick') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p2_birthday">Дата рождения:</label>
+                    <input type="text" required name="p2_birthday" class="form-control {% if errors.first('p2_birthday') %}is-invalid{% endif %}" id="p2_birthday"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_birthday') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p2_uni_info">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
+                    <input type="text" required name="p2_uni_info" class="form-control {% if errors.first('p2_uni_info') %}is-invalid{% endif %}" id="p2_uni_info"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_uni_info') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p2_vk">Ссылка VK:</label>
+                    <input type="text" required name="p2_vk" class="form-control {% if errors.first('p2_vk') %}is-invalid{% endif %}" id="p2_vk"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_vk') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p2_steam">Ссылка Steam:</label>
+                    <input type="text" required name="p2_steam" class="form-control {% if errors.first('p2_steam') %}is-invalid{% endif %}" id="p2_steam"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_steam') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p2_teams">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
+                    <input type="text" name="p2_teams" class="form-control {% if errors.first('p2_teams') %}is-invalid{% endif %}" id="p2_teams"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p2_teams') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №3</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="p3_fio">ФИО:</label>
+                    <input type="text" required name="p2_fio" class="form-control {% if errors.first('p3_fio') %}is-invalid{% endif %}" id="p3_fio"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_fio') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p3_nick">Никнейм:</label>
+                    <input type="text" required name="p3_nick" class="form-control {% if errors.first('p3_nick') %}is-invalid{% endif %}" id="p3_nick"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_nick') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p3_birthday">Дата рождения:</label>
+                    <input type="text" required name="p3_birthday" class="form-control {% if errors.first('p3_birthday') %}is-invalid{% endif %}" id="p3_birthday"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_birthday') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p3_uni_info">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
+                    <input type="text" required name="p3_uni_info" class="form-control {% if errors.first('p3_uni_info') %}is-invalid{% endif %}" id="p3_uni_info"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_uni_info') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p3_vk">Ссылка VK:</label>
+                    <input type="text" required name="p3_vk" class="form-control {% if errors.first('p3_vk') %}is-invalid{% endif %}" id="p3_vk"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_vk') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p3_steam">Ссылка Steam:</label>
+                    <input type="text" required name="p3_steam" class="form-control {% if errors.first('p3_steam') %}is-invalid{% endif %}" id="p3_steam"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_steam') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p3_teams">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
+                    <input type="text" name="p3_teams" class="form-control {% if errors.first('p3_teams') %}is-invalid{% endif %}" id="p3_teams"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p3_teams') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №4</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="p4_fio">ФИО:</label>
+                    <input type="text" required name="p4_fio" class="form-control {% if errors.first('p4_fio') %}is-invalid{% endif %}" id="p4_fio"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_fio') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p4_nick">Никнейм:</label>
+                    <input type="text" required name="p4_nick" class="form-control {% if errors.first('p4_nick') %}is-invalid{% endif %}" id="p4_nick"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_nick') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p4_birthday">Дата рождения:</label>
+                    <input type="text" required name="p4_birthday" class="form-control {% if errors.first('p4_birthday') %}is-invalid{% endif %}" id="p4_birthday"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_birthday') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p4_uni_info">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
+                    <input type="text" required name="p4_uni_info" class="form-control {% if errors.first('p4_uni_info') %}is-invalid{% endif %}" id="p4_uni_info"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_uni_info') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p4_vk">Ссылка VK:</label>
+                    <input type="text" required name="p4_vk" class="form-control {% if errors.first('p4_vk') %}is-invalid{% endif %}" id="p4_vk"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_vk') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p4_steam">Ссылка Steam:</label>
+                    <input type="text" required name="p4_steam" class="form-control {% if errors.first('p4_steam') %}is-invalid{% endif %}" id="p4_steam"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_steam') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p4_teams">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
+                    <input type="text" name="p4_teams" class="form-control {% if errors.first('p4_teams') %}is-invalid{% endif %}" id="p4_teams"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p4_teams') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №5</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="p5_fio">ФИО:</label>
+                    <input type="text" required name="p5_fio" class="form-control {% if errors.first('p5_fio') %}is-invalid{% endif %}" id="p5_fio"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_fio') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p5_nick">Никнейм:</label>
+                    <input type="text" required name="p3_nick" class="form-control {% if errors.first('p5_nick') %}is-invalid{% endif %}" id="p5_nick"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_nick') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p5_birthday">Дата рождения:</label>
+                    <input type="text" required name="p5_birthday" class="form-control {% if errors.first('p5_birthday') %}is-invalid{% endif %}" id="p5_birthday"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_birthday') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p5_uni_info">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
+                    <input type="text" required name="p5_uni_info" class="form-control {% if errors.first('p5_uni_info') %}is-invalid{% endif %}" id="p5_uni_info"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_uni_info') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p5_vk">Ссылка VK:</label>
+                    <input type="text" required name="p5_vk" class="form-control {% if errors.first('p5_vk') %}is-invalid{% endif %}" id="p5_vk"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_vk') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p5_steam">Ссылка Steam:</label>
+                    <input type="text" required name="p5_steam" class="form-control {% if errors.first('p5_steam') %}is-invalid{% endif %}" id="p5_steam"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_steam') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p5_teams">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
+                    <input type="text" name="p5_teams" class="form-control {% if errors.first('p5_teams') %}is-invalid{% endif %}" id="p5_teams"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p5_teams') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №6(Запасной)</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="p6_fio">ФИО:</label>
+                    <input type="text" name="p6_fio" class="form-control {% if errors.first('p6_fio') %}is-invalid{% endif %}" id="p6_fio"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_fio') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p6_nick">Никнейм:</label>
+                    <input type="text" name="p6_nick" class="form-control {% if errors.first('p6_nick') %}is-invalid{% endif %}" id="p6_nick"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_nick') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p6_birthday">Дата рождения:</label>
+                    <input type="text" name="p6_birthday" class="form-control {% if errors.first('p6_birthday') %}is-invalid{% endif %}" id="p6_birthday"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_birthday') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p6_uni_info">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
+                    <input type="text" name="p6_uni_info" class="form-control {% if errors.first('p6_uni_info') %}is-invalid{% endif %}" id="p6_uni_info"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_uni_info') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p6_vk">Ссылка VK:</label>
+                    <input type="text" name="p6_vk" class="form-control {% if errors.first('p6_vk') %}is-invalid{% endif %}" id="p6_vk"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_vk') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p6_steam">Ссылка Steam:</label>
+                    <input type="text" name="p6_steam" class="form-control {% if errors.first('p6_steam') %}is-invalid{% endif %}" id="p6_steam"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_steam') }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="p6_teams">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
+                    <input type="text" name="p6_teams" class="form-control {% if errors.first('p6_teams') %}is-invalid{% endif %}" id="p6_teams"/>
+                    <div class="invalid-feedback">
+                        {{ errors.first('p6_teams') }}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="g-recaptcha" data-sitekey="6LfaykgUAAAAALk-WYUAjDwqDgSuNEwmlxSJf7_V" data-theme="dark"></div>
