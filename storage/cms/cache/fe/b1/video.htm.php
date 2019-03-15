@@ -1,5 +1,5 @@
 <?php 
-use wrdn\Video\Models\Video;class Cms5c6dc9c51330d197633049_59e84a2d96a978c1d325795152131687Class extends Cms\Classes\PageCode
+use wrdn\Video\Models\Video;class Cms5c8be2d9c8906850496586_e9de981297020b74a2c48ed87df9892dClass extends Cms\Classes\PageCode
 {
 public function onStart() {
     

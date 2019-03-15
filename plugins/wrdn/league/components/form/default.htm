@@ -33,6 +33,7 @@
         <div class="form-group">
             <label for="logo">Логотип:</label>
             <input type="text" class="form-control {% if errors.first('logo') %}is-invalid{% endif %}" id="logo" name="logo"/>
+            <small id="logoHelp" class="form-text text-muted">Рекомендуется .png 512x512px с прозрачным фоном - можно прислать администратору не позднее конца регистрации.</small>
             <div class="invalid-feedback">
                 {{ errors.first('logo') }}
             </div>
@@ -44,7 +45,7 @@
                 {{ errors.first('university') }}
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Капитан команды</h5>
             <div class="card-body">
                 <div class="form-group">
@@ -98,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №2</h5>
             <div class="card-body">
                 <div class="form-group">
@@ -152,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №3</h5>
             <div class="card-body">
                 <div class="form-group">
@@ -206,7 +207,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №4</h5>
             <div class="card-body">
                 <div class="form-group">
@@ -260,7 +261,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №5</h5>
             <div class="card-body">
                 <div class="form-group">
@@ -314,7 +315,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №6(Запасной)</h5>
             <div class="card-body">
                 <div class="form-group">
@@ -368,7 +369,7 @@
                 </div>
             </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LfaykgUAAAAALk-WYUAjDwqDgSuNEwmlxSJf7_V" data-theme="dark"></div>
+        <div class="g-recaptcha" data-sitekey="6Ld48ZcUAAAAALOoJQTgzN_fhg_7DOAmlifBGD8m" data-theme="dark"></div>
         <button type="submit" class="btn btn-success">Отправить</button>
         {{form_close}}
     </div>

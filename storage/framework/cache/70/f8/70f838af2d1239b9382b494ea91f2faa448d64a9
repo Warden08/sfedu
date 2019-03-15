@@ -1,4 +1,4 @@
-1552602606a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:328:"title = "Регламент"
+1552674462a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:346:"title = "Регламент"
 url = "/rules"
 layout = "default"
 is_hidden = 0
@@ -7,15 +7,15 @@ is_hidden = 0
     <div class="card my-4">
         <div class="card-header">Регламент</div>
         <div class="card-body">
-            some text here111s
+            some text here111sпарпрапва
         </div>
     </div>
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550741341;s:6:"markup";s:243:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1552602357;s:6:"markup";s:261:"<div class="col-md-8">
     <div class="card my-4">
         <div class="card-header">Регламент</div>
         <div class="card-body">
-            some text here111s
+            some text here111sпарпрапва
         </div>
     </div>
 </div>

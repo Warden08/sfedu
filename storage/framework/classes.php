@@ -122,4 +122,6 @@
   'anandpatel\\wysiwygeditors\\Plugin' => 'plugins\\anandpatel\\wysiwygeditors\\Plugin.php',
   'AnandPatel\\WysiwygEditors\\Models\\Settings' => 'plugins\\anandpatel\\wysiwygeditors\\models\\Settings.php',
   'AnandPatel\\WysiwygEditors\\FormWidgets\\Editor' => 'plugins\\anandpatel\\wysiwygeditors\\formwidgets\\Editor.php',
+  'wrdn\\league\\Controllers\\teamrequests' => 'plugins\\wrdn\\league\\controllers\\teamrequests.php',
+  'Wrdn\\league\\Models\\Teamrequest' => 'plugins\\wrdn\\league\\models\\Teamrequest.php',
 );

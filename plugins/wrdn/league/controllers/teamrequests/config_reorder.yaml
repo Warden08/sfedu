@@ -1,0 +1,4 @@
+title: Teamrequests
+modelClass: Wrdn\league\Models\Teamrequest
+toolbar:
+    buttons: reorder_toolbar

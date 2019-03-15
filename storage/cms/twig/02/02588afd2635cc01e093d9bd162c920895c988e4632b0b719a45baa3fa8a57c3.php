@@ -71,7 +71,13 @@ class __TwigTemplate_d014b30345f36eef2037e89f9017939b44638f7734c0d2680efc07a1cfc
             </span>
         </li>
     </ul>
-</nav>
+     ";
+        // line 52
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_footer"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 53
+        echo "</nav>
 <!-- partial -->";
     }
 
@@ -80,9 +86,14 @@ class __TwigTemplate_d014b30345f36eef2037e89f9017939b44638f7734c0d2680efc07a1cfc
         return "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/sidebar.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  23 => 1,);
+        return array (  80 => 53,  76 => 52,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -138,6 +149,7 @@ class __TwigTemplate_d014b30345f36eef2037e89f9017939b44638f7734c0d2680efc07a1cfc
             </span>
         </li>
     </ul>
+     {% partial 'sidebar_footer' %}
 </nav>
 <!-- partial -->", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/sidebar.htm", "");
     }

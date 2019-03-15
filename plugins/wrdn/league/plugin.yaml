@@ -28,7 +28,7 @@ navigation:
                 icon: icon-user
             side-menu-item5:
                 label: Заявки
-                url: wrdn/league/requests
+                url: wrdn/league/teamrequests
                 icon: icon-sitemap
             side-menu-item6:
                 label: Матчи

@@ -1,4 +1,5 @@
-1552602607a:1:{s:11:"sidebar.htm";a:5:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2165:"<!-- partial:partials/_sidebar.html -->
+1552674462a:1:{s:11:"sidebar.htm";a:6:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2258:"==
+<!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
@@ -49,8 +50,9 @@
             </span>
         </li>
     </ul>
+     {% partial 'sidebar_footer' %}
 </nav>
-<!-- partial -->";s:5:"mtime";i:1550535487;s:6:"markup";s:2165:"<!-- partial:partials/_sidebar.html -->
+<!-- partial -->";s:5:"mtime";i:1552671677;s:6:"markup";s:2254:"<!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
@@ -101,5 +103,6 @@
             </span>
         </li>
     </ul>
+     {% partial 'sidebar_footer' %}
 </nav>
-<!-- partial -->";s:4:"code";N;}}
+<!-- partial -->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

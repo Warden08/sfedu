@@ -1,0 +1,10 @@
+name: Teamrequests
+form: $/wrdn/league/models/teamrequest/fields.yaml
+modelClass: Wrdn\league\Models\Teamrequest
+defaultRedirect: wrdn/league/teamrequests
+create:
+    redirect: 'wrdn/league/teamrequests/update/:id'
+    redirectClose: wrdn/league/teamrequests
+update:
+    redirect: wrdn/league/teamrequests
+    redirectClose: wrdn/league/teamrequests

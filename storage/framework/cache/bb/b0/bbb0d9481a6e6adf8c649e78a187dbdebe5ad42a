@@ -1,4 +1,4 @@
-1552602606a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2499:"==
+1552674462a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2534:"==
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="container-scroller">
@@ -40,7 +41,7 @@
             </div>
 
             <!-- content-wrapper ends -->
-            {% partial "footer" %}
+
         </div>
         <!-- main-panel ends -->
     </div>
@@ -63,7 +64,7 @@
 <!-- End custom js for this page-->
 </body>
 
-</html>";s:5:"mtime";i:1550744711;s:6:"markup";s:2495:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1552672239;s:6:"markup";s:2530:"<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -82,6 +83,7 @@
     <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="container-scroller">
@@ -104,7 +106,7 @@
             </div>
 
             <!-- content-wrapper ends -->
-            {% partial "footer" %}
+
         </div>
         <!-- main-panel ends -->
     </div>
