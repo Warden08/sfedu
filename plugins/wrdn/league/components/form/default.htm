@@ -1,7 +1,7 @@
 <div class="card my-4">
     <div class="card-header">Отправить заявку на участие</div>
     <div class="card-body">
-        {{ form_open({ request: 'onSave' }) }}
+        <form method="post" action="{{url('register')}}" accept-charset="UTF-8" enctype="multipart/form-data">
         {% flash success %}
         <div class="alert alert-success" role="alert">
             {{message}}
@@ -12,39 +12,46 @@
             {{message}}
         </div>
         {% endflash %}
-        <div class="form-group">
-            <label for="game">Дисциплина:</label>
-            <select class="form-control {% if errors.first('game') %}is-invalid{% endif %}" id="game" name="game">
-                <option value="dota2">Dota 2</option>
-                <option value="csgo">Counter-Strike:Global Offensive</option>
-                <option value="warface">Warface</option>
-            </select>
-            <div class="invalid-feedback">
-                {{ errors.first('game') }}
+            <div class="form-group">
+                <label for="game">Дисциплина:</label>
+                <select class="form-control {% if errors.first('game') %}is-invalid{% endif %}" id="game" name="game">
+                    <option value="dota2">Dota 2</option>
+                    <option value="csgo">Counter-Strike:Global Offensive</option>
+                    <option value="warface">Warface</option>
+                </select>
+                <div class="invalid-feedback">
+                    {{ errors.first('game') }}
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="team_name">Название команды:</label>
-            <input type="text" required class="form-control {% if errors.first('team_name') %}is-invalid{% endif %}" id="team_name" name="team_name"/>
-            <div class="invalid-feedback">
-                {{ errors.first('team_name') }}
+            <div class="form-group">
+                <label for="team_name">Название команды:</label>
+                <input type="text" required class="form-control {% if errors.first('team_name') %}is-invalid{% endif %}" id="team_name" name="team_name"/>
+                <div class="invalid-feedback">
+                    {{ errors.first('team_name') }}
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="logo">Логотип:</label>
-            <input type="text" class="form-control {% if errors.first('logo') %}is-invalid{% endif %}" id="logo" name="logo"/>
-            <small id="logoHelp" class="form-text text-muted">Рекомендуется .png 512x512px с прозрачным фоном - можно прислать администратору не позднее конца регистрации.</small>
-            <div class="invalid-feedback">
-                {{ errors.first('logo') }}
+            <div class="form-group">
+                <label for="logo">Логотип:</label>
+                <input name="logo" type="file" accept="image/*" class="form-control {% if errors.first('logo') %}is-invalid{% endif %}" id="logo"/>
+                <small id="logoHelp" class="form-text text-muted">Рекомендуется .png 512x512px с прозрачным фоном - можно прислать администратору не позднее конца регистрации.</small>
+                <div class="invalid-feedback">
+                    {{ errors.first('logo') }}
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="university">Принадлежность к структурному подразделению (факультету, институту):</label>
-            <input name="university" class="form-control {% if errors.first('university') %}is-invalid{% endif %}" id="university"/>
-            <div class="invalid-feedback">
-                {{ errors.first('university') }}
+            <div class="form-group">
+                <label for="scards">Сканы\Фотографии студенческих бидетов ВСЕХ игроков команды:</label>
+                <input name="scards[]" multiple required accept="image/*" type="file" class="form-control {% if errors.first('scards') %}is-invalid{% endif %}" id="scards"/>
+                <div class="invalid-feedback">
+                    {{ errors.first('scards') }}
+                </div>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="university">Принадлежность к структурному подразделению (факультету, институту):</label>
+                <input name="university" class="form-control {% if errors.first('university') %}is-invalid{% endif %}" id="university"/>
+                <div class="invalid-feedback">
+                    {{ errors.first('university') }}
+                </div>
+            </div>
         <div class="card" style="margin-bottom: 1rem">
             <h5 class="card-header" style="text-align: left; font-size: 14px;">Капитан команды</h5>
             <div class="card-body">
@@ -158,7 +165,7 @@
             <div class="card-body">
                 <div class="form-group">
                     <label for="p3_fio">ФИО:</label>
-                    <input type="text" required name="p2_fio" class="form-control {% if errors.first('p3_fio') %}is-invalid{% endif %}" id="p3_fio"/>
+                    <input type="text" required name="p3_fio" class="form-control {% if errors.first('p3_fio') %}is-invalid{% endif %}" id="p3_fio"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p3_fio') }}
                     </div>
@@ -273,7 +280,7 @@
                 </div>
                 <div class="form-group">
                     <label for="p5_nick">Никнейм:</label>
-                    <input type="text" required name="p3_nick" class="form-control {% if errors.first('p5_nick') %}is-invalid{% endif %}" id="p5_nick"/>
+                    <input type="text" required name="p5_nick" class="form-control {% if errors.first('p5_nick') %}is-invalid{% endif %}" id="p5_nick"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p5_nick') }}
                     </div>
@@ -369,8 +376,11 @@
                 </div>
             </div>
         </div>
-        <div class="g-recaptcha" data-sitekey="6Ld48ZcUAAAAALOoJQTgzN_fhg_7DOAmlifBGD8m" data-theme="dark"></div>
+        <!--<div class="g-recaptcha" data-sitekey="6Ld48ZcUAAAAALOoJQTgzN_fhg_7DOAmlifBGD8m" data-theme="dark"></div>-->
+            <input type="hidden" name="_handler" value="onSave">
+            {{ form_token() }}
+            {{ form_sessionKey() }}
         <button type="submit" class="btn btn-success">Отправить</button>
-        {{form_close}}
+        </form>
     </div>
 </div>

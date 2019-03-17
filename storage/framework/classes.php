@@ -124,4 +124,6 @@
   'AnandPatel\\WysiwygEditors\\FormWidgets\\Editor' => 'plugins\\anandpatel\\wysiwygeditors\\formwidgets\\Editor.php',
   'wrdn\\league\\Controllers\\teamrequests' => 'plugins\\wrdn\\league\\controllers\\teamrequests.php',
   'Wrdn\\league\\Models\\Teamrequest' => 'plugins\\wrdn\\league\\models\\Teamrequest.php',
+  'Wrdn\\League\\Models\\Request' => 'plugins\\wrdn\\league\\models\\Request.php',
+  'Wrdn\\League\\Models\\Teamrequest' => 'plugins\\wrdn\\league\\models\\Teamrequest.php',
 );

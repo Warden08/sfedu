@@ -20,4 +20,13 @@ class Teamrequest extends Model
      */
     public $rules = [
     ];
+
+    public $attachOne = [
+        'teamlogo' => ['System\Models\File']
+    ];
+
+    public $attachMany = [
+        'scards'        => ['System\Models\File'],
+        'playerphotos'  => ['System\Models\File']
+    ];
 }

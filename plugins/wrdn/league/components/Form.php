@@ -3,7 +3,8 @@
 use BackendAuth;
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
-use Wrdn\League\Models\Request as Req;
+use Wrdn\League\Models\Teamrequest as Req;
+use System\Models\File;
 use Input;
 use Flash;
 use Validator;
@@ -26,7 +27,6 @@ class Form extends ComponentBase {
             [
                 'game'          => Input::get('game'),
                 'team_name'     => Input::get('team_name'),
-                'logo'          => Input::get('logo'),
                 'university'    => Input::get('university'),
                 'cap_fio'       => Input::get('cap_fio'),
                 'cap_nick'      => Input::get('cap_nick'),
@@ -75,7 +75,6 @@ class Form extends ComponentBase {
             [
                 'game'         => 'required',
                 'team_name'    => 'required',
-                'logo'         => 'required',
                 'cap_fio'      => 'required',
                 'cap_nick'     => 'required',
                 'cap_birthday' => 'required',
@@ -110,23 +109,23 @@ class Form extends ComponentBase {
         );
 
         if(Session::token() != Input::get('_token')) {
-            Flash::error('ÕÂ‚ÂÌ˚È CSRF token!');
+            Flash::error('–ù–µ–≤–µ—Ä–Ω—ã–π CSRF token!');
         } else {
             if ($validator->fails()) {
                 return Redirect::back()->withErrors($validator);
             } else {
 
-                if (Request::post('g-recaptcha-response')) {
+              //  if (Request::post('g-recaptcha-response')) {
 
-                    $g_resp = Request::post('g-recaptcha-response');
+                    //$g_resp = Request::post('g-recaptcha-response');
 
-                    $google = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Ld48ZcUAAAAAKc5FjPZHFPydj73Ko7NUqjz1OEx&response=" . $g_resp);
-                    $response = json_decode($google, true);
-                    if ($response['success']) {
+                   // $google = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Ld48ZcUAAAAAKc5FjPZHFPydj73Ko7NUqjz1OEx&response=" . $g_resp);
+                   // $response = json_decode($google, true);
+                   // if ($response['success']) {
                         $request = new Req();
                         $request->game = Input::get('game');
                         $request->team_name = Input::get('team_name');
-                        $request->logo = Input::get('logo');
+                        //$request->logo = Input::get('logo');
                         $request->university = Input::get('university');
                         $request->cap_fio = Input::get('cap_fio');
                         $request->cap_nick = Input::get('cap_nick');
@@ -134,46 +133,62 @@ class Form extends ComponentBase {
                         $request->cap_vk = Input::get('cap_vk');
                         $request->cap_steam = Input::get('cap_steam');
                         $request->cap_uni_info = Input::get('cap_uni_info');
+                        $request->cap_teams = Input::get('cap_teams');
                         $request->p2_fio = Input::get('p2_fio');
                         $request->p2_nick = Input::get('p2_nick');
                         $request->p2_birthday = Input::get('p2_birthday');
                         $request->p2_vk = Input::get('p2_vk');
                         $request->p2_steam = Input::get('p2_steam');
                         $request->p2_uni_info = Input::get('p2_uni_info');
+                        $request->p2_teams = Input::get('p2_teams');
                         $request->p3_fio = Input::get('p3_fio');
                         $request->p3_nick = Input::get('p3_nick');
                         $request->p3_birthday = Input::get('p3_birthday');
                         $request->p3_vk = Input::get('p3_vk');
                         $request->p3_steam = Input::get('p3_steam');
                         $request->p3_uni_info = Input::get('p3_uni_info');
+                        $request->p3_teams = Input::get('p3_teams');
                         $request->p4_fio = Input::get('p4_fio');
                         $request->p4_nick = Input::get('p4_nick');
                         $request->p4_birthday = Input::get('p4_birthday');
                         $request->p4_vk = Input::get('p4_vk');
                         $request->p4_steam = Input::get('p4_steam');
                         $request->p4_uni_info = Input::get('p4_uni_info');
+                        $request->p4_teams = Input::get('p4_teams');
                         $request->p5_fio = Input::get('p5_fio');
                         $request->p5_nick = Input::get('p5_nick');
                         $request->p5_birthday = Input::get('p5_birthday');
                         $request->p5_vk = Input::get('p5_vk');
                         $request->p5_steam = Input::get('p5_steam');
                         $request->p5_uni_info = Input::get('p5_uni_info');
+                        $request->p5_teams = Input::get('p5_teams');
                         $request->p6_fio = Input::get('p6_fio');
                         $request->p6_nick = Input::get('p6_nick');
                         $request->p6_birthday = Input::get('p6_birthday');
                         $request->p6_vk = Input::get('p6_vk');
                         $request->p6_steam = Input::get('p6_steam');
                         $request->p6_uni_info = Input::get('p6_uni_info');
+                        $request->p6_teams = Input::get('p6_teams');
 
-                        $request->save();
+                        // –°–æ—Ö—Ä–∞–Ω–µ–Ω–∏–µ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏—è
+                        if (Input::hasFile('logo')) {
+                            $request->teamlogo = Input::file('logo');
+                        }
+                        // –°–æ—Ö—Ä–∞–Ω–µ–Ω–∏–µ –∏–∑–æ–±—Ä–∞–∂–µ–Ω–∏—è
+                        if (Input::hasFile('scards')) {
+                            $request->scards = Input::file('scards');
+                        }
 
-                        Flash::success('«‡ˇ‚Í‡ ÓÚÔ‡‚ÎÂÌ‡!');
-                    } else {
-                        Flash::error('œÓËÁÓ¯Î‡ Í‡Í‡ˇ-ÚÓ Ó¯Ë·Í‡, ‚‚Â‰ËÚÂ Í‡ÔÚ˜Û Á‡ÌÓ‚Ó!');
-                    }
-                } else {
-                    Flash::error('¬˚ ÌÂ ‚‚ÂÎË Í‡ÔÚ˜Û!');
-                }
+
+                $request->save();
+
+                        Flash::success('–ó–∞—è–≤–∫–∞ –æ—Ç–ø—Ä–∞–≤–ª–µ–Ω–∞!');
+                   // } else {
+                   //     Flash::error('–ü—Ä–æ–∏–∑–æ—à–ª–∞ –∫–∞–∫–∞—è-—Ç–æ –æ—à–∏–±–∫–∞, –≤–≤–µ–¥–∏—Ç–µ –∫–∞–ø—Ç—á—É –∑–∞–Ω–æ–≤–æ!');
+                  //  }
+               // } else {
+               //     Flash::error('–í—ã –Ω–µ –≤–≤–µ–ª–∏ –∫–∞–ø—Ç—á—É!');
+              //  }
 
             }
         }

@@ -81,3 +81,6 @@
 1.0.28:
     - 'Updated table wrdn_league_requests'
     - builder_table_update_wrdn_league_requests_2.php
+1.0.29:
+    - 'Updated table wrdn_league_requests'
+    - builder_table_update_wrdn_league_requests_3.php
