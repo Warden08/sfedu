@@ -20,9 +20,16 @@ class __TwigTemplate_71ce4e2344f46dd768646c199183f916faf089c45a26ad840ef85de0913
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<div class=\"socials\">
-
-    </div>";
+        echo "<div class=\"header__user user-block\">
+    <div class=\"header__soc soc soc--header\">
+        <a href=\"#\" class=\"soc__item\" target=\"_blank\">
+            Обратная связь
+        </a>
+        <a href=\"#\" class=\"soc__item\" target=\"_blank\">
+            Карта сайта
+        </a>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -37,8 +44,15 @@ class __TwigTemplate_71ce4e2344f46dd768646c199183f916faf089c45a26ad840ef85de0913
 
     public function getSourceContext()
     {
-        return new Twig_Source("<div class=\"socials\">
-
-    </div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/sidebar_footer.htm", "");
+        return new Twig_Source("<div class=\"header__user user-block\">
+    <div class=\"header__soc soc soc--header\">
+        <a href=\"#\" class=\"soc__item\" target=\"_blank\">
+            Обратная связь
+        </a>
+        <a href=\"#\" class=\"soc__item\" target=\"_blank\">
+            Карта сайта
+        </a>
+    </div>
+</div>", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/sidebar_footer.htm", "");
     }
 }

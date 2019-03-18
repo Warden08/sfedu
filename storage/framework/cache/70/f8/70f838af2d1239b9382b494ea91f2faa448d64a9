@@ -1,4 +1,4 @@
-1552852167a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:346:"title = "Регламент"
+1552879248a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:1886:"title = "Регламент"
 url = "/rules"
 layout = "default"
 is_hidden = 0
@@ -7,15 +7,77 @@ is_hidden = 0
     <div class="card my-4">
         <div class="card-header">Регламент</div>
         <div class="card-body">
-            some text here111sпарпрапва
+            <ul class="rules__list">
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Dota 2.png" alt="icon">
+                        <span>Dota 2 | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/CSGO.png" alt="icon">
+                        <span>CS:GO | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Hearthstone.png" alt="icon">
+                        <span>Hearthstone | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Artifact.png" alt="icon">
+                        <span>Artifact | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Warface.png" alt="icon">
+                        <span>Warface | Технические правила</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1552602357;s:6:"markup";s:261:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1552876533;s:6:"markup";s:1801:"<div class="col-md-8">
     <div class="card my-4">
         <div class="card-header">Регламент</div>
         <div class="card-body">
-            some text here111sпарпрапва
+            <ul class="rules__list">
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Dota 2.png" alt="icon">
+                        <span>Dota 2 | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/CSGO.png" alt="icon">
+                        <span>CS:GO | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Hearthstone.png" alt="icon">
+                        <span>Hearthstone | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Artifact.png" alt="icon">
+                        <span>Artifact | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/Warface.png" alt="icon">
+                        <span>Warface | Технические правила</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

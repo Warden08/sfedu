@@ -8,6 +8,7 @@ class Plugin extends PluginBase
     {
         return [
             'Wrdn\League\Components\Form'       => 'Form',
+            'Wrdn\League\Components\Formhs'     => 'Formhs',
             'Wrdn\League\Components\Seasons'    => 'Seasons',
             'Wrdn\League\Components\Season'     => 'SeasonEntry',
             'Wrdn\League\Components\Tournament' => 'TournamentEntry',

@@ -125,7 +125,6 @@ class Form extends ComponentBase {
                         $request = new Req();
                         $request->game = Input::get('game');
                         $request->team_name = Input::get('team_name');
-                        //$request->logo = Input::get('logo');
                         $request->university = Input::get('university');
                         $request->cap_fio = Input::get('cap_fio');
                         $request->cap_nick = Input::get('cap_nick');
@@ -177,6 +176,10 @@ class Form extends ComponentBase {
                         // Сохранение изображения
                         if (Input::hasFile('scards')) {
                             $request->scards = Input::file('scards');
+                        }
+                        // Сохранение изображения
+                        if (Input::hasFile('playerphotos')) {
+                            $request->playerphotos = Input::file('playerphotos');
                         }
 
 

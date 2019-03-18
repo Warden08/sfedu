@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    cap_fio:
+        label: cap_fio
+        type: text
+    cap_nick:
+        label: cap_nick
+        type: text
+    created_at:
+        label: created_at
+        type: datetime

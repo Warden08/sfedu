@@ -21,13 +21,14 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
     {
         // line 1
         echo "<!-- partial:partials/_navbar.html-->
-<div class=\"row\">
+<div class=\"container-fluid page-body-wrapper\" style=\"min-height: 70px;\">
     <nav class=\"navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row\">
         <div class=\"text-center navbar-brand-wrapper d-flex align-items-center justify-content-center\">
             <a class=\"navbar-brand brand-logo\" href=\"/\"><img src=\"/storage/app/media/logo.png\" alt=\"logo\"/></a>
             <a class=\"navbar-brand brand-logo-mini\" href=\"/\"><img src=\"/storage/app/media/rnd_logo_clear_2.png\" alt=\"logo\"/></a>
         </div>
-            <div class=\"col-md-8\" style=\"width: auto\">
+        <div class=\"main-panel\" style=\"min-height: auto; margin-left: 0px; border-bottom: 1px solid rgba(189,171,193, 0.255);\">
+            <div class=\"col-md-12\" style=\"\">
                 <div class=\"navbar-menu-wrapper d-flex align-items-stretch\">
                     <ul class=\"navbar-nav navbar-nav-right\">
                         <li class=\"nav-item d-none d-lg-block full-screen-link\">
@@ -46,6 +47,7 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
                     </button>
                 </div>
             </div>
+        </div>
     </nav>
 </div>
 <!--  partial -->";
@@ -64,13 +66,14 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
     public function getSourceContext()
     {
         return new Twig_Source("<!-- partial:partials/_navbar.html-->
-<div class=\"row\">
+<div class=\"container-fluid page-body-wrapper\" style=\"min-height: 70px;\">
     <nav class=\"navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row\">
         <div class=\"text-center navbar-brand-wrapper d-flex align-items-center justify-content-center\">
             <a class=\"navbar-brand brand-logo\" href=\"/\"><img src=\"/storage/app/media/logo.png\" alt=\"logo\"/></a>
             <a class=\"navbar-brand brand-logo-mini\" href=\"/\"><img src=\"/storage/app/media/rnd_logo_clear_2.png\" alt=\"logo\"/></a>
         </div>
-            <div class=\"col-md-8\" style=\"width: auto\">
+        <div class=\"main-panel\" style=\"min-height: auto; margin-left: 0px; border-bottom: 1px solid rgba(189,171,193, 0.255);\">
+            <div class=\"col-md-12\" style=\"\">
                 <div class=\"navbar-menu-wrapper d-flex align-items-stretch\">
                     <ul class=\"navbar-nav navbar-nav-right\">
                         <li class=\"nav-item d-none d-lg-block full-screen-link\">
@@ -89,6 +92,7 @@ class __TwigTemplate_74f8bddbee7e93eb0c59046910280bf5298957eb0b992379f6d380a2b4d
                     </button>
                 </div>
             </div>
+        </div>
     </nav>
 </div>
 <!--  partial -->", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/partials/nav.htm", "");

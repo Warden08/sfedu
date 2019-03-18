@@ -13,8 +13,7 @@
                 {% endif %}
                 <h4>{{ post.title }}</h4>
                 <p class="info">
-                    Posted
-                    on {{ post.published_at|date('M d, Y') }}
+                    Опубликовано {{ post.published_at|date('d.m.Y') }}
                 </p>
             </a>
         </article>

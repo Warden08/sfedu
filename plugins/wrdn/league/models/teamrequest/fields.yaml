@@ -1,27 +1,238 @@
-fields:
-    team_name:
-        label: Text
-        span: auto
-        type: text
-    teamlogo:
-        label: 'File upload'
-        span: auto
-        mode: image
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        imageWidth: '100'
-        imageHeight: '100'
-        type: fileupload
-    scards:
-        label: 'File upload'
-        span: auto
-        mode: image
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        imageWidth: '100'
-        imageHeight: '100'
-        type: fileupload
+tabs:
+    fields:
+        game:
+            label: Дисциплина
+            span: auto
+            type: text
+            tab: Команда
+        team_name:
+            label: 'Название команды'
+            span: auto
+            type: text
+            tab: Команда
+        university:
+            label: 'Принадлежность к структурному подразделению (факультету, институту):'
+            span: auto
+            type: text
+            tab: Команда
+        teamlogo:
+            label: Логотип
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Команда
+        scards:
+            label: 'Студенческие билеты'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Команда
+        playerphotos:
+            label: 'Фотографии игроков'
+            span: auto
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            imageWidth: '100'
+            imageHeight: '100'
+            type: fileupload
+            tab: Команда
+        cap_steam:
+            label: 'wrdn.league::lang.player_steam'
+            span: auto
+            type: text
+            tab: Капитан
+        cap_teams:
+            label: 'wrdn.league::lang.player_teams'
+            span: auto
+            type: text
+            tab: Капитан
+        p2_fio:
+            label: 'wrdn.league::lang.player_fio'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p2_nick:
+            label: 'wrdn.league::lang.player_nickname'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p2_birthday:
+            label: 'wrdn.league::lang.player_birthday'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p2_uni_info:
+            label: 'wrdn.league::lang.player_university'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p2_vk:
+            label: 'wrdn.league::lang.player_vk'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p2_steam:
+            label: 'wrdn.league::lang.player_steam'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p2_teams:
+            label: 'wrdn.league::lang.player_teams'
+            span: auto
+            type: text
+            tab: 'Игрок №2'
+        p3_fio:
+            label: 'wrdn.league::lang.player_fio'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p3_nick:
+            label: 'wrdn.league::lang.player_nickname'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p3_birthday:
+            label: 'wrdn.league::lang.player_birthday'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p3_uni_info:
+            label: 'wrdn.league::lang.player_university'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p3_vk:
+            label: 'wrdn.league::lang.player_vk'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p3_steam:
+            label: 'wrdn.league::lang.player_steam'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p3_teams:
+            label: 'wrdn.league::lang.player_teams'
+            span: auto
+            type: text
+            tab: 'Игрок №3'
+        p4_fio:
+            label: 'wrdn.league::lang.player_fio'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p4_nick:
+            label: 'wrdn.league::lang.player_nickname'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p4_birthday:
+            label: 'wrdn.league::lang.player_birthday'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p4_uni_info:
+            label: 'wrdn.league::lang.player_university'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p4_vk:
+            label: 'wrdn.league::lang.player_vk'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p4_steam:
+            label: 'wrdn.league::lang.player_steam'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p4_teams:
+            label: 'wrdn.league::lang.player_teams'
+            span: auto
+            type: text
+            tab: 'Игрок №4'
+        p5_fio:
+            label: 'wrdn.league::lang.player_fio'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p5_nick:
+            label: 'wrdn.league::lang.player_nickname'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p5_birthday:
+            label: 'wrdn.league::lang.player_birthday'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p5_uni_info:
+            label: 'wrdn.league::lang.player_university'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p5_vk:
+            label: 'wrdn.league::lang.player_vk'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p5_steam:
+            label: 'wrdn.league::lang.player_steam'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p5_teams:
+            label: 'wrdn.league::lang.player_teams'
+            span: auto
+            type: text
+            tab: 'Игрок №5'
+        p6_fio:
+            label: 'wrdn.league::lang.player_fio'
+            span: auto
+            type: text
+            tab: Запасной
+        p6_nick:
+            label: 'wrdn.league::lang.player_nickname'
+            span: auto
+            type: text
+            tab: Запасной
+        p6_birthday:
+            label: 'wrdn.league::lang.player_birthday'
+            span: auto
+            type: text
+            tab: Запасной
+        p6_uni_info:
+            label: 'wrdn.league::lang.player_university'
+            span: auto
+            type: text
+            tab: Запасной
+        p6_vk:
+            label: 'wrdn.league::lang.player_vk'
+            span: auto
+            type: text
+            tab: Запасной
+        p6_steam:
+            label: 'wrdn.league::lang.player_steam'
+            span: auto
+            type: text
+            tab: Запасной
+        p6_teams:
+            label: 'wrdn.league::lang.player_teams'
+            span: auto
+            type: text
+            tab: Запасной

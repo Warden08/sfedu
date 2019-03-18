@@ -1,0 +1,10 @@
+name: Solorequests
+form: $/wrdn/league/models/solorequest/fields.yaml
+modelClass: Wrdn\league\Models\Solorequest
+defaultRedirect: wrdn/league/solorequests
+create:
+    redirect: 'wrdn/league/solorequests/update/:id'
+    redirectClose: wrdn/league/solorequests
+update:
+    redirect: wrdn/league/solorequests
+    redirectClose: wrdn/league/solorequests

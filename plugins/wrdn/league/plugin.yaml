@@ -26,11 +26,15 @@ navigation:
                 label: Игроки
                 url: wrdn/league/players
                 icon: icon-user
-            side-menu-item5:
-                label: Заявки
-                url: wrdn/league/teamrequests
-                icon: icon-sitemap
             side-menu-item6:
                 label: Матчи
                 url: wrdn/league/matches
                 icon: icon-navicon
+            side-menu-item5:
+                label: 'Заявки на командные дисциплины'
+                url: wrdn/league/teamrequests
+                icon: icon-tags
+            side-menu-item7:
+                label: 'Заявки на одиночные дисциплины'
+                url: wrdn/league/solorequests
+                icon: icon-tag

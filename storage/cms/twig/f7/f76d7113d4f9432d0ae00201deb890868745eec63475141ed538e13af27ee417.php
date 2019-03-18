@@ -21,15 +21,29 @@ class __TwigTemplate_f971fa0df70a6757032405f68f67a32fd96e6c5c9760dcadc68a83124cc
     {
         // line 1
         echo "<div class=\"col-md-8\">
+    <div class=\"card my-4\">
+        <div class=\"card-header\">Регистрация по дисциплинам</div>
+        <div class=\"card-body\">
+            <div class=\"row tournaments-in-season\">
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/team\" style=\"background-image: url('/storage/app/media/CSGO.png')\"></a>
+                </div>
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/team\" style=\"background-image: url('/storage/app/media/Dota 2.png')\"></a>
+                </div>
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/solo\" style=\"background-image: url('/storage/app/media/Hearthstone.png')\"></a>
+                </div>
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/team\" style=\"background-image: url('/storage/app/media/Warface.png')\"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 ";
-        // line 2
-        $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("Form"        , $context['__cms_component_params']        );
-        unset($context['__cms_component_params']);
-        // line 3
-        echo "</div>
-";
-        // line 4
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
@@ -47,14 +61,33 @@ class __TwigTemplate_f971fa0df70a6757032405f68f67a32fd96e6c5c9760dcadc68a83124cc
 
     public function getDebugInfo()
     {
-        return array (  33 => 4,  30 => 3,  26 => 2,  23 => 1,);
+        return array (  47 => 23,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"col-md-8\">
-{% component 'Form' %}
+    <div class=\"card my-4\">
+        <div class=\"card-header\">Регистрация по дисциплинам</div>
+        <div class=\"card-body\">
+            <div class=\"row tournaments-in-season\">
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/team\" style=\"background-image: url('/storage/app/media/CSGO.png')\"></a>
+                </div>
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/team\" style=\"background-image: url('/storage/app/media/Dota 2.png')\"></a>
+                </div>
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/solo\" style=\"background-image: url('/storage/app/media/Hearthstone.png')\"></a>
+                </div>
+                <div class=\"col-md-3\">
+                    <a class=\"logo\" href=\"/register/team\" style=\"background-image: url('/storage/app/media/Warface.png')\"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 {% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/register.htm", "");
     }
 }

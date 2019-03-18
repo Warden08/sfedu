@@ -65,10 +65,9 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "title", array()), "html", null, true);
             echo "</h4>
                 <p class=\"info\">
-                    Posted
-                    on ";
-            // line 17
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "published_at", array()), "M d, Y"), "html", null, true);
+                    Опубликовано ";
+            // line 16
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "published_at", array()), "d.m.Y"), "html", null, true);
             echo "
                 </p>
             </a>
@@ -77,7 +76,7 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 22
+            // line 21
             echo "        <article class=\"no-data\">";
             echo twig_escape_filter($this->env, ($context["noPostsMessage"] ?? null), "html", null, true);
             echo "</article>
@@ -86,37 +85,37 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 24
+        // line 23
         echo "    </div>
 </div>
 
 ";
-        // line 27
+        // line 26
         if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", array()) > 1)) {
-            // line 28
+            // line 27
             echo "<ul class=\"pagination\">
     ";
-            // line 29
+            // line 28
             if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", array()) > 1)) {
-                // line 30
+                // line 29
                 echo "    <li><a href=\"";
                 echo $this->extensions['Cms\Twig\Extension']->pageFilter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", array()) - 1)));
                 echo "\">&larr; Prev</a></li>
     ";
             }
-            // line 32
+            // line 31
             echo "
     ";
-            // line 33
+            // line 32
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", array())));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 34
+                // line 33
                 echo "    <li class=\"";
                 echo (((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", array()) == $context["page"])) ? ("active") : (null));
                 echo "\">
         <a href=\"";
-                // line 35
+                // line 34
                 echo $this->extensions['Cms\Twig\Extension']->pageFilter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => $context["page"]));
                 echo "\">";
                 echo twig_escape_filter($this->env, $context["page"], "html", null, true);
@@ -127,18 +126,18 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 38
+            // line 37
             echo "
     ";
-            // line 39
+            // line 38
             if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", array()) > twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", array()))) {
-                // line 40
+                // line 39
                 echo "    <li><a href=\"";
                 echo $this->extensions['Cms\Twig\Extension']->pageFilter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", array()) + 1)));
                 echo "\">Next &rarr;</a></li>
     ";
             }
-            // line 42
+            // line 41
             echo "</ul>
 ";
         }
@@ -156,7 +155,7 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
 
     public function getDebugInfo()
     {
-        return array (  142 => 42,  136 => 40,  134 => 39,  131 => 38,  120 => 35,  115 => 34,  111 => 33,  108 => 32,  102 => 30,  100 => 29,  97 => 28,  95 => 27,  90 => 24,  81 => 22,  71 => 17,  64 => 14,  61 => 13,  50 => 11,  45 => 10,  43 => 9,  39 => 8,  36 => 7,  31 => 6,  25 => 2,  23 => 1,);
+        return array (  141 => 41,  135 => 39,  133 => 38,  130 => 37,  119 => 34,  114 => 33,  110 => 32,  107 => 31,  101 => 29,  99 => 28,  96 => 27,  94 => 26,  89 => 23,  80 => 21,  70 => 16,  64 => 14,  61 => 13,  50 => 11,  45 => 10,  43 => 9,  39 => 8,  36 => 7,  31 => 6,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -176,8 +175,7 @@ class __TwigTemplate_ef9f11b17f20cbd3cb66bf23a356058b766b5cad4cc726f9765e700ddbe
                 {% endif %}
                 <h4>{{ post.title }}</h4>
                 <p class=\"info\">
-                    Posted
-                    on {{ post.published_at|date('M d, Y') }}
+                    Опубликовано {{ post.published_at|date('d.m.Y') }}
                 </p>
             </a>
         </article>

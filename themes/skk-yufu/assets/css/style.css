@@ -17263,35 +17263,6 @@ input:focus {
   outline: none;
 }
 
-/* Fonts */
-@font-face {
-  font-family: 'ubuntu-light';
-  src: url("../fonts/Ubuntu/Ubuntu-Light.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Light.woff") format("woff"), url("../fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'ubuntu-regular';
-  src: url("../fonts/Ubuntu/Ubuntu-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'ubuntu-medium';
-  src: url("../fonts/Ubuntu/Ubuntu-Medium.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Medium.woff") format("woff"), url("../fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'ubuntu-bold';
-  src: url("../fonts/Ubuntu/Ubuntu-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
-}
-
 /* Backgrounds  */
 .bg-gradient-primary {
   background: linear-gradient(to right, #da8cff, #9a55ff);
@@ -17446,7 +17417,6 @@ input:focus {
 
 .sidebar .nav .nav-item.active > .nav-link .menu-title {
   color: #b66dff;
-  font-family: "ubuntu-medium", sans-serif;
 }
 
 .sidebar .nav .nav-item.active > .nav-link i {
@@ -17738,8 +17708,6 @@ input:focus {
 }
 
 .navbar.default-layout-navbar {
-  font-family: "ubuntu-light", sans-serif;
-  background: #f2f4f5;
   transition: background 0.25s ease;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
@@ -17802,7 +17770,6 @@ input:focus {
   color: #9c9fa6;
   padding-left: 24px;
   padding-right: 24px;
-  width: calc(100% - 260px);
   height: 70px;
 }
 
@@ -17849,25 +17816,21 @@ input:focus {
 .navbar.default-layout-navbar .navbar-menu-wrapper .search-field .input-group input:-ms-input-placeholder {
   font-size: 0.875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-light", sans-serif;
 }
 
 .navbar.default-layout-navbar .navbar-menu-wrapper .search-field .input-group input:-moz-placeholder {
   font-size: 0.875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-light", sans-serif;
 }
 
 .navbar.default-layout-navbar .navbar-menu-wrapper .search-field .input-group input::-moz-placeholder {
   font-size: 0.875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-light", sans-serif;
 }
 
 .navbar.default-layout-navbar .navbar-menu-wrapper .search-field .input-group input::-webkit-input-placeholder {
   font-size: 0.875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-light", sans-serif;
 }
 
 .navbar.default-layout-navbar .navbar-menu-wrapper .search-field .input-group i {
@@ -18015,7 +17978,6 @@ input:focus {
   background: #ffffff;
   border-radius: 6px;
   line-height: 1;
-  font-family: "ubuntu-bold", sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -18104,7 +18066,6 @@ input:focus {
 
 .navbar.horizontal-full-width-layout-navbar .navbar-top .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
   color: #9c9fa6;
-  font-family: "ubuntu-bold", sans-serif;
 }
 
 .navbar.horizontal-full-width-layout-navbar .navbar-top .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.active {
@@ -18143,7 +18104,6 @@ input:focus {
   color: #9c9fa6;
   padding: .75rem 1rem;
   line-height: 1;
-  font-family: "ubuntu-bold", sans-serif;
 }
 
 .navbar.horizontal-full-width-layout-navbar .navbar-bottom .navbar-nav.navbar-nav-left .nav-item .nav-link i {
@@ -18178,25 +18138,21 @@ input:focus {
 .navbar.horizontal-full-width-layout-navbar .navbar-bottom .navbar-nav .nav-item.nav-search .search-field input:-ms-input-placeholder {
   font-size: .875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-regular", sans-serif;
 }
 
 .navbar.horizontal-full-width-layout-navbar .navbar-bottom .navbar-nav .nav-item.nav-search .search-field input:-moz-placeholder {
   font-size: .875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-regular", sans-serif;
 }
 
 .navbar.horizontal-full-width-layout-navbar .navbar-bottom .navbar-nav .nav-item.nav-search .search-field input::-moz-placeholder {
   font-size: .875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-regular", sans-serif;
 }
 
 .navbar.horizontal-full-width-layout-navbar .navbar-bottom .navbar-nav .nav-item.nav-search .search-field input::-webkit-input-placeholder {
   font-size: .875rem;
   color: #9c9fa6;
-  font-family: "ubuntu-regular", sans-serif;
 }
 
 .navbar.horizontal-full-width-layout-navbar .navbar-bottom .navbar-nav.navbar-nav-right .nav-item .nav-link {
@@ -18305,7 +18261,7 @@ body {
   font-weight: 400;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
-  background-color: #f2edf3;
+  background-color: #e7e8ec;
 }
 
 h1,
@@ -18528,7 +18484,6 @@ html {
   flex-direction: row;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 70px;
 }
 
 .page-body-wrapper.full-page-wrapper {
@@ -18546,6 +18501,7 @@ html {
   -webkit-flex-direction: column;
   flex-direction: column;
   width: 1060px;
+  background: #f2edf3;
 }
 
 @media (max-width: 991px) {
@@ -18567,6 +18523,14 @@ html {
   overflow: hidden;
 }
 
+.required-field:after {
+  position: relative;
+  top: 0;
+  right: 0;
+  color: red;
+  content: '*';
+}
+
 pre {
   background: #e8eff4;
   padding: 15px;
@@ -18576,7 +18540,6 @@ pre {
 code {
   padding: 5px;
   color: #fe7c96;
-  font-family: "ubuntu-light", sans-serif;
   font-size: 0.875rem;
   border-radius: 4px;
 }
@@ -18619,7 +18582,6 @@ code {
   -webkit-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   font-size: calc(0.875rem - 0.05rem);
-  font-family: "ubuntu-regular", sans-serif;
   border-top: 1px solid #dccedf;
 }
 
@@ -18751,15 +18713,16 @@ code {
 }
 
 .font-weight-light {
-  font-family: "ubuntu-light", sans-serif;
+  font-family: "RussellSquare", sans-serif;
 }
 
 .font-weight-bold {
-  font-family: "ubuntu-bold", sans-serif;
+  font-family: "RussellSquare", sans-serif;
+  font-weight: 700;
 }
 
 .font-weight-normal {
-  font-family: "ubuntu-regular", sans-serif;
+  font-family: "RussellSquare", sans-serif;
 }
 
 /* Demo Styles */
@@ -18898,7 +18861,6 @@ code {
   font-weight: initial;
   line-height: 1;
   padding: .375rem .5625rem;
-  font-family: "ubuntu-medium", sans-serif;
 }
 
 .badge.badge-pill {
@@ -19058,7 +19020,6 @@ code {
 .btn {
   font-size: 0.875rem;
   line-height: 1;
-  font-family: "ubuntu-bold", sans-serif;
   /* Buttons with only icons */
   /* Buttons with icon and text */
 }
@@ -20064,19 +20025,16 @@ code {
   color: #000;
   margin-bottom: .75rem;
   text-transform: capitalize;
-  font-family: "ubuntu-medium", sans-serif;
   font-size: 1.125rem;
 }
 
 .card .card-subtitle {
-  font-family: "ubuntu-regular", sans-serif;
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
 }
 
 .card .card-description {
   margin-bottom: 1.5rem;
-  font-family: "ubuntu-regular", sans-serif;
   color: #76838f;
 }
 
@@ -20492,7 +20450,6 @@ code {
 
 .form-control {
   border: 1px solid #ebedf2;
-  font-family: "ubuntu-regular", sans-serif;
   font-size: 0.8125rem;
 }
 
@@ -20608,7 +20565,6 @@ select.form-control.border-dark:focus {
   -webkit-align-items: center;
   align-items: center;
   padding: 15px 15px;
-  font-family: "ubuntu-regular", sans-serif;
   font-size: 0.875rem;
 }
 
@@ -20869,7 +20825,6 @@ dl li {
 .table thead th {
   border-top: 0;
   border-bottom-width: 1px;
-  font-family: "ubuntu-medium", sans-serif;
   font-weight: initial;
 }
 
@@ -21201,5 +21156,75 @@ dl li {
   padding-left: .5rem;
   border-left: 2px solid #212529;
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .rules__list {
+    margin: 0;
+  }
+  .rules__link {
+    padding-left: 68px;
+  }
+  .rules__link img {
+    max-width: 48px;
+    width: 48px;
+  }
+  .rules__link span {
+    padding: 24px 0;
+  }
+}
+.rules__list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.rules__link {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding-left: 52px;
+}
+.rules__link img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 36px;
+  max-width: 36px;
+}
+.rules__link span {
+  display: inline-block;
+  width: 100%;
+  font-size: 17px;
+  line-height: 23px;
+  padding: 16px 0;
+  font-weight: 400;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.rules__link:hover span {
+  color: #0056b3;
+}
+.header__user {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.header__soc {
+  padding: 0 39px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.soc__item {
+  display: inline-block;
+  font-size: .9em;
+  margin-right: 3px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 /*# sourceMappingURL=maps/style.css.map */

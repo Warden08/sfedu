@@ -20,4 +20,13 @@ class Request extends Model
      */
     public $rules = [
     ];
+
+    public $attachOne = [
+        'playerphoto'   => ['System\Models\File'],
+        'scard'         => ['System\Models\File'],
+    ];
+
+    public $attachMany = [
+        'deckphotos'    => ['System\Models\File']
+    ];
 }
