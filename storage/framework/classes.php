@@ -126,4 +126,8 @@
   'Wrdn\\league\\Models\\Teamrequest' => 'plugins\\wrdn\\league\\models\\Teamrequest.php',
   'Wrdn\\League\\Models\\Request' => 'plugins\\wrdn\\league\\models\\Request.php',
   'Wrdn\\League\\Models\\Teamrequest' => 'plugins\\wrdn\\league\\models\\Teamrequest.php',
+  'RainLab\\Builder\\Classes\\LanguageMixer' => 'plugins\\rainlab\\builder\\classes\\LanguageMixer.php',
+  'Wrdn\\League\\Components\\Formhs' => 'plugins\\wrdn\\league\\components\\Formhs.php',
+  'wrdn\\league\\Controllers\\solorequests' => 'plugins\\wrdn\\league\\controllers\\solorequests.php',
+  'Wrdn\\league\\Models\\Solorequest' => 'plugins\\wrdn\\league\\models\\Solorequest.php',
 );

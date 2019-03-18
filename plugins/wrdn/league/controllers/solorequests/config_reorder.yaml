@@ -1,0 +1,4 @@
+title: Solorequests
+modelClass: Wrdn\league\Models\Solorequest
+toolbar:
+    buttons: reorder_toolbar

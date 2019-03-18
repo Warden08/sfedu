@@ -1,14 +1,50 @@
-1552852167a:1:{s:12:"register.htm";a:10:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:198:"title = "Заявка на участие"
+1552879248a:1:{s:12:"register.htm";a:9:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:1206:"title = "Регистрация по дисциплинам"
 url = "/register"
 layout = "default"
 is_hidden = 0
-
-[Form]
 ==
 <div class="col-md-8">
-{% component 'Form' %}
+    <div class="card my-4">
+        <div class="card-header">Регистрация по дисциплинам</div>
+        <div class="card-body">
+            <div class="row tournaments-in-season">
+                <div class="col-md-3">
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/CSGO.png')"></a>
+                </div>
+                <div class="col-md-3">
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Dota 2.png')"></a>
+                </div>
+                <div class="col-md-3">
+                    <a class="logo" href="/register/solo" style="background-image: url('/storage/app/media/Hearthstone.png')"></a>
+                </div>
+                <div class="col-md-3">
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Warface.png')"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550531978;s:6:"markup";s:86:"<div class="col-md-8">
-{% component 'Form' %}
+
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1552873694;s:6:"markup";s:1086:"<div class="col-md-8">
+    <div class="card my-4">
+        <div class="card-header">Регистрация по дисциплинам</div>
+        <div class="card-body">
+            <div class="row tournaments-in-season">
+                <div class="col-md-3">
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/CSGO.png')"></a>
+                </div>
+                <div class="col-md-3">
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Dota 2.png')"></a>
+                </div>
+                <div class="col-md-3">
+                    <a class="logo" href="/register/solo" style="background-image: url('/storage/app/media/Hearthstone.png')"></a>
+                </div>
+                <div class="col-md-3">
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Warface.png')"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:32:"Заявка на участие";s:3:"url";s:9:"/register";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:4:"Form";a:0:{}}}
+
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:50:"Регистрация по дисциплинам";s:3:"url";s:9:"/register";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

@@ -1,11 +1,12 @@
-1552852167a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:1619:"<!-- partial:partials/_navbar.html-->
-<div class="row">
+1552878810a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:1810:"<!-- partial:partials/_navbar.html-->
+<div class="container-fluid page-body-wrapper" style="min-height: 70px;">
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
             <a class="navbar-brand brand-logo" href="/"><img src="/storage/app/media/logo.png" alt="logo"/></a>
             <a class="navbar-brand brand-logo-mini" href="/"><img src="/storage/app/media/rnd_logo_clear_2.png" alt="logo"/></a>
         </div>
-            <div class="col-md-8" style="width: auto">
+        <div class="main-panel" style="min-height: auto; margin-left: 0px; border-bottom: 1px solid rgba(189,171,193, 0.255);">
+            <div class="col-md-12" style="">
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
                     <ul class="navbar-nav navbar-nav-right">
                         <li class="nav-item d-none d-lg-block full-screen-link">
@@ -24,16 +25,18 @@
                     </button>
                 </div>
             </div>
+        </div>
     </nav>
 </div>
-<!--  partial -->";s:5:"mtime";i:1550536593;s:6:"markup";s:1619:"<!-- partial:partials/_navbar.html-->
-<div class="row">
+<!--  partial -->";s:5:"mtime";i:1552876803;s:6:"markup";s:1810:"<!-- partial:partials/_navbar.html-->
+<div class="container-fluid page-body-wrapper" style="min-height: 70px;">
     <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
             <a class="navbar-brand brand-logo" href="/"><img src="/storage/app/media/logo.png" alt="logo"/></a>
             <a class="navbar-brand brand-logo-mini" href="/"><img src="/storage/app/media/rnd_logo_clear_2.png" alt="logo"/></a>
         </div>
-            <div class="col-md-8" style="width: auto">
+        <div class="main-panel" style="min-height: auto; margin-left: 0px; border-bottom: 1px solid rgba(189,171,193, 0.255);">
+            <div class="col-md-12" style="">
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
                     <ul class="navbar-nav navbar-nav-right">
                         <li class="nav-item d-none d-lg-block full-screen-link">
@@ -52,6 +55,7 @@
                     </button>
                 </div>
             </div>
+        </div>
     </nav>
 </div>
 <!--  partial -->";s:4:"code";N;}}

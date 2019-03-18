@@ -1,0 +1,62 @@
+fields:
+    cap_fio:
+        label: 'wrdn.league::lang.player_fio'
+        span: auto
+        type: text
+    cap_nick:
+        label: 'wrdn.league::lang.player_nickname'
+        span: auto
+        type: text
+    cap_birthday:
+        label: 'wrdn.league::lang.player_birthday'
+        span: auto
+        type: text
+    cap_uni_info:
+        label: 'wrdn.league::lang.player_university'
+        span: auto
+        type: text
+    cap_vk:
+        label: 'wrdn.league::lang.player_vk'
+        span: auto
+        type: text
+    cap_battletag:
+        label: BattleTag
+        span: auto
+        type: text
+    decks:
+        label: Колоды
+        span: auto
+        type: text
+    deckphotos:
+        label: 'Скриншоты колод'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    scard:
+        label: 'Студенческий билет'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        imageWidth: '100'
+        imageHeight: '100'
+        type: fileupload
+    playerphoto:
+        label: Фотография
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

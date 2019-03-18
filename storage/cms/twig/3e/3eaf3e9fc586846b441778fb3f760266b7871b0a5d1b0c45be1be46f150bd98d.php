@@ -24,12 +24,43 @@ class __TwigTemplate_bc01d535b24d06a592f06e86cb7dde25346f4deeedd96904b61829e4695
     <div class=\"card my-4\">
         <div class=\"card-header\">Регламент</div>
         <div class=\"card-body\">
-            some text here111sпарпрапва
+            <ul class=\"rules__list\">
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Dota 2.png\" alt=\"icon\">
+                        <span>Dota 2 | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/CSGO.png\" alt=\"icon\">
+                        <span>CS:GO | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Hearthstone.png\" alt=\"icon\">
+                        <span>Hearthstone | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Artifact.png\" alt=\"icon\">
+                        <span>Artifact | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Warface.png\" alt=\"icon\">
+                        <span>Warface | Технические правила</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 ";
-        // line 9
+        // line 40
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
@@ -47,7 +78,7 @@ class __TwigTemplate_bc01d535b24d06a592f06e86cb7dde25346f4deeedd96904b61829e4695
 
     public function getDebugInfo()
     {
-        return array (  33 => 9,  23 => 1,);
+        return array (  64 => 40,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -56,7 +87,38 @@ class __TwigTemplate_bc01d535b24d06a592f06e86cb7dde25346f4deeedd96904b61829e4695
     <div class=\"card my-4\">
         <div class=\"card-header\">Регламент</div>
         <div class=\"card-body\">
-            some text here111sпарпрапва
+            <ul class=\"rules__list\">
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Dota 2.png\" alt=\"icon\">
+                        <span>Dota 2 | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/CSGO.png\" alt=\"icon\">
+                        <span>CS:GO | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Hearthstone.png\" alt=\"icon\">
+                        <span>Hearthstone | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Artifact.png\" alt=\"icon\">
+                        <span>Artifact | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/Warface.png\" alt=\"icon\">
+                        <span>Warface | Технические правила</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

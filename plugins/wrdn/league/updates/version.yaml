@@ -84,3 +84,12 @@
 1.0.29:
     - 'Updated table wrdn_league_requests'
     - builder_table_update_wrdn_league_requests_3.php
+1.0.30:
+    - 'Updated table wrdn_league_requests'
+    - builder_table_update_wrdn_league_requests_4.php
+1.0.31:
+    - 'Created table wrdn_league_solorequests'
+    - builder_table_create_wrdn_league_solorequests.php
+1.0.32:
+    - 'Updated table wrdn_league_solorequests'
+    - builder_table_update_wrdn_league_solorequests.php
