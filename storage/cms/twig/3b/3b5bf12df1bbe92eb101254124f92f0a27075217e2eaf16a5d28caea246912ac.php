@@ -58,55 +58,55 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
     <!-- endinject -->
     <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"";
         // line 19
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-57x57.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-57x57.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"";
         // line 20
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-60x60.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-60x60.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"";
         // line 21
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-72x72.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-72x72.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"";
         // line 22
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-76x76.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-76x76.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"";
         // line 23
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-114x114.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-114x114.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"";
         // line 24
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-120x120.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-120x120.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"";
         // line 25
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-144x144.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-144x144.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"";
         // line 26
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-152x152.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-152x152.png");
         echo "\">
     <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"";
         // line 27
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/apple-icon-180x180.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/apple-icon-180x180.png");
         echo "\">
     <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"";
         // line 28
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/android-icon-192x192.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/android-icon-192x192.png");
         echo "\">
     <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"";
         // line 29
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/favicon-32x32.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/favicon-32x32.png");
         echo "\">
     <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"";
         // line 30
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/favicon-96x96.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/favicon-96x96.png");
         echo "\">
     <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"";
         // line 31
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/favicon-16x16.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("images/icons/favicon-16x16.png");
         echo "\">
     <link rel=\"manifest\" href=\"";
         // line 32
@@ -231,19 +231,19 @@ class __TwigTemplate_e585497cc2b38dd6a9e3e4c9306bf7f8b40fc13238f8140d9697706ffcb
     <!-- inject:css -->
     <link rel=\"stylesheet\" href=\"{{ 'assets/css/style.css'|theme }}\">
     <!-- endinject -->
-    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"{{ 'assets/images/icons/apple-icon-57x57.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"{{ 'assets/images/icons/apple-icon-60x60.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"{{ 'assets/images/icons/apple-icon-72x72.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"{{ 'assets/images/icons/apple-icon-76x76.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"{{ 'assets/images/icons/apple-icon-114x114.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"{{ 'assets/images/icons/apple-icon-120x120.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"{{ 'assets/images/icons/apple-icon-144x144.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"{{ 'assets/images/icons/apple-icon-152x152.png'|theme }}\">
-    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"{{ 'assets/images/icons/apple-icon-180x180.png'|theme }}\">
-    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"{{ 'assets/images/icons/android-icon-192x192.png'|theme }}\">
-    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"{{ 'assets/images/icons/favicon-32x32.png'|theme }}\">
-    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"{{ 'assets/images/icons/favicon-96x96.png'|theme }}\">
-    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"{{ 'assets/images/icons/favicon-16x16.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"{{ 'images/icons/apple-icon-57x57.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"{{ 'images/icons/apple-icon-60x60.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"{{ 'images/icons/apple-icon-72x72.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"{{ 'images/icons/apple-icon-76x76.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"{{ 'images/icons/apple-icon-114x114.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"{{ 'images/icons/apple-icon-120x120.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"{{ 'images/icons/apple-icon-144x144.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"{{ 'images/icons/apple-icon-152x152.png'|theme }}\">
+    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"{{ 'images/icons/apple-icon-180x180.png'|theme }}\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"{{ 'images/icons/android-icon-192x192.png'|theme }}\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"{{ 'images/icons/favicon-32x32.png'|theme }}\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"{{ 'images/icons/favicon-96x96.png'|theme }}\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"{{ 'images/icons/favicon-16x16.png'|theme }}\">
     <link rel=\"manifest\" href=\"{{ 'assets/images/icons/manifest.json'|theme }}\">
     <meta name=\"msapplication-TileColor\" content=\"#ffffff\">
     <meta name=\"msapplication-TileImage\" content=\"{{ 'assets/images/icons/ms-icon-144x144.png'|theme }}\">
