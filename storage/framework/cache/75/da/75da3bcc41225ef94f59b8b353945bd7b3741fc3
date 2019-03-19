@@ -1,4 +1,4 @@
-1552941002a:1:{s:11:"sidebar.htm";a:6:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2488:"==
+1552954281a:1:{s:11:"sidebar.htm";a:6:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2545:"==
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
@@ -8,7 +8,7 @@
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% if this.page.url == '/news/:slug' %}active{% endif %}">
             <a class="nav-link" href="/news">
                 <span class="menu-title">Новости</span>
                 <i class="mdi mdi-newspaper menu-icon"></i>
@@ -52,7 +52,7 @@
     </ul>
      {% partial 'sidebar_footer' %}
 </nav>
-<!-- partial -->";s:5:"mtime";i:1552875265;s:6:"markup";s:2484:"<!-- partial:partials/_sidebar.html -->
+<!-- partial -->";s:5:"mtime";i:1552941606;s:6:"markup";s:2541:"<!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
@@ -61,7 +61,7 @@
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% if this.page.url == '/news/:slug' %}active{% endif %}">
             <a class="nav-link" href="/news">
                 <span class="menu-title">Новости</span>
                 <i class="mdi mdi-newspaper menu-icon"></i>
