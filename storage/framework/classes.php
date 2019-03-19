@@ -130,4 +130,9 @@
   'Wrdn\\League\\Components\\Formhs' => 'plugins\\wrdn\\league\\components\\Formhs.php',
   'wrdn\\league\\Controllers\\solorequests' => 'plugins\\wrdn\\league\\controllers\\solorequests.php',
   'Wrdn\\league\\Models\\Solorequest' => 'plugins\\wrdn\\league\\models\\Solorequest.php',
+  'vdomah\\blogviews\\Plugin' => 'plugins\\vdomah\\blogviews\\Plugin.php',
+  'Rainlab\\Blog\\Components\\Post' => 'plugins\\rainlab\\blog\\components\\Post.php',
+  'Rainlab\\Blog\\Models\\Post' => 'plugins\\rainlab\\blog\\models\\Post.php',
+  'Vdomah\\BlogViews\\Components\\Views' => 'plugins\\vdomah\\blogviews\\components\\Views.php',
+  'Vdomah\\BlogViews\\Components\\Popular' => 'plugins\\vdomah\\blogviews\\components\\Popular.php',
 );

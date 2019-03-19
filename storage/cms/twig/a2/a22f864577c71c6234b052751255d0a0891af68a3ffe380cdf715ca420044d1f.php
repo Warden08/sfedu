@@ -1,7 +1,7 @@
 <?php
 
-/* D:\OSPanel\domains\sfedu/themes/skk-yufu/pages/teams/entry.htm */
-class __TwigTemplate_d8a1125db3ffa57810bbc2ff06e79e6309b422614fdd505c0739b66404889632 extends Twig_Template
+/* D:\OSPanel\domains\sfedu/themes/skk-yufu/pages/schedule.htm */
+class __TwigTemplate_1ce6e41be8ba5eda39029d09c9ea72bc8b539b5c5ebc0d39b64332ba76e86f79 extends Twig_Template
 {
     private $source;
 
@@ -13,18 +13,18 @@ class __TwigTemplate_d8a1125db3ffa57810bbc2ff06e79e6309b422614fdd505c0739b664048
 
         $this->parent = false;
 
-        $this->blocks = array(
-        );
+        $this->blocks = [
+        ];
     }
 
-    protected function doDisplay(array $context, array $blocks = array())
+    protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
         echo "<div class=\"col-md-8\">
 ";
         // line 2
         $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("TeamEntry"        , $context['__cms_component_params']        );
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("Matches"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 3
         echo "</div>
@@ -37,7 +37,7 @@ class __TwigTemplate_d8a1125db3ffa57810bbc2ff06e79e6309b422614fdd505c0739b664048
 
     public function getTemplateName()
     {
-        return "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/teams/entry.htm";
+        return "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/schedule.htm";
     }
 
     public function isTraitable()
@@ -53,8 +53,8 @@ class __TwigTemplate_d8a1125db3ffa57810bbc2ff06e79e6309b422614fdd505c0739b664048
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"col-md-8\">
-{% component 'TeamEntry' %}
+{% component 'Matches' %}
 </div>
-{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/teams/entry.htm", "");
+{% partial 'sidebar_blocks' %}", "D:\\OSPanel\\domains\\sfedu/themes/skk-yufu/pages/schedule.htm", "");
     }
 }

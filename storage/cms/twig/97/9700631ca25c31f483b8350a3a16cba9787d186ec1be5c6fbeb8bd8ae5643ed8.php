@@ -1,7 +1,7 @@
 <?php
 
 /* D:\OSPanel\domains\sfedu/themes/skk-yufu/partials/sidebar_vk.htm */
-class __TwigTemplate_923b5f388c00effad1f799df6b816551fd5feac6b8026eabdce0901c929be77d extends Twig_Template
+class __TwigTemplate_88aca2ed119c7e3ad2a8dbf6a5cca766ef524fdc18e0f150cfeb05a570fcbe41 extends Twig_Template
 {
     private $source;
 
@@ -13,11 +13,11 @@ class __TwigTemplate_923b5f388c00effad1f799df6b816551fd5feac6b8026eabdce0901c929
 
         $this->parent = false;
 
-        $this->blocks = array(
-        );
+        $this->blocks = [
+        ];
     }
 
-    protected function doDisplay(array $context, array $blocks = array())
+    protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
         echo "<div class=\"card my-4\">
