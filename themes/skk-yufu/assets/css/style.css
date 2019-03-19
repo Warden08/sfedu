@@ -21220,4 +21220,85 @@ dl li {
   -webkit-transition: all .3s;
   transition: all .3s;
 }
+.esport-match .esport-match-single .team-vs-team {
+  padding: 7px 0;
+  color: #343a40;
+}
+.esport-match .esport-match-single > div, .esport-match .esport-match-single > a, .esport-match .esport-match-single > a > div {
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+}
+.esport-match .esport-match-single {
+  height: 60px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 0 15px;
+  line-height: 58px;
+  position: relative;
+  border-bottom: 1px solid #CDCFD0;
+  background: #eaeced;
+}
+.esport-match .esport-match-single .team-vs-team .team-left {
+  text-align: right;
+}
+.esport-match .esport-match-single .team {
+  width: 200px;
+  white-space: nowrap;
+  position: relative;
+}
+.esport-match .esport-match-single .status {
+  font-size: 16px;
+  width: 90px;
+}
+.esport-match .esport-match-single .team-vs-team .team-right {
+  text-align: left;
+}
+.esport-match .esport-match-single .name {
+  width: 140px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 36px;
+  height: 40px;
+}
+.esport-match .esport-match-single .team img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+.esport-match .esport-match-single .time {
+  color: #00c0ff;
+}
+.esport-match .esport-match-single .date {
+  color: #767779;
+  font-size: 11px;
+  margin: 5px 0 0;
+}
+.esport-match .esport-match-single:nth-of-type(2n) {
+  background: #f3f3f3;
+}
+.esport-match .esport-match-single > div, .esport-match .esport-match-single > a, .esport-match .esport-match-single > a > div, .esport-map-wrapper .esport-map-single > div, .esport-map-wrapper .esport-map-single > a, .esport-map-wrapper .esport-map-single > a > div, footer li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.esport-match .esport-match-single .esport-match-single-tournament {
+  position: relative;
+  text-align: left;
+  width: 40px;
+  margin-left: 5px;
+}
+.esport-match .esport-match-single .esport-match-single-tournament img {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  width: auto;
+  height: 40px;
+  vertical-align: middle;
+  border-radius: 3px;
+  -webkit-filter: grayscale(50%);
+  opacity: .9;
+}
 /*# sourceMappingURL=maps/style.css.map */

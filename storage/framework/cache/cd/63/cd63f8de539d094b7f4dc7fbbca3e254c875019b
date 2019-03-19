@@ -1,4 +1,4 @@
-1552954281a:1:{s:18:"sidebar_blocks.htm";a:7:{s:8:"fileName";s:18:"sidebar_blocks.htm";s:7:"content";s:535:"[PostsSidebar]
+1553032629a:1:{s:18:"sidebar_blocks.htm";a:7:{s:8:"fileName";s:18:"sidebar_blocks.htm";s:7:"content";s:535:"[PostsSidebar]
 pageNumber = "{{ :page }}"
 postsPerPage = 5
 noPostsMessage = "No posts found"

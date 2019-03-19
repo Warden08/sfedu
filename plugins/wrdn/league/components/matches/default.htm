@@ -3,17 +3,38 @@
 <div class="card my-4">
     <div class="card-header">Расписание матчей</div>
     <div class="card-body">
-        {% for match in matches_all %}
-        <p>{% for team1 in match.team1 %}
-                {{team1.name}}
+        <div class="esport-match">
+            {% for match in matches_all %}
+            <div class="esport-match-single">
+                <a class="team-vs-team" href="#">
+                    <div class="esport-match-single-tournament">
+                        <img src="/storage/app/media/{{match.game}}.png">
+                    </div>
+                    <div class="team team-left">
+                        {% for team1 in match.team1 %}
+                        <span class="name">{{team1.name}}</span>
+                        <img src="/storage/app/media{{team1.logo}}">
+                        {% endfor %}
+                    </div>
+                    <div class="status">
+                        <div class="time">
+                            {{ match.date|date('H:i') }}
+                            <div class="date">{{ match.date|date('d.m') }}</div>
+                        </div>
+
+                    </div>
+                    <div class="team team-right">
+                        {% for team2 in match.team2 %}
+                            <img src="/storage/app/media{{team2.logo}}">
+                            <span class="name">{{team2.name}}</span>
+                        {% endfor %}
+                    </div>
+                </a>
+                <div class="match-links">
+                </div>
+            </div>
             {% endfor %}
-            <b>vs</b>
-            {% for team2 in match.team2 %}
-            {{team2.name}}
-            {% endfor %}</p>
-        {% else %}
-        <article class="no-data">{{ noPostsMessage }}</article>
-        {% endfor %}
+        </div>
     </div>
 </div>
 

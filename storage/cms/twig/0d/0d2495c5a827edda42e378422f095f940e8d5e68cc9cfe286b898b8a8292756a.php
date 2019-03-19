@@ -56,17 +56,13 @@ class __TwigTemplate_5018a7d6ea292f7188ac4f008e1ca7a77548851aba5ff5b47364735a369
             echo "\" style=\"background-image: url('/storage/app/media";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "portret", []), "html", null, true);
             echo "')\">
-                        <!--<img src=\"/storage/app/media";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "portret", []), "html", null, true);
-            echo "\" width=\"100%\">-->
                         <div class=\"info\">
                             <h4 class=\"nickname\">";
-            // line 19
+            // line 18
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "nickname", []), "html", null, true);
             echo "</h4>
                             <div class=\"name\">";
-            // line 20
+            // line 19
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "first_name", []), "html", null, true);
             echo " ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["player"], "last_name", []), "html", null, true);
@@ -79,7 +75,7 @@ class __TwigTemplate_5018a7d6ea292f7188ac4f008e1ca7a77548851aba5ff5b47364735a369
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['player'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
+        // line 24
         echo "        </div>
     </div>
 </div>
@@ -88,14 +84,14 @@ class __TwigTemplate_5018a7d6ea292f7188ac4f008e1ca7a77548851aba5ff5b47364735a369
     <div class=\"card-body\">
         <div class=\"row\">
             ";
-        // line 32
+        // line 31
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["team"] ?? null), "matches", []));
         foreach ($context['_seq'] as $context["_key"] => $context["match"]) {
-            // line 33
+            // line 32
             echo "            <div class=\"col-md-4\">
                 <p>";
-            // line 34
+            // line 33
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["match"], "game", []), "html", null, true);
             echo "</p>
             </div>
@@ -104,7 +100,7 @@ class __TwigTemplate_5018a7d6ea292f7188ac4f008e1ca7a77548851aba5ff5b47364735a369
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['match'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
+        // line 36
         echo "        </div>
     </div>
 </div>";
@@ -122,7 +118,7 @@ class __TwigTemplate_5018a7d6ea292f7188ac4f008e1ca7a77548851aba5ff5b47364735a369
 
     public function getDebugInfo()
     {
-        return array (  108 => 37,  99 => 34,  96 => 33,  92 => 32,  83 => 25,  70 => 20,  66 => 19,  61 => 17,  55 => 16,  52 => 15,  48 => 14,  41 => 10,  35 => 7,  28 => 3,  25 => 2,  23 => 1,);
+        return array (  104 => 36,  95 => 33,  92 => 32,  88 => 31,  79 => 24,  66 => 19,  62 => 18,  55 => 16,  52 => 15,  48 => 14,  41 => 10,  35 => 7,  28 => 3,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -143,7 +139,6 @@ class __TwigTemplate_5018a7d6ea292f7188ac4f008e1ca7a77548851aba5ff5b47364735a369
             {% for player in team.players %}
                 <div class=\"col-md-4\">
                     <a class=\"team-player\" href=\"/players/{{player.slug}}\" style=\"background-image: url('/storage/app/media{{player.portret}}')\">
-                        <!--<img src=\"/storage/app/media{{player.portret}}\" width=\"100%\">-->
                         <div class=\"info\">
                             <h4 class=\"nickname\">{{player.nickname}}</h4>
                             <div class=\"name\">{{player.first_name}} {{player.last_name}}</div>

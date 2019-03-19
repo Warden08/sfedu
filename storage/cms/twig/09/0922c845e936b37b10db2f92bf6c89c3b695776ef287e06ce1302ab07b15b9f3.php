@@ -26,88 +26,117 @@ class __TwigTemplate_9a7aa7a4ed81617ea4fd6b3af6b5c67f100a4d62394dc13c9a4d50b75a9
 <div class=\"card my-4\">
     <div class=\"card-header\">Расписание матчей</div>
     <div class=\"card-body\">
-        ";
-        // line 6
+        <div class=\"esport-match\">
+            ";
+        // line 7
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["matches_all"] ?? null));
-        $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["match"]) {
-            // line 7
-            echo "        <p>";
+            // line 8
+            echo "            <div class=\"esport-match-single\">
+                <a class=\"team-vs-team\" href=\"#\">
+                    <div class=\"esport-match-single-tournament\">
+                        <img src=\"/storage/app/media/";
+            // line 11
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["match"], "game", []), "html", null, true);
+            echo ".png\">
+                    </div>
+                    <div class=\"team team-left\">
+                        ";
+            // line 14
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["match"], "team1", []));
             foreach ($context['_seq'] as $context["_key"] => $context["team1"]) {
-                // line 8
-                echo "                ";
+                // line 15
+                echo "                        <span class=\"name\">";
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team1"], "name", []), "html", null, true);
-                echo "
-            ";
+                echo "</span>
+                        <img src=\"/storage/app/media";
+                // line 16
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team1"], "logo", []), "html", null, true);
+                echo "\">
+                        ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['team1'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 10
-            echo "            <b>vs</b>
-            ";
-            // line 11
+            // line 18
+            echo "                    </div>
+                    <div class=\"status\">
+                        <div class=\"time\">
+                            ";
+            // line 21
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["match"], "date", []), "H:i"), "html", null, true);
+            echo "
+                            <div class=\"date\">";
+            // line 22
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["match"], "date", []), "d.m"), "html", null, true);
+            echo "</div>
+                        </div>
+
+                    </div>
+                    <div class=\"team team-right\">
+                        ";
+            // line 27
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["match"], "team2", []));
             foreach ($context['_seq'] as $context["_key"] => $context["team2"]) {
-                // line 12
-                echo "            ";
+                // line 28
+                echo "                            <img src=\"/storage/app/media";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team2"], "logo", []), "html", null, true);
+                echo "\">
+                            <span class=\"name\">";
+                // line 29
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["team2"], "name", []), "html", null, true);
-                echo "
-            ";
+                echo "</span>
+                        ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['team2'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 13
-            echo "</p>
-        ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
-            // line 15
-            echo "        <article class=\"no-data\">";
-            echo twig_escape_filter($this->env, ($context["noPostsMessage"] ?? null), "html", null, true);
-            echo "</article>
-        ";
+            // line 31
+            echo "                    </div>
+                </a>
+                <div class=\"match-links\">
+                </div>
+            </div>
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['match'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 17
-        echo "    </div>
+        // line 37
+        echo "        </div>
+    </div>
 </div>
 
 ";
-        // line 20
+        // line 41
         if ((twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "lastPage", []) > 1)) {
-            // line 21
+            // line 42
             echo "<ul class=\"pagination\">
     ";
-            // line 22
+            // line 43
             if ((twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "currentPage", []) > 1)) {
-                // line 23
+                // line 44
                 echo "    <li><a href=\"";
                 echo $this->extensions['Cms\Twig\Extension']->pageFilter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", []), "baseFileName", []), [($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "currentPage", []) - 1)]);
                 echo "\">&larr; Prev</a></li>
     ";
             }
-            // line 25
+            // line 46
             echo "
     ";
-            // line 26
+            // line 47
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "lastPage", [])));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 27
+                // line 48
                 echo "    <li class=\"";
                 echo (((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", []) == $context["page"])) ? ("active") : (null));
                 echo "\">
         <a href=\"";
-                // line 28
+                // line 49
                 echo $this->extensions['Cms\Twig\Extension']->pageFilter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", []), "baseFileName", []), [($context["pageParam"] ?? null) => $context["page"]]);
                 echo "\">";
                 echo twig_escape_filter($this->env, $context["page"], "html", null, true);
@@ -118,18 +147,18 @@ class __TwigTemplate_9a7aa7a4ed81617ea4fd6b3af6b5c67f100a4d62394dc13c9a4d50b75a9
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 31
+            // line 52
             echo "
     ";
-            // line 32
+            // line 53
             if ((twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "lastPage", []) > twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "currentPage", []))) {
-                // line 33
+                // line 54
                 echo "    <li><a href=\"";
                 echo $this->extensions['Cms\Twig\Extension']->pageFilter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", []), "baseFileName", []), [($context["pageParam"] ?? null) => (twig_get_attribute($this->env, $this->source, ($context["matches"] ?? null), "currentPage", []) + 1)]);
                 echo "\">Next &rarr;</a></li>
     ";
             }
-            // line 35
+            // line 56
             echo "</ul>
 ";
         }
@@ -147,7 +176,7 @@ class __TwigTemplate_9a7aa7a4ed81617ea4fd6b3af6b5c67f100a4d62394dc13c9a4d50b75a9
 
     public function getDebugInfo()
     {
-        return array (  133 => 35,  127 => 33,  125 => 32,  122 => 31,  111 => 28,  106 => 27,  102 => 26,  99 => 25,  93 => 23,  91 => 22,  88 => 21,  86 => 20,  81 => 17,  72 => 15,  66 => 13,  57 => 12,  53 => 11,  50 => 10,  41 => 8,  36 => 7,  31 => 6,  25 => 2,  23 => 1,);
+        return array (  162 => 56,  156 => 54,  154 => 53,  151 => 52,  140 => 49,  135 => 48,  131 => 47,  128 => 46,  122 => 44,  120 => 43,  117 => 42,  115 => 41,  109 => 37,  98 => 31,  90 => 29,  85 => 28,  81 => 27,  73 => 22,  69 => 21,  64 => 18,  56 => 16,  51 => 15,  47 => 14,  41 => 11,  36 => 8,  32 => 7,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -157,17 +186,38 @@ class __TwigTemplate_9a7aa7a4ed81617ea4fd6b3af6b5c67f100a4d62394dc13c9a4d50b75a9
 <div class=\"card my-4\">
     <div class=\"card-header\">Расписание матчей</div>
     <div class=\"card-body\">
-        {% for match in matches_all %}
-        <p>{% for team1 in match.team1 %}
-                {{team1.name}}
+        <div class=\"esport-match\">
+            {% for match in matches_all %}
+            <div class=\"esport-match-single\">
+                <a class=\"team-vs-team\" href=\"#\">
+                    <div class=\"esport-match-single-tournament\">
+                        <img src=\"/storage/app/media/{{match.game}}.png\">
+                    </div>
+                    <div class=\"team team-left\">
+                        {% for team1 in match.team1 %}
+                        <span class=\"name\">{{team1.name}}</span>
+                        <img src=\"/storage/app/media{{team1.logo}}\">
+                        {% endfor %}
+                    </div>
+                    <div class=\"status\">
+                        <div class=\"time\">
+                            {{ match.date|date('H:i') }}
+                            <div class=\"date\">{{ match.date|date('d.m') }}</div>
+                        </div>
+
+                    </div>
+                    <div class=\"team team-right\">
+                        {% for team2 in match.team2 %}
+                            <img src=\"/storage/app/media{{team2.logo}}\">
+                            <span class=\"name\">{{team2.name}}</span>
+                        {% endfor %}
+                    </div>
+                </a>
+                <div class=\"match-links\">
+                </div>
+            </div>
             {% endfor %}
-            <b>vs</b>
-            {% for team2 in match.team2 %}
-            {{team2.name}}
-            {% endfor %}</p>
-        {% else %}
-        <article class=\"no-data\">{{ noPostsMessage }}</article>
-        {% endfor %}
+        </div>
     </div>
 </div>
 
