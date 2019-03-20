@@ -2,6 +2,15 @@
 <div class="card my-4">
     <div class="card-header">{{player.nickname}}</div>
     <div class="card-body">
-        <p>{{player.first_name}}  {{player.last_name}}</p>
+        <div class="row team-profile">
+            <div class="col-md-4">
+                <div class="logo" style="background-image: url('/storage/app/media{{player.portret}}')"></div>
+            </div>
+            <div class="col-md-8">
+                <p>{{player.last_name}} {{player.first_name}} {{player.patronymic}}, {{player.age}}</p>
+                <p>Структурное подразделение: {{player.university}}</p>
+                <p><a href="{{player.vk}}" target="_blank">Профиль ВКонтакте</a></p>
+            </div>
+        </div>
     </div>
 </div>

@@ -7,6 +7,10 @@ fields:
         label: Фамилия
         span: auto
         type: text
+    patronymic:
+        label: Отчество
+        span: auto
+        type: text
     nickname:
         label: Никнейм
         span: auto
@@ -22,14 +26,22 @@ fields:
         label: Возраст
         span: auto
         type: text
+    vk:
+        label: 'wrdn.league::lang.player_vk'
+        span: auto
+        type: text
+    university:
+        label: 'wrdn.league::lang.player_university'
+        span: auto
+        type: text
+    portret:
+        label: Фото
+        span: auto
+        mode: file
+        type: mediafinder
     teams:
         label: 'Состоит в команде'
         nameFrom: name
         descriptionFrom: description
         span: auto
         type: relation
-    portret:
-        label: Фото
-        span: auto
-        mode: file
-        type: mediafinder

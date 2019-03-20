@@ -28,12 +28,34 @@ class __TwigTemplate_d4fbf70e5bbff47f5bf77127a5b32fc9d858ebc22f43252aa2f97acd6ea
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "nickname", []), "html", null, true);
         echo "</div>
     <div class=\"card-body\">
-        <p>";
-        // line 5
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "first_name", []), "html", null, true);
-        echo "  ";
+        <div class=\"row team-profile\">
+            <div class=\"col-md-4\">
+                <div class=\"logo\" style=\"background-image: url('/storage/app/media";
+        // line 7
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "portret", []), "html", null, true);
+        echo "')\"></div>
+            </div>
+            <div class=\"col-md-8\">
+                <p>";
+        // line 10
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "last_name", []), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "first_name", []), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "patronymic", []), "html", null, true);
+        echo ", ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "age", []), "html", null, true);
         echo "</p>
+                <p>Структурное подразделение: ";
+        // line 11
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "university", []), "html", null, true);
+        echo "</p>
+                <p><a href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["player"] ?? null), "vk", []), "html", null, true);
+        echo "\" target=\"_blank\">Профиль ВКонтакте</a></p>
+            </div>
+        </div>
     </div>
 </div>";
     }
@@ -50,7 +72,7 @@ class __TwigTemplate_d4fbf70e5bbff47f5bf77127a5b32fc9d858ebc22f43252aa2f97acd6ea
 
     public function getDebugInfo()
     {
-        return array (  33 => 5,  28 => 3,  25 => 2,  23 => 1,);
+        return array (  55 => 12,  51 => 11,  41 => 10,  35 => 7,  28 => 3,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -59,7 +81,16 @@ class __TwigTemplate_d4fbf70e5bbff47f5bf77127a5b32fc9d858ebc22f43252aa2f97acd6ea
 <div class=\"card my-4\">
     <div class=\"card-header\">{{player.nickname}}</div>
     <div class=\"card-body\">
-        <p>{{player.first_name}}  {{player.last_name}}</p>
+        <div class=\"row team-profile\">
+            <div class=\"col-md-4\">
+                <div class=\"logo\" style=\"background-image: url('/storage/app/media{{player.portret}}')\"></div>
+            </div>
+            <div class=\"col-md-8\">
+                <p>{{player.last_name}} {{player.first_name}} {{player.patronymic}}, {{player.age}}</p>
+                <p>Структурное подразделение: {{player.university}}</p>
+                <p><a href=\"{{player.vk}}\" target=\"_blank\">Профиль ВКонтакте</a></p>
+            </div>
+        </div>
     </div>
 </div>", "D:\\OSPanel\\domains\\sfedu/plugins/wrdn/league/components/player/default.htm", "");
     }
