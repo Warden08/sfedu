@@ -1,0 +1,19 @@
+1554367494a:1:{s:12:"schedule.htm";a:10:{s:8:"fileName";s:12:"schedule.htm";s:7:"content";s:337:"title = "Расписание матчей"
+url = "/schedule"
+layout = "default"
+is_hidden = 0
+
+[Matches]
+pageNumber = "{{ :page }}"
+seasonsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+seasonPage = "matches/entry"
+==
+<div class="col-md-8">
+{% component 'Matches' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1553107609;s:6:"markup";s:86:"<div class="col-md-8">
+{% component 'Matches' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:33:"Расписание матчей";s:3:"url";s:9:"/schedule";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"Matches";a:5:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"seasonsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:10:"seasonPage";s:13:"matches/entry";}}}

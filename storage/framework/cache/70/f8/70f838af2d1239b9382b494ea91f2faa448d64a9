@@ -1,4 +1,4 @@
-1553107715a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:1886:"title = "Регламент"
+1554368365a:1:{s:9:"rules.htm";a:9:{s:8:"fileName";s:9:"rules.htm";s:7:"content";s:2150:"title = "Регламент"
 url = "/rules"
 layout = "default"
 is_hidden = 0
@@ -28,8 +28,8 @@ is_hidden = 0
                 </li>
                 <li>
                     <a target="_blank" href="#" class="rules__link">
-                        <img src="/storage/app/media/Artifact.png" alt="icon">
-                        <span>Artifact | Технические правила</span>
+                        <img src="/storage/app/media/lol.png" alt="icon">
+                        <span>League of Legends | Технические правила</span>
                     </a>
                 </li>
                 <li>
@@ -38,11 +38,17 @@ is_hidden = 0
                         <span>Warface | Технические правила</span>
                     </a>
                 </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/overwatch.png" alt="icon">
+                        <span>Overwatch | Технические правила</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1552876533;s:6:"markup";s:1801:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554367151;s:6:"markup";s:2070:"<div class="col-md-8">
     <div class="card my-4">
         <div class="card-header">Регламент</div>
         <div class="card-body">
@@ -67,14 +73,20 @@ is_hidden = 0
                 </li>
                 <li>
                     <a target="_blank" href="#" class="rules__link">
-                        <img src="/storage/app/media/Artifact.png" alt="icon">
-                        <span>Artifact | Технические правила</span>
+                        <img src="/storage/app/media/lol.png" alt="icon">
+                        <span>League of Legends | Технические правила</span>
                     </a>
                 </li>
                 <li>
                     <a target="_blank" href="#" class="rules__link">
                         <img src="/storage/app/media/Warface.png" alt="icon">
                         <span>Warface | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="rules__link">
+                        <img src="/storage/app/media/overwatch.png" alt="icon">
+                        <span>Overwatch | Технические правила</span>
                     </a>
                 </li>
             </ul>

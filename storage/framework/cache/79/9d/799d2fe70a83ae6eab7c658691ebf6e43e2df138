@@ -1,4 +1,4 @@
-1553107716a:1:{s:14:"sidebar_vk.htm";a:5:{s:8:"fileName";s:14:"sidebar_vk.htm";s:7:"content";s:370:"<div class="card my-4">
+1554368365a:1:{s:14:"sidebar_vk.htm";a:5:{s:8:"fileName";s:14:"sidebar_vk.htm";s:7:"content";s:362:"<div class="card my-4">
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 
     <!-- VK Widget -->
@@ -6,7 +6,7 @@
     <script type="text/javascript">
         VK.Widgets.Group("vk_groups", {mode: 4, no_cover: 1, height: "500",width: "auto", color1: 'F2F4F5', color2: '343A40'}, 139261503);
     </script>
-</div>";s:5:"mtime";i:1550601912;s:6:"markup";s:370:"<div class="card my-4">
+</div>";s:5:"mtime";i:1554367151;s:6:"markup";s:362:"<div class="card my-4">
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
 
     <!-- VK Widget -->

@@ -13,9 +13,8 @@
                         alt="{{ image.description }}"
                         style="max-width: 100%" />
             </p>
-            {% endfor %}
+           
         </div>
-        {% endif %}
         {{ post.content_html|raw }}</div>
 <div class="card-footer text-muted">
         Опубликовано {{ post.published_at|date('d.m.Y, H:i') }}
@@ -23,13 +22,15 @@
             <!-- Put this script tag to the place, where the Share button will be -->
             <script type="text/javascript"><!--
             document.write(VK.Share.button({
-                url: "http://artifact.plus/news/{{post.slug}}",
-                title: '{{post.name}} - Новости - СКК ЮФУ',
-                image: '{{ post.img }}',
+                url: "http://esfedu.ru/news/{{post.slug}}",
+                title: '{{post.title}} - Новости - СКК ЮФУ',
+                image: '{{ image.path }}',
                 noparse: true
-            },{type: "custom",noparse: 0, text: "<img src=\"https://artifact.plus/themes/seanrasmussen-raz_html5up_halcyonic/assets/css/images/icon_vk.png\" width=\"32\" height=\"19\" />"}));
+            },{type: "custom",noparse: 0, text: "<img src=\"http://esfedu.ru/themes/skk-yufu/images/icon_vk.png\" width=\"32\" height=\"19\" />"}));
             -->
             </script>
+             {% endfor %}
+              {% endif %}
         </div>
     </div>
 </div>

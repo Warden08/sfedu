@@ -1,0 +1,15 @@
+1554367494a:1:{s:21:"tournaments/entry.htm";a:10:{s:8:"fileName";s:21:"tournaments/entry.htm";s:7:"content";s:225:"title = "Турниры"
+url = "/tournaments/:slug"
+layout = "default"
+is_hidden = 0
+
+[TournamentEntry]
+slug = "{{ :slug }}"
+==
+<div class="col-md-8">
+{% component 'TournamentEntry' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554329421;s:6:"markup";s:97:"<div class="col-md-8">
+{% component 'TournamentEntry' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:14:"Турниры";s:3:"url";s:18:"/tournaments/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:15:"TournamentEntry";a:1:{s:4:"slug";s:11:"{{ :slug }}";}}}

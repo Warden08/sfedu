@@ -1,4 +1,4 @@
-1553107715a:1:{s:12:"register.htm";a:9:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:1206:"title = "Регистрация по дисциплинам"
+1554368365a:1:{s:12:"register.htm";a:9:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:807:"title = "Регистрация по дисциплинам"
 url = "/register"
 layout = "default"
 is_hidden = 0
@@ -9,38 +9,26 @@ is_hidden = 0
         <div class="card-body">
             <div class="row tournaments-in-season">
                 <div class="col-md-3">
-                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/CSGO.png')"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Dota 2.png')"></a>
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/multigame.png')"></a>
                 </div>
                 <div class="col-md-3">
                     <a class="logo" href="/register/solo" style="background-image: url('/storage/app/media/Hearthstone.png')"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Warface.png')"></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1552873694;s:6:"markup";s:1086:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554367151;s:6:"markup";s:692:"<div class="col-md-8">
     <div class="card my-4">
         <div class="card-header">Регистрация по дисциплинам</div>
         <div class="card-body">
             <div class="row tournaments-in-season">
                 <div class="col-md-3">
-                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/CSGO.png')"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Dota 2.png')"></a>
+                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/multigame.png')"></a>
                 </div>
                 <div class="col-md-3">
                     <a class="logo" href="/register/solo" style="background-image: url('/storage/app/media/Hearthstone.png')"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="logo" href="/register/team" style="background-image: url('/storage/app/media/Warface.png')"></a>
                 </div>
             </div>
         </div>

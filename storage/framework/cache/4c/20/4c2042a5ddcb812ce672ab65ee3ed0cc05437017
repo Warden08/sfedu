@@ -1,0 +1,110 @@
+1554367494a:1:{s:11:"sidebar.htm";a:6:{s:8:"fileName";s:11:"sidebar.htm";s:7:"content";s:2591:"==
+<!-- partial:partials/_sidebar.html -->
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+            <a class="nav-link" href="/">
+                <span class="menu-title">Главная</span>
+                <i class="mdi mdi-home menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item {% if this.page.url == '/news/:slug' %}active{% endif %}">
+            <a class="nav-link" href="/news">
+                <span class="menu-title">Новости</span>
+                <i class="mdi mdi-newspaper menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item {% if this.page.url == '/video/:slug' %}active{% endif %}">
+            <a class="nav-link" href="/video">
+                <span class="menu-title">Видео</span>
+                <i class="mdi mdi-video menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/schedule">
+                <span class="menu-title">Расписание</span>
+                <i class="mdi mdi-table menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/rules">
+                <span class="menu-title">Регламент</span>
+                <i class="mdi mdi-information-outline menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item {% if this.page.url == '/tournaments/:slug' or this.page.url == '/teams/:slug' or this.page.url == '/players/:slug' %}active{% endif %}">
+            <a class="nav-link" data-toggle="" href="/seasons" aria-expanded="true" aria-controls="general-pages">
+                <span class="menu-title">Сезоны</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-gamepad-variant menu-icon"></i>
+            </a>
+            <div class="collapse show" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="/seasons/autumn-2018">Autumn 2018</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/seasons/spring-2019">Spring 2019</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item sidebar-actions">
+            <span class="nav-link">
+              <a class="btn btn-block btn-lg btn-gradient-primary" href="/register/">Участвовать</a>
+            </span>
+        </li>
+    </ul>
+     {% partial 'sidebar_footer' %}
+</nav>
+<!-- partial -->";s:5:"mtime";i:1554328146;s:6:"markup";s:2588:"<!-- partial:partials/_sidebar.html -->
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+            <a class="nav-link" href="/">
+                <span class="menu-title">Главная</span>
+                <i class="mdi mdi-home menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item {% if this.page.url == '/news/:slug' %}active{% endif %}">
+            <a class="nav-link" href="/news">
+                <span class="menu-title">Новости</span>
+                <i class="mdi mdi-newspaper menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item {% if this.page.url == '/video/:slug' %}active{% endif %}">
+            <a class="nav-link" href="/video">
+                <span class="menu-title">Видео</span>
+                <i class="mdi mdi-video menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/schedule">
+                <span class="menu-title">Расписание</span>
+                <i class="mdi mdi-table menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/rules">
+                <span class="menu-title">Регламент</span>
+                <i class="mdi mdi-information-outline menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item {% if this.page.url == '/tournaments/:slug' or this.page.url == '/teams/:slug' or this.page.url == '/players/:slug' %}active{% endif %}">
+            <a class="nav-link" data-toggle="" href="/seasons" aria-expanded="true" aria-controls="general-pages">
+                <span class="menu-title">Сезоны</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-gamepad-variant menu-icon"></i>
+            </a>
+            <div class="collapse show" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="/seasons/autumn-2018">Autumn 2018</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/seasons/spring-2019">Spring 2019</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item sidebar-actions">
+            <span class="nav-link">
+              <a class="btn btn-block btn-lg btn-gradient-primary" href="/register/">Участвовать</a>
+            </span>
+        </li>
+    </ul>
+     {% partial 'sidebar_footer' %}
+</nav>
+<!-- partial -->";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

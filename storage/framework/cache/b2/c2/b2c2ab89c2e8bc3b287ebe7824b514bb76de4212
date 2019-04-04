@@ -1,0 +1,15 @@
+1554367494a:1:{s:17:"seasons/entry.htm";a:10:{s:8:"fileName";s:17:"seasons/entry.htm";s:7:"content";s:211:"title = "Сезоны"
+url = "/seasons/:slug"
+layout = "default"
+is_hidden = 0
+
+[SeasonEntry]
+slug = "{{ :slug }}"
+==
+<div class="col-md-8">
+{% component 'SeasonEntry' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554329392;s:6:"markup";s:93:"<div class="col-md-8">
+{% component 'SeasonEntry' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:12:"Сезоны";s:3:"url";s:14:"/seasons/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"SeasonEntry";a:1:{s:4:"slug";s:11:"{{ :slug }}";}}}

@@ -56,7 +56,7 @@ return [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'port'      => '3306',
-            'database'  => 'sfedu_project',
+            'database'  => 'dnaclubug_sfedu',
             'username'  => 'mysql',
             'password'  => 'mysql',
             'charset'   => 'utf8mb4',

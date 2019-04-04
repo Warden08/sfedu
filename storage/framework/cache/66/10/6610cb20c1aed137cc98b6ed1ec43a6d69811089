@@ -1,4 +1,4 @@
-1553107715a:1:{s:11:"seasons.htm";a:10:{s:8:"fileName";s:11:"seasons.htm";s:7:"content";s:330:"title = "Сезоны"
+1554368365a:1:{s:11:"seasons.htm";a:10:{s:8:"fileName";s:11:"seasons.htm";s:7:"content";s:315:"title = "Сезоны"
 url = "/seasons"
 layout = "default"
 is_hidden = 0
@@ -13,7 +13,7 @@ seasonPage = "seasons/entry"
 <div class="col-md-8">
 {% component 'Seasons' %}
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550532062;s:6:"markup";s:89:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554367151;s:6:"markup";s:86:"<div class="col-md-8">
 {% component 'Seasons' %}
 </div>
 {% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:12:"Сезоны";s:3:"url";s:8:"/seasons";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"Seasons";a:5:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"seasonsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:10:"seasonPage";s:13:"seasons/entry";}}}

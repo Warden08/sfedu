@@ -6,9 +6,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="title" content="СКК ЮФУ - {{ this.page.title }}">
+    <meta name="title" content="{% if post %}{{post.title}} - Новости {% else %}{{ this.page.title }}{% endif %}- СКК ЮФУ">
+    <meta property="og:image" content="http://esfedu.ru/storage/app/media/logo.png">
     <meta name="description" content="{{ this.page.meta_description }}">
-    <title>СКК ЮФУ - {{ this.page.title }}</title>
+    <title>{% if video %}{{video.name}} - {% endif %}
+    	   {% if season %}{{season.name}} - {% endif %}
+    	   {% if tournament %}{{tournament.name}} - {% endif %}
+    	   {% if team %}{{team.name}} - {% endif %}
+    	   {% if player %}{{player.nickname}} - {% endif %}
+    {% if post %}{{post.title}} - Новости {% else %}{{ this.page.title }}{% endif %}
+    - СКК ЮФУ</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ 'assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css'|theme }}">
     <link rel="stylesheet" href="{{ 'assets/vendors/css/vendor.bundle.base.css'|theme }}">
@@ -36,6 +43,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 <body>
 <div class="container-scroller">

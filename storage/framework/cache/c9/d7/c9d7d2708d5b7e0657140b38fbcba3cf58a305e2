@@ -1,4 +1,4 @@
-1553107716a:1:{s:18:"sidebar_footer.htm";a:6:{s:8:"fileName";s:18:"sidebar_footer.htm";s:7:"content";s:314:"==
+1554368365a:1:{s:18:"sidebar_footer.htm";a:6:{s:8:"fileName";s:18:"sidebar_footer.htm";s:7:"content";s:314:"==
 <div class="header__user user-block">
     <div class="header__soc soc soc--header">
         <a href="#" class="soc__item" target="_blank">
@@ -8,7 +8,7 @@
             Карта сайта
         </a>
     </div>
-</div>";s:5:"mtime";i:1552877273;s:6:"markup";s:311:"<div class="header__user user-block">
+</div>";s:5:"mtime";i:1554367151;s:6:"markup";s:311:"<div class="header__user user-block">
     <div class="header__soc soc soc--header">
         <a href="#" class="soc__item" target="_blank">
             Обратная связь

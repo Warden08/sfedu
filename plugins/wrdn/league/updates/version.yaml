@@ -96,3 +96,6 @@
 1.0.33:
     - 'Updated table wrdn_league_players'
     - builder_table_update_wrdn_league_players_3.php
+1.0.34:
+    - 'Updated table wrdn_league_teams'
+    - builder_table_update_wrdn_league_teams_3.php

@@ -1,4 +1,4 @@
-1553107715a:1:{s:17:"players/entry.htm";a:10:{s:8:"fileName";s:17:"players/entry.htm";s:7:"content";s:253:"title = "Игроки - Отдельная запись"
+1554368365a:1:{s:17:"players/entry.htm";a:10:{s:8:"fileName";s:17:"players/entry.htm";s:7:"content";s:242:"title = "Игроки - Отдельная запись"
 url = "/players/:slug"
 layout = "default"
 is_hidden = 0
@@ -9,7 +9,7 @@ slug = "{{ :slug }}"
 <div class="col-md-8">
 {% component 'PlayerEntry' %}
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550531957;s:6:"markup";s:93:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554367151;s:6:"markup";s:90:"<div class="col-md-8">
 {% component 'PlayerEntry' %}
 </div>
 {% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:46:"Игроки - Отдельная запись";s:3:"url";s:14:"/players/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"PlayerEntry";a:1:{s:4:"slug";s:11:"{{ :slug }}";}}}

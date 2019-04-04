@@ -18,6 +18,8 @@
                     <option value="dota2">Dota 2</option>
                     <option value="csgo">Counter-Strike:Global Offensive</option>
                     <option value="warface">Warface</option>
+                    <option value="overwatch">Overwatch</option>
+                    <option value="lol">League of Legends</option>
                 </select>
                 <div class="invalid-feedback">
                     {{ errors.first('game') }}
@@ -99,7 +101,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="cap_steam" class="required-field">Ссылка Steam:</label>
+                    <label for="cap_steam" class="required-field">Ссылка на игровой сервис(Steam\Battle.net\и т.д.):</label>
                     <input type="text" required name="cap_steam" class="form-control {% if errors.first('cap_steam') %}is-invalid{% endif %}" id="cap_steam"/>
                     <div class="invalid-feedback">
                         {{ errors.first('cap_steam') }}
@@ -153,7 +155,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="p2_steam" class="required-field">Ссылка Steam:</label>
+                    <label for="p2_steam" class="required-field">Ссылка на игровой сервис(Steam\Battle.net\и т.д.):</label>
                     <input type="text" required name="p2_steam" class="form-control {% if errors.first('p2_steam') %}is-invalid{% endif %}" id="p2_steam"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p2_steam') }}
@@ -207,7 +209,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="p3_steam" class="required-field">Ссылка Steam:</label>
+                    <label for="p3_steam" class="required-field">Ссылка на игровой сервис(Steam\Battle.net\и т.д.):</label>
                     <input type="text" required name="p3_steam" class="form-control {% if errors.first('p3_steam') %}is-invalid{% endif %}" id="p3_steam"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p3_steam') }}
@@ -261,7 +263,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="p4_steam" class="required-field">Ссылка Steam:</label>
+                    <label for="p4_steam" class="required-field">Ссылка на игровой сервис(Steam\Battle.net\и т.д.):</label>
                     <input type="text" required name="p4_steam" class="form-control {% if errors.first('p4_steam') %}is-invalid{% endif %}" id="p4_steam"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p4_steam') }}
@@ -315,7 +317,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="p5_steam" class="required-field">Ссылка Steam:</label>
+                    <label for="p5_steam" class="required-field">Ссылка на игровой сервис(Steam\Battle.net\и т.д.):</label>
                     <input type="text" required name="p5_steam" class="form-control {% if errors.first('p5_steam') %}is-invalid{% endif %}" id="p5_steam"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p5_steam') }}
@@ -331,7 +333,7 @@
             </div>
         </div>
         <div class="card" style="margin-bottom: 1rem">
-            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №6(Запасной)</h5>
+            <h5 class="card-header" style="text-align: left; font-size: 14px;">Игрок №6</h5>
             <div class="card-body">
                 <div class="form-group">
                     <label for="p6_fio">ФИО:</label>
@@ -369,7 +371,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="p6_steam">Ссылка Steam:</label>
+                    <label for="p6_steam">Ссылка на игровой сервис(Steam\Battle.net\и т.д.):</label>
                     <input type="text" name="p6_steam" class="form-control {% if errors.first('p6_steam') %}is-invalid{% endif %}" id="p6_steam"/>
                     <div class="invalid-feedback">
                         {{ errors.first('p6_steam') }}

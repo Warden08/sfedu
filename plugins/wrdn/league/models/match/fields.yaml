@@ -3,6 +3,8 @@ fields:
         label: Дисциплина
         options:
             CSGO: 'CS:GO'
+            lol: 'League of Legends'
+            overwatch: Overwatch
             'Dota 2': 'Dota 2'
             Artifact: Artifact
             Warface: Warface

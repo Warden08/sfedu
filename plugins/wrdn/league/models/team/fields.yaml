@@ -10,10 +10,6 @@ fields:
             field: name
             type: slug
         type: text
-    tag:
-        label: 'Тег команды'
-        span: auto
-        type: text
     logo:
         label: Логотип
         mode: file
@@ -21,13 +17,15 @@ fields:
         type: mediafinder
     game:
         label: Дисциплина
-        span: auto
         options:
             'Dota 2': 'Dota 2'
+            lol: 'League of Legends'
+            overwatch: Overwatch
             Artifact: Artifact
             'CS:GO': 'CS:GO'
             Warface: Warface
             Hearthstone: Hearthstone
+        span: auto
         type: dropdown
     tournaments:
         label: 'Участие в турнирах'
