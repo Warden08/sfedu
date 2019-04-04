@@ -1,4 +1,4 @@
-1553107716a:1:{s:18:"sidebar_blocks.htm";a:7:{s:8:"fileName";s:18:"sidebar_blocks.htm";s:7:"content";s:535:"[PostsSidebar]
+1554368365a:1:{s:18:"sidebar_blocks.htm";a:7:{s:8:"fileName";s:18:"sidebar_blocks.htm";s:7:"content";s:516:"[PostsSidebar]
 pageNumber = "{{ :page }}"
 postsPerPage = 5
 noPostsMessage = "No posts found"
@@ -17,7 +17,7 @@ videoPage = "video/entry"
     {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
     {% component 'videoVideos' %}
     {% partial 'sidebar_vk' %}
- </div>";s:5:"mtime";i:1550607557;s:6:"markup";s:204:"<div class="col-md-4">
+ </div>";s:5:"mtime";i:1554367151;s:6:"markup";s:200:"<div class="col-md-4">
     {% if this.page.id != 'news' and this.page.id != 'home'  %}{% component 'PostsSidebar' %}{% endif %}
     {% component 'videoVideos' %}
     {% partial 'sidebar_vk' %}

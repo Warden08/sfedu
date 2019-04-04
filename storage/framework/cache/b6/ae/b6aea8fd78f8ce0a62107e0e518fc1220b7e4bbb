@@ -1,0 +1,14 @@
+1554367494a:1:{s:17:"register/team.htm";a:10:{s:8:"fileName";s:17:"register/team.htm";s:7:"content";s:212:"title = "Отправить заявку на участие"
+url = "/register/team"
+layout = "default"
+is_hidden = 0
+
+[Form]
+==
+<div class="col-md-8">
+{% component 'Form' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1553107609;s:6:"markup";s:83:"<div class="col-md-8">
+{% component 'Form' %}
+</div>
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:51:"Отправить заявку на участие";s:3:"url";s:14:"/register/team";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:4:"Form";a:0:{}}}

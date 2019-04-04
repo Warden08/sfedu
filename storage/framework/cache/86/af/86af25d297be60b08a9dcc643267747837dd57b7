@@ -1,4 +1,4 @@
-1553107716a:1:{s:15:"video/entry.htm";a:10:{s:8:"fileName";s:15:"video/entry.htm";s:7:"content";s:247:"title = "Видео - Отдельная запись"
+1554368365a:1:{s:15:"video/entry.htm";a:10:{s:8:"fileName";s:15:"video/entry.htm";s:7:"content";s:205:"title = "Видео"
 url = "/video/:slug"
 layout = "default"
 is_hidden = 0
@@ -9,7 +9,7 @@ slug = "{{ :slug }}"
 <div class="col-md-8">
 {% component 'videoVideo' %}
 </div>
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550531949;s:6:"markup";s:92:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554367151;s:6:"markup";s:92:"<div class="col-md-8">
 {% component 'videoVideo' %}
 </div>
-{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:44:"Видео - Отдельная запись";s:3:"url";s:12:"/video/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"videoVideo";a:1:{s:4:"slug";s:11:"{{ :slug }}";}}}
+{% partial 'sidebar_blocks' %}";s:4:"code";N;s:5:"title";s:10:"Видео";s:3:"url";s:12:"/video/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"videoVideo";a:1:{s:4:"slug";s:11:"{{ :slug }}";}}}

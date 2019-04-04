@@ -29,7 +29,7 @@ class __TwigTemplate_73b5434ebac6ed3a9542450faafd70b67e79b56d5d65f914f6228484c74
             echo "active";
         }
         echo "\">
-            <a class=\"nav-link\" href=\"http://sfedu\">
+            <a class=\"nav-link\" href=\"/\">
                 <span class=\"menu-title\">Главная</span>
                 <i class=\"mdi mdi-home menu-icon\"></i>
             </a>
@@ -82,21 +82,22 @@ class __TwigTemplate_73b5434ebac6ed3a9542450faafd70b67e79b56d5d65f914f6228484c74
             <div class=\"collapse show\" id=\"general-pages\">
                 <ul class=\"nav flex-column sub-menu\">
                     <li class=\"nav-item\"> <a class=\"nav-link\" href=\"/seasons/autumn-2018\">Autumn 2018</a></li>
+                    <li class=\"nav-item\"> <a class=\"nav-link\" href=\"/seasons/spring-2019\">Spring 2019</a></li>
                 </ul>
             </div>
         </li>
         <li class=\"nav-item sidebar-actions\">
             <span class=\"nav-link\">
-              <a class=\"btn btn-block btn-lg btn-gradient-primary\" href=\"/register/\">Регистрация</a>
+              <a class=\"btn btn-block btn-lg btn-gradient-primary\" href=\"/register/\">Участвовать</a>
             </span>
         </li>
     </ul>
      ";
-        // line 52
+        // line 53
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 53
+        // line 54
         echo "</nav>
 <!-- partial -->";
     }
@@ -113,7 +114,7 @@ class __TwigTemplate_73b5434ebac6ed3a9542450faafd70b67e79b56d5d65f914f6228484c74
 
     public function getDebugInfo()
     {
-        return array (  100 => 53,  96 => 52,  73 => 34,  50 => 16,  39 => 10,  28 => 4,  23 => 1,);
+        return array (  101 => 54,  97 => 53,  73 => 34,  50 => 16,  39 => 10,  28 => 4,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -122,7 +123,7 @@ class __TwigTemplate_73b5434ebac6ed3a9542450faafd70b67e79b56d5d65f914f6228484c74
 <nav class=\"sidebar sidebar-offcanvas\" id=\"sidebar\">
     <ul class=\"nav\">
         <li class=\"nav-item {% if this.page.id == 'home' %}active{% endif %}\">
-            <a class=\"nav-link\" href=\"http://sfedu\">
+            <a class=\"nav-link\" href=\"/\">
                 <span class=\"menu-title\">Главная</span>
                 <i class=\"mdi mdi-home menu-icon\"></i>
             </a>
@@ -160,12 +161,13 @@ class __TwigTemplate_73b5434ebac6ed3a9542450faafd70b67e79b56d5d65f914f6228484c74
             <div class=\"collapse show\" id=\"general-pages\">
                 <ul class=\"nav flex-column sub-menu\">
                     <li class=\"nav-item\"> <a class=\"nav-link\" href=\"/seasons/autumn-2018\">Autumn 2018</a></li>
+                    <li class=\"nav-item\"> <a class=\"nav-link\" href=\"/seasons/spring-2019\">Spring 2019</a></li>
                 </ul>
             </div>
         </li>
         <li class=\"nav-item sidebar-actions\">
             <span class=\"nav-link\">
-              <a class=\"btn btn-block btn-lg btn-gradient-primary\" href=\"/register/\">Регистрация</a>
+              <a class=\"btn btn-block btn-lg btn-gradient-primary\" href=\"/register/\">Участвовать</a>
             </span>
         </li>
     </ul>

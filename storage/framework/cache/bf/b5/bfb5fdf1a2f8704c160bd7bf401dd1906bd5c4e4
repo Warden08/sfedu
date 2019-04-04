@@ -1,4 +1,4 @@
-1553107716a:1:{s:9:"video.htm";a:9:{s:8:"fileName";s:9:"video.htm";s:7:"content";s:2401:"title = "Видео"
+1554368365a:1:{s:9:"video.htm";a:9:{s:8:"fileName";s:9:"video.htm";s:7:"content";s:2331:"title = "Видео"
 url = "/video"
 layout = "default"
 is_hidden = 0
@@ -68,7 +68,7 @@ function onStart() {
         </div>
     </div>
 </div>  
-{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1550531969;s:6:"markup";s:2153:"<div class="col-md-8">
+{% partial 'sidebar_blocks' %}";s:5:"mtime";i:1554367151;s:6:"markup";s:2097:"<div class="col-md-8">
     <div class="card my-4">
         <div class="card-header">Видео</div>
         <div class="card-body row">
@@ -124,7 +124,7 @@ function onStart() {
         </div>
     </div>
 </div>  
-{% partial 'sidebar_blocks' %}";s:4:"code";s:154:"function onStart() {
+{% partial 'sidebar_blocks' %}";s:4:"code";s:149:"function onStart() {
     use wrdn\Video\Models\Video;
     $videos = Video::orderBy('id', 'desc')->paginate(20);
     

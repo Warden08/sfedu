@@ -63,10 +63,12 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     <option value=\"dota2\">Dota 2</option>
                     <option value=\"csgo\">Counter-Strike:Global Offensive</option>
                     <option value=\"warface\">Warface</option>
+                    <option value=\"overwatch\">Overwatch</option>
+                    <option value=\"lol\">League of Legends</option>
                 </select>
                 <div class=\"invalid-feedback\">
                     ";
-        // line 23
+        // line 25
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "game"], "method"), "html", null, true);
         echo "
                 </div>
@@ -74,14 +76,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             <div class=\"form-group\">
                 <label for=\"team_name\" class=\"required-field\">Название команды:</label>
                 <input type=\"text\" required class=\"form-control ";
-        // line 28
+        // line 30
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "team_name"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"team_name\" name=\"team_name\"/>
                 <div class=\"invalid-feedback\">
                     ";
-        // line 30
+        // line 32
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "team_name"], "method"), "html", null, true);
         echo "
                 </div>
@@ -89,7 +91,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             <div class=\"form-group\">
                 <label for=\"logo\">Логотип:</label>
                 <input name=\"logo\" type=\"file\" accept=\"image/*\" class=\"form-control ";
-        // line 35
+        // line 37
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "logo"], "method")) {
             echo "is-invalid";
         }
@@ -97,7 +99,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <small id=\"logoHelp\" class=\"form-text text-muted\">Рекомендуется .png 512x512px с прозрачным фоном - можно прислать администратору не позднее конца регистрации.</small>
                 <div class=\"invalid-feedback\">
                     ";
-        // line 38
+        // line 40
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "logo"], "method"), "html", null, true);
         echo "
                 </div>
@@ -105,14 +107,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             <div class=\"form-group\">
                 <label for=\"scards\" class=\"required-field\">Сканы\\Фотографии студенческих бидетов ВСЕХ игроков команды:</label>
                 <input name=\"scards[]\" multiple required accept=\"image/*\" type=\"file\" class=\"form-control ";
-        // line 43
+        // line 45
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "scards"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"scards\"/>
                 <div class=\"invalid-feedback\">
                     ";
-        // line 45
+        // line 47
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "scards"], "method"), "html", null, true);
         echo "
                 </div>
@@ -120,14 +122,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             <div class=\"form-group\">
                 <label for=\"university\">Принадлежность к структурному подразделению (факультету, институту):</label>
                 <input name=\"university\" class=\"form-control ";
-        // line 50
+        // line 52
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "university"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"university\"/>
                 <div class=\"invalid-feedback\">
                     ";
-        // line 52
+        // line 54
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "university"], "method"), "html", null, true);
         echo "
                 </div>
@@ -135,7 +137,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             <div class=\"form-group\">
                 <label for=\"playerphotos\">Фотографии игроков(по желанию):</label>
                 <input name=\"playerphotos[]\" multiple accept=\"image/*\" type=\"file\" class=\"form-control ";
-        // line 57
+        // line 59
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "playerphotos"], "method")) {
             echo "is-invalid";
         }
@@ -143,7 +145,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <small id=\"playerphotosHelp\" class=\"form-text text-muted\">Рекомендации - чтобы было видно лицо и в надлежащем качестве, в названии фото указывать никнейм изображенного игрока.</small>
                 <div class=\"invalid-feedback\">
                     ";
-        // line 60
+        // line 62
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "playerphotos"], "method"), "html", null, true);
         echo "
                 </div>
@@ -154,14 +156,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"cap_fio\" class=\"required-field\">ФИО:</label>
                     <input type=\"text\" required name=\"cap_fio\" class=\"form-control ";
-        // line 68
+        // line 70
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_fio"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_fio\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 70
+        // line 72
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_fio"], "method"), "html", null, true);
         echo "
                     </div>
@@ -169,14 +171,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"cap_nick\" class=\"required-field\">Никнейм:</label>
                     <input type=\"text\" required name=\"cap_nick\" class=\"form-control ";
-        // line 75
+        // line 77
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_nick"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_nick\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 77
+        // line 79
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_nick"], "method"), "html", null, true);
         echo "
                     </div>
@@ -184,14 +186,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"cap_birthday\" class=\"required-field\">Дата рождения:</label>
                     <input type=\"text\" required name=\"cap_birthday\" class=\"form-control ";
-        // line 82
+        // line 84
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_birthday"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_birthday\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 84
+        // line 86
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_birthday"], "method"), "html", null, true);
         echo "
                     </div>
@@ -199,14 +201,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"cap_uni_info\" class=\"required-field\">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
                     <input type=\"text\" required name=\"cap_uni_info\" class=\"form-control ";
-        // line 89
+        // line 91
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_uni_info"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_uni_info\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 91
+        // line 93
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_uni_info"], "method"), "html", null, true);
         echo "
                     </div>
@@ -214,29 +216,29 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"cap_vk\" class=\"required-field\">Ссылка VK:</label>
                     <input type=\"text\" required name=\"cap_vk\" class=\"form-control ";
-        // line 96
+        // line 98
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_vk"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_vk\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 98
+        // line 100
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_vk"], "method"), "html", null, true);
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"cap_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"cap_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"cap_steam\" class=\"form-control ";
-        // line 103
+        // line 105
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_steam"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_steam\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 105
+        // line 107
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_steam"], "method"), "html", null, true);
         echo "
                     </div>
@@ -244,14 +246,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"cap_teams\">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
                     <input type=\"text\" name=\"cap_teams\" class=\"form-control ";
-        // line 110
+        // line 112
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_teams"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"cap_teams\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 112
+        // line 114
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "cap_teams"], "method"), "html", null, true);
         echo "
                     </div>
@@ -264,14 +266,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p2_fio\" class=\"required-field\">ФИО:</label>
                     <input type=\"text\" required name=\"p2_fio\" class=\"form-control ";
-        // line 122
+        // line 124
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_fio"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_fio\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 124
+        // line 126
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_fio"], "method"), "html", null, true);
         echo "
                     </div>
@@ -279,14 +281,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p2_nick\" class=\"required-field\">Никнейм:</label>
                     <input type=\"text\" required name=\"p2_nick\" class=\"form-control ";
-        // line 129
+        // line 131
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_nick"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_nick\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 131
+        // line 133
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_nick"], "method"), "html", null, true);
         echo "
                     </div>
@@ -294,14 +296,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p2_birthday\" class=\"required-field\">Дата рождения:</label>
                     <input type=\"text\" required name=\"p2_birthday\" class=\"form-control ";
-        // line 136
+        // line 138
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_birthday"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_birthday\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 138
+        // line 140
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_birthday"], "method"), "html", null, true);
         echo "
                     </div>
@@ -309,14 +311,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p2_uni_info\" class=\"required-field\">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
                     <input type=\"text\" required name=\"p2_uni_info\" class=\"form-control ";
-        // line 143
+        // line 145
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_uni_info"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_uni_info\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 145
+        // line 147
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_uni_info"], "method"), "html", null, true);
         echo "
                     </div>
@@ -324,29 +326,29 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p2_vk\" class=\"required-field\">Ссылка VK:</label>
                     <input type=\"text\" required name=\"p2_vk\" class=\"form-control ";
-        // line 150
+        // line 152
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_vk"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_vk\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 152
+        // line 154
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_vk"], "method"), "html", null, true);
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p2_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p2_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p2_steam\" class=\"form-control ";
-        // line 157
+        // line 159
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_steam"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_steam\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 159
+        // line 161
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_steam"], "method"), "html", null, true);
         echo "
                     </div>
@@ -354,14 +356,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p2_teams\">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
                     <input type=\"text\" name=\"p2_teams\" class=\"form-control ";
-        // line 164
+        // line 166
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_teams"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p2_teams\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 166
+        // line 168
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p2_teams"], "method"), "html", null, true);
         echo "
                     </div>
@@ -374,14 +376,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p3_fio\" class=\"required-field\">ФИО:</label>
                     <input type=\"text\" required name=\"p3_fio\" class=\"form-control ";
-        // line 176
+        // line 178
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_fio"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_fio\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 178
+        // line 180
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_fio"], "method"), "html", null, true);
         echo "
                     </div>
@@ -389,14 +391,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p3_nick\" class=\"required-field\">Никнейм:</label>
                     <input type=\"text\" required name=\"p3_nick\" class=\"form-control ";
-        // line 183
+        // line 185
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_nick"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_nick\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 185
+        // line 187
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_nick"], "method"), "html", null, true);
         echo "
                     </div>
@@ -404,14 +406,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p3_birthday\" class=\"required-field\">Дата рождения:</label>
                     <input type=\"text\" required name=\"p3_birthday\" class=\"form-control ";
-        // line 190
+        // line 192
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_birthday"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_birthday\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 192
+        // line 194
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_birthday"], "method"), "html", null, true);
         echo "
                     </div>
@@ -419,14 +421,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p3_uni_info\" class=\"required-field\">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
                     <input type=\"text\" required name=\"p3_uni_info\" class=\"form-control ";
-        // line 197
+        // line 199
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_uni_info"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_uni_info\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 199
+        // line 201
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_uni_info"], "method"), "html", null, true);
         echo "
                     </div>
@@ -434,29 +436,29 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p3_vk\" class=\"required-field\">Ссылка VK:</label>
                     <input type=\"text\" required name=\"p3_vk\" class=\"form-control ";
-        // line 204
+        // line 206
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_vk"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_vk\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 206
+        // line 208
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_vk"], "method"), "html", null, true);
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p3_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p3_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p3_steam\" class=\"form-control ";
-        // line 211
+        // line 213
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_steam"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_steam\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 213
+        // line 215
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_steam"], "method"), "html", null, true);
         echo "
                     </div>
@@ -464,14 +466,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p3_teams\">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
                     <input type=\"text\" name=\"p3_teams\" class=\"form-control ";
-        // line 218
+        // line 220
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_teams"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p3_teams\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 220
+        // line 222
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p3_teams"], "method"), "html", null, true);
         echo "
                     </div>
@@ -484,14 +486,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p4_fio\" class=\"required-field\">ФИО:</label>
                     <input type=\"text\" required name=\"p4_fio\" class=\"form-control ";
-        // line 230
+        // line 232
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_fio"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_fio\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 232
+        // line 234
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_fio"], "method"), "html", null, true);
         echo "
                     </div>
@@ -499,14 +501,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p4_nick\" class=\"required-field\">Никнейм:</label>
                     <input type=\"text\" required name=\"p4_nick\" class=\"form-control ";
-        // line 237
+        // line 239
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_nick"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_nick\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 239
+        // line 241
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_nick"], "method"), "html", null, true);
         echo "
                     </div>
@@ -514,14 +516,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p4_birthday\" class=\"required-field\">Дата рождения:</label>
                     <input type=\"text\" required name=\"p4_birthday\" class=\"form-control ";
-        // line 244
+        // line 246
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_birthday"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_birthday\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 246
+        // line 248
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_birthday"], "method"), "html", null, true);
         echo "
                     </div>
@@ -529,14 +531,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p4_uni_info\" class=\"required-field\">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
                     <input type=\"text\" required name=\"p4_uni_info\" class=\"form-control ";
-        // line 251
+        // line 253
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_uni_info"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_uni_info\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 253
+        // line 255
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_uni_info"], "method"), "html", null, true);
         echo "
                     </div>
@@ -544,29 +546,29 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p4_vk\" class=\"required-field\">Ссылка VK:</label>
                     <input type=\"text\" required name=\"p4_vk\" class=\"form-control ";
-        // line 258
+        // line 260
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_vk"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_vk\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 260
+        // line 262
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_vk"], "method"), "html", null, true);
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p4_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p4_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p4_steam\" class=\"form-control ";
-        // line 265
+        // line 267
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_steam"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_steam\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 267
+        // line 269
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_steam"], "method"), "html", null, true);
         echo "
                     </div>
@@ -574,14 +576,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p4_teams\">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
                     <input type=\"text\" name=\"p4_teams\" class=\"form-control ";
-        // line 272
+        // line 274
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_teams"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p4_teams\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 274
+        // line 276
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p4_teams"], "method"), "html", null, true);
         echo "
                     </div>
@@ -594,14 +596,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p5_fio\" class=\"required-field\">ФИО:</label>
                     <input type=\"text\" required name=\"p5_fio\" class=\"form-control ";
-        // line 284
+        // line 286
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_fio"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_fio\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 286
+        // line 288
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_fio"], "method"), "html", null, true);
         echo "
                     </div>
@@ -609,14 +611,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p5_nick\" class=\"required-field\">Никнейм:</label>
                     <input type=\"text\" required name=\"p5_nick\" class=\"form-control ";
-        // line 291
+        // line 293
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_nick"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_nick\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 293
+        // line 295
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_nick"], "method"), "html", null, true);
         echo "
                     </div>
@@ -624,14 +626,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p5_birthday\" class=\"required-field\">Дата рождения:</label>
                     <input type=\"text\" required name=\"p5_birthday\" class=\"form-control ";
-        // line 298
+        // line 300
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_birthday"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_birthday\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 300
+        // line 302
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_birthday"], "method"), "html", null, true);
         echo "
                     </div>
@@ -639,14 +641,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p5_uni_info\" class=\"required-field\">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
                     <input type=\"text\" required name=\"p5_uni_info\" class=\"form-control ";
-        // line 305
+        // line 307
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_uni_info"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_uni_info\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 307
+        // line 309
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_uni_info"], "method"), "html", null, true);
         echo "
                     </div>
@@ -654,29 +656,29 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p5_vk\" class=\"required-field\">Ссылка VK:</label>
                     <input type=\"text\" required name=\"p5_vk\" class=\"form-control ";
-        // line 312
+        // line 314
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_vk"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_vk\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 314
+        // line 316
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_vk"], "method"), "html", null, true);
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p5_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p5_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p5_steam\" class=\"form-control ";
-        // line 319
+        // line 321
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_steam"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_steam\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 321
+        // line 323
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_steam"], "method"), "html", null, true);
         echo "
                     </div>
@@ -684,14 +686,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p5_teams\">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
                     <input type=\"text\" name=\"p5_teams\" class=\"form-control ";
-        // line 326
+        // line 328
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_teams"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p5_teams\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 328
+        // line 330
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p5_teams"], "method"), "html", null, true);
         echo "
                     </div>
@@ -699,19 +701,19 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             </div>
         </div>
         <div class=\"card\" style=\"margin-bottom: 1rem\">
-            <h5 class=\"card-header\" style=\"text-align: left; font-size: 14px;\">Игрок №6(Запасной)</h5>
+            <h5 class=\"card-header\" style=\"text-align: left; font-size: 14px;\">Игрок №6</h5>
             <div class=\"card-body\">
                 <div class=\"form-group\">
                     <label for=\"p6_fio\">ФИО:</label>
                     <input type=\"text\" name=\"p6_fio\" class=\"form-control ";
-        // line 338
+        // line 340
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_fio"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_fio\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 340
+        // line 342
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_fio"], "method"), "html", null, true);
         echo "
                     </div>
@@ -719,14 +721,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p6_nick\">Никнейм:</label>
                     <input type=\"text\" name=\"p6_nick\" class=\"form-control ";
-        // line 345
+        // line 347
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_nick"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_nick\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 347
+        // line 349
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_nick"], "method"), "html", null, true);
         echo "
                     </div>
@@ -734,14 +736,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p6_birthday\">Дата рождения:</label>
                     <input type=\"text\" name=\"p6_birthday\" class=\"form-control ";
-        // line 352
+        // line 354
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_birthday"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_birthday\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 354
+        // line 356
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_birthday"], "method"), "html", null, true);
         echo "
                     </div>
@@ -749,14 +751,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p6_uni_info\">ВУЗ, структурное подразделение, факультет, курс, группа:</label>
                     <input type=\"text\" name=\"p6_uni_info\" class=\"form-control ";
-        // line 359
+        // line 361
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_uni_info"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_uni_info\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 361
+        // line 363
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_uni_info"], "method"), "html", null, true);
         echo "
                     </div>
@@ -764,29 +766,29 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p6_vk\">Ссылка VK:</label>
                     <input type=\"text\" name=\"p6_vk\" class=\"form-control ";
-        // line 366
+        // line 368
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_vk"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_vk\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 368
+        // line 370
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_vk"], "method"), "html", null, true);
         echo "
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p6_steam\">Ссылка Steam:</label>
+                    <label for=\"p6_steam\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" name=\"p6_steam\" class=\"form-control ";
-        // line 373
+        // line 375
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_steam"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_steam\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 375
+        // line 377
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_steam"], "method"), "html", null, true);
         echo "
                     </div>
@@ -794,14 +796,14 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                 <div class=\"form-group\">
                     <label for=\"p6_teams\">Команды, в которых играл на прошлых турнирах ЮФУ (по этой дисциплине):</label>
                     <input type=\"text\" name=\"p6_teams\" class=\"form-control ";
-        // line 380
+        // line 382
         if (twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_teams"], "method")) {
             echo "is-invalid";
         }
         echo "\" id=\"p6_teams\"/>
                     <div class=\"invalid-feedback\">
                         ";
-        // line 382
+        // line 384
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["errors"] ?? null), "first", [0 => "p6_teams"], "method"), "html", null, true);
         echo "
                     </div>
@@ -811,11 +813,11 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
         <!--<div class=\"g-recaptcha\" data-sitekey=\"6Ld48ZcUAAAAALOoJQTgzN_fhg_7DOAmlifBGD8m\" data-theme=\"dark\"></div>-->
             <input type=\"hidden\" name=\"_handler\" value=\"onSave\">
             ";
-        // line 389
+        // line 391
         echo call_user_func_array($this->env->getFunction('form_token')->getCallable(), ["token"]);
         echo "
             ";
-        // line 390
+        // line 392
         echo call_user_func_array($this->env->getFunction('form_sessionKey')->getCallable(), ["sessionKey"]);
         echo "
         <button type=\"submit\" class=\"btn btn-success\">Отправить</button>
@@ -836,7 +838,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
 
     public function getDebugInfo()
     {
-        return array (  819 => 390,  815 => 389,  805 => 382,  798 => 380,  790 => 375,  783 => 373,  775 => 368,  768 => 366,  760 => 361,  753 => 359,  745 => 354,  738 => 352,  730 => 347,  723 => 345,  715 => 340,  708 => 338,  695 => 328,  688 => 326,  680 => 321,  673 => 319,  665 => 314,  658 => 312,  650 => 307,  643 => 305,  635 => 300,  628 => 298,  620 => 293,  613 => 291,  605 => 286,  598 => 284,  585 => 274,  578 => 272,  570 => 267,  563 => 265,  555 => 260,  548 => 258,  540 => 253,  533 => 251,  525 => 246,  518 => 244,  510 => 239,  503 => 237,  495 => 232,  488 => 230,  475 => 220,  468 => 218,  460 => 213,  453 => 211,  445 => 206,  438 => 204,  430 => 199,  423 => 197,  415 => 192,  408 => 190,  400 => 185,  393 => 183,  385 => 178,  378 => 176,  365 => 166,  358 => 164,  350 => 159,  343 => 157,  335 => 152,  328 => 150,  320 => 145,  313 => 143,  305 => 138,  298 => 136,  290 => 131,  283 => 129,  275 => 124,  268 => 122,  255 => 112,  248 => 110,  240 => 105,  233 => 103,  225 => 98,  218 => 96,  210 => 91,  203 => 89,  195 => 84,  188 => 82,  180 => 77,  173 => 75,  165 => 70,  158 => 68,  147 => 60,  139 => 57,  131 => 52,  124 => 50,  116 => 45,  109 => 43,  101 => 38,  93 => 35,  85 => 30,  78 => 28,  70 => 23,  59 => 17,  55 => 15,  49 => 12,  46 => 11,  43 => 10,  37 => 7,  34 => 6,  32 => 5,  28 => 4,  23 => 1,);
+        return array (  821 => 392,  817 => 391,  807 => 384,  800 => 382,  792 => 377,  785 => 375,  777 => 370,  770 => 368,  762 => 363,  755 => 361,  747 => 356,  740 => 354,  732 => 349,  725 => 347,  717 => 342,  710 => 340,  697 => 330,  690 => 328,  682 => 323,  675 => 321,  667 => 316,  660 => 314,  652 => 309,  645 => 307,  637 => 302,  630 => 300,  622 => 295,  615 => 293,  607 => 288,  600 => 286,  587 => 276,  580 => 274,  572 => 269,  565 => 267,  557 => 262,  550 => 260,  542 => 255,  535 => 253,  527 => 248,  520 => 246,  512 => 241,  505 => 239,  497 => 234,  490 => 232,  477 => 222,  470 => 220,  462 => 215,  455 => 213,  447 => 208,  440 => 206,  432 => 201,  425 => 199,  417 => 194,  410 => 192,  402 => 187,  395 => 185,  387 => 180,  380 => 178,  367 => 168,  360 => 166,  352 => 161,  345 => 159,  337 => 154,  330 => 152,  322 => 147,  315 => 145,  307 => 140,  300 => 138,  292 => 133,  285 => 131,  277 => 126,  270 => 124,  257 => 114,  250 => 112,  242 => 107,  235 => 105,  227 => 100,  220 => 98,  212 => 93,  205 => 91,  197 => 86,  190 => 84,  182 => 79,  175 => 77,  167 => 72,  160 => 70,  149 => 62,  141 => 59,  133 => 54,  126 => 52,  118 => 47,  111 => 45,  103 => 40,  95 => 37,  87 => 32,  80 => 30,  72 => 25,  59 => 17,  55 => 15,  49 => 12,  46 => 11,  43 => 10,  37 => 7,  34 => 6,  32 => 5,  28 => 4,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -861,6 +863,8 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     <option value=\"dota2\">Dota 2</option>
                     <option value=\"csgo\">Counter-Strike:Global Offensive</option>
                     <option value=\"warface\">Warface</option>
+                    <option value=\"overwatch\">Overwatch</option>
+                    <option value=\"lol\">League of Legends</option>
                 </select>
                 <div class=\"invalid-feedback\">
                     {{ errors.first('game') }}
@@ -942,7 +946,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"cap_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"cap_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"cap_steam\" class=\"form-control {% if errors.first('cap_steam') %}is-invalid{% endif %}\" id=\"cap_steam\"/>
                     <div class=\"invalid-feedback\">
                         {{ errors.first('cap_steam') }}
@@ -996,7 +1000,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p2_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p2_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p2_steam\" class=\"form-control {% if errors.first('p2_steam') %}is-invalid{% endif %}\" id=\"p2_steam\"/>
                     <div class=\"invalid-feedback\">
                         {{ errors.first('p2_steam') }}
@@ -1050,7 +1054,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p3_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p3_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p3_steam\" class=\"form-control {% if errors.first('p3_steam') %}is-invalid{% endif %}\" id=\"p3_steam\"/>
                     <div class=\"invalid-feedback\">
                         {{ errors.first('p3_steam') }}
@@ -1104,7 +1108,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p4_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p4_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p4_steam\" class=\"form-control {% if errors.first('p4_steam') %}is-invalid{% endif %}\" id=\"p4_steam\"/>
                     <div class=\"invalid-feedback\">
                         {{ errors.first('p4_steam') }}
@@ -1158,7 +1162,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p5_steam\" class=\"required-field\">Ссылка Steam:</label>
+                    <label for=\"p5_steam\" class=\"required-field\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" required name=\"p5_steam\" class=\"form-control {% if errors.first('p5_steam') %}is-invalid{% endif %}\" id=\"p5_steam\"/>
                     <div class=\"invalid-feedback\">
                         {{ errors.first('p5_steam') }}
@@ -1174,7 +1178,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
             </div>
         </div>
         <div class=\"card\" style=\"margin-bottom: 1rem\">
-            <h5 class=\"card-header\" style=\"text-align: left; font-size: 14px;\">Игрок №6(Запасной)</h5>
+            <h5 class=\"card-header\" style=\"text-align: left; font-size: 14px;\">Игрок №6</h5>
             <div class=\"card-body\">
                 <div class=\"form-group\">
                     <label for=\"p6_fio\">ФИО:</label>
@@ -1212,7 +1216,7 @@ class __TwigTemplate_22d93fa889757eb5f59624d31313efec4c4534ea86cf6492105944a9718
                     </div>
                 </div>
                 <div class=\"form-group\">
-                    <label for=\"p6_steam\">Ссылка Steam:</label>
+                    <label for=\"p6_steam\">Ссылка на игровой сервис(Steam\\Battle.net\\и т.д.):</label>
                     <input type=\"text\" name=\"p6_steam\" class=\"form-control {% if errors.first('p6_steam') %}is-invalid{% endif %}\" id=\"p6_steam\"/>
                     <div class=\"invalid-feedback\">
                         {{ errors.first('p6_steam') }}

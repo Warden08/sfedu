@@ -45,8 +45,8 @@ class __TwigTemplate_a8b6a4721d66e60b3cb34a20f3b1a39d63780974a775b9834b9531ca42c
                 </li>
                 <li>
                     <a target=\"_blank\" href=\"#\" class=\"rules__link\">
-                        <img src=\"/storage/app/media/Artifact.png\" alt=\"icon\">
-                        <span>Artifact | Технические правила</span>
+                        <img src=\"/storage/app/media/lol.png\" alt=\"icon\">
+                        <span>League of Legends | Технические правила</span>
                     </a>
                 </li>
                 <li>
@@ -55,12 +55,18 @@ class __TwigTemplate_a8b6a4721d66e60b3cb34a20f3b1a39d63780974a775b9834b9531ca42c
                         <span>Warface | Технические правила</span>
                     </a>
                 </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/overwatch.png\" alt=\"icon\">
+                        <span>Overwatch | Технические правила</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 </div>
 ";
-        // line 40
+        // line 46
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("sidebar_blocks"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
@@ -78,7 +84,7 @@ class __TwigTemplate_a8b6a4721d66e60b3cb34a20f3b1a39d63780974a775b9834b9531ca42c
 
     public function getDebugInfo()
     {
-        return array (  64 => 40,  23 => 1,);
+        return array (  70 => 46,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -108,14 +114,20 @@ class __TwigTemplate_a8b6a4721d66e60b3cb34a20f3b1a39d63780974a775b9834b9531ca42c
                 </li>
                 <li>
                     <a target=\"_blank\" href=\"#\" class=\"rules__link\">
-                        <img src=\"/storage/app/media/Artifact.png\" alt=\"icon\">
-                        <span>Artifact | Технические правила</span>
+                        <img src=\"/storage/app/media/lol.png\" alt=\"icon\">
+                        <span>League of Legends | Технические правила</span>
                     </a>
                 </li>
                 <li>
                     <a target=\"_blank\" href=\"#\" class=\"rules__link\">
                         <img src=\"/storage/app/media/Warface.png\" alt=\"icon\">
                         <span>Warface | Технические правила</span>
+                    </a>
+                </li>
+                <li>
+                    <a target=\"_blank\" href=\"#\" class=\"rules__link\">
+                        <img src=\"/storage/app/media/overwatch.png\" alt=\"icon\">
+                        <span>Overwatch | Технические правила</span>
                     </a>
                 </li>
             </ul>
